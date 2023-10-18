@@ -126,7 +126,7 @@ The main tasks for this exercise are to:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0602-RG** |
+   | Resource group | Click on **Create new** name the resource group as **AZ801-L0602-RG** |
    | Name | **az801l06a-bastion** |
    | Region | the same Azure region to which you deployed the resources in the previous tasks of this exercise |
    | Tier | **Basic** |
