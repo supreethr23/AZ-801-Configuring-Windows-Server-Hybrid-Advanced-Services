@@ -220,6 +220,7 @@ The main tasks for this exercise are to:
    > **Note**: The operating system will restart automatically to complete the promotion process.
 
 1. On **SEA-SVR2**, reconnect to **az801l06a-dc2** via the Bastion service.
+
 1. Within the Remote Desktop session to **az801l06a-dc2**, use **Server Manager** to verify that locally installed roles include **AD DS** and **DNS**.
 
 #### Task 5: Remove Azure resources deployed in the exercise
