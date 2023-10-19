@@ -496,3 +496,15 @@ After completing this lab, you will be able to:
 1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, select the **Replicating servers** entry and then, on the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
+
+## Review
+
+In this lab, you have completed:
+
++ Prepare the lab environment
++ Prepare for assessment and migration by using Azure Migrate
++ Assess Hyper-V for migration by using Azure Migrate
++ Migrate Hyper-V VMs by using Azure Migrate
+
+## You have successfully completed the lab.
+
