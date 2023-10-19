@@ -258,3 +258,10 @@
    > **Note**: Wait until the backup completes. This should take about 1 minute.
 
 1. On **SEA-SVR2**, switch to File Explorer, browse to **C:\\BackupShare**, and verify that the folder includes the newly created backup in the **WindowsImageBackup** subfolder.
+
+### Review
+In this lab, you have completed:
+- Implemented Hyper-V Replica.
+- Implemented backup and restore with Windows Server Backup.
+
+### You have successfully completed the lab
