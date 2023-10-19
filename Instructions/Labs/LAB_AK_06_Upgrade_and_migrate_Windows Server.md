@@ -1,13 +1,20 @@
----
-lab:
-    title: 'Lab: Upgrade and migrate in Windows Server'
-    type: 'Answer Key'
-    module: 'Module 6 - Upgrade and migrate in Windows Server'
----
 
-# Lab answer key: Upgrade and migrate in Windows Server
+# Lab 06: Upgrade and migrate in Windows Server
+
+## Lab scenario
+
+Contoso is exploring the hybrid model for its infrastructure services that would facilitate migration of its on-premises Windows servers to Azure virtual machines (VMs). To assist with this initiative, and you were tasked with evaluating the process of deploying Active Directory Domain Services (AD DS) domain controllers in Azure VMs. Your intention is to identify differences between the manual process currently used for on-premises deployments and the deployment methods available in Azure. In addition, you want to test and document the Storage Migration Services functionality to validate its usage for migrations of on-premises file servers. 
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Upgrading%20and%20migrating%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Objectives
+
+In this lab, you will:
+
+- Deploy AD DS domain controllers in Azure.
+- Migrate file servers by using Storage Migration Service.
+
+## Estimated time: 60 minutes
 
 ## Exercise 1: Deploying AD DS domain controllers in Azure
 
@@ -74,7 +81,7 @@ lab:
 
 #### Task 2: Deploy Azure Bastion 
 
-> **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
+ > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
@@ -431,3 +438,10 @@ lab:
    Get-ChildItem -Path 'S:\Data'
    ```
 
+### Review
+
+In this lab, you have completed the following:
+- Deployed AD DS domain controllers in Azure.
+- Migrated file servers by using Storage Migration Service.
+
+## You have successfully completed the lab
