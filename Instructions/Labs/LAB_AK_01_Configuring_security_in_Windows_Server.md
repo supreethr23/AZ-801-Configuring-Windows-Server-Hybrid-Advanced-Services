@@ -170,3 +170,10 @@
 1. Review the password assigned to SEA-SVR1 and note that it matches the one displayed in the **LAPS UI** tool.
 
    > **Note:** The value of the password is, in this case, enclosed in a pair of braces.
+
+### Review
+In this lab, you have completed:
+- Configured Windows Defender Credential Guard
+- Implemented LAPS.
+
+### You have successfully completed the lab
