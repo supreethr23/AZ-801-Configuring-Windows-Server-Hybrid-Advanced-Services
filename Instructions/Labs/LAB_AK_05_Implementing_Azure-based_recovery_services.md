@@ -6,9 +6,9 @@
 
 After completing this lab, you'll be able to:
 
-- Create an Azure Site Recovery vault
-- Implementing Hyper-V VM protection by using Azure Site Recovery vault
-- Implementing Azure Backup
+- Create an Azure Site Recovery vault.
+- Implement Hyper-V VM protection by using Azure Site Recovery vault.
+- Implement Azure Backup.
 
 ## Exercise 1: Creating and configuring an Azure Site Recovery vault
 
