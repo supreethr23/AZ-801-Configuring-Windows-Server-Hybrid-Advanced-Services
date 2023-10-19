@@ -505,3 +505,5 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    ```
 
 1. Switch back to the **Recover Data Wizard**, and on the **Browse and Recover Files** page, select **Unmount**, and when prompted to confirm, select **Yes**. 
+
+## You have successfully completed the lab.
