@@ -1,15 +1,35 @@
----
-lab:
-    title: 'Lab: Migrating Hyper-V VMs to Azure by using Azure Migrate'
-    type: 'Answer Key'
-    module: 'Module 7: Design for Migration'
----
+# Lab7: Migrating Hyper-V VMs to Azure by using Azure Migrate
 
-# Lab answer key: Migrating Hyper-V VMs to Azure by using Azure Migrate
+## Lab scenario
+
+Despite its ambitions to modernize its workloads as part of the migration to Azure, the Adatum Enterprise Architecture team realizes that, due to aggressive timelines, in many cases, it will be necessary to follow the lift-and-shift approach. To simplify this task, the team starts exploring the capabilities of Azure Migrate. Azure Migrate serves as a centralized hub to assess and migrate to Azure on-premises servers, infrastructure, applications, and data.
+
+Azure Migrate provides the following features:
+
+- Unified migration platform: A single portal to start, run, and track your migration to Azure.
+- Range of tools: A range of tools for assessment and migration. Tools include Azure Migrate: Server Assessment and Migration and modernization. Azure Migrate integrates with other Azure services and with other tools and independent software vendor (ISV) offerings.
+- Assessment and migration: In the Azure Migrate hub, you can assess and migrate:
+    - Servers: Assess on-premises servers and migrate them to Azure virtual machines.
+    - Databases: Assess on-premises databases and migrate them to Azure SQL Database or to SQL Managed Instance.
+    - Web applications: Assess on-premises web applications and migrate them to Azure App Service by using the Azure App Service Migration Assistant.
+    - Virtual desktops: Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Windows Virtual Desktop in Azure.
+    - Data: Migrate large amounts of data to Azure quickly and cost-effectively using Azure Data Box products.
+
+While databases, web apps, and virtual desktops are within the scope of the next stage of the migration initiative, the Adatum Enterprise Architecture team wants to start by evaluating the use of Azure Migrate for migrating their on-premises Hyper-V virtual machines to Azure VM.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Migrating%20Hyper-V%20VMs%20to%20Azure%20by%20using%20Azure%20Migrate)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
 **Note**: You may need to install the latest version of the Microsoft Edge browser. To update the Microsoft Edge browser, select the three dots (ellipsis) icon in the upper-right corner of the window. Select **Help and feedback** from the dropdown menu, then select **About Microsoft Edge**. Edge will automatically check for updates and download any available updates, once the update is downloaded, click on the **Restart**
+
+## Objectives
+  
+After completing this lab, you will be able to:
+
+-  Prepare for assessment and migration by using Azure Migrate.
+-  Assess Hyper-V for migration by using Azure Migrate.
+-  Migrate Hyper-V VMs by using Azure Migrate.
+
+## Estimated Time: 120 minutes
 
 ## Exercise 1: Prepare the lab environment
 
@@ -17,13 +37,21 @@ lab:
 
 1. Connect to **SEA-SVR2** and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
-1. When prompted, in the Azure portal, sign in by using the credentials of a user account with the Owner role in the subscription you'll be using in this lab.
+
+   ![](../Media/image3.png)
+   
+1. When prompted, in the Azure portal, sign in by using following credentials:
+   
+   - Username: <inject key="AzureAdUserEmail"></inject>
+  
+   - Password: <inject key="AzureAdUserPassword"></inject>
+  
 1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.):
 
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0701-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0701-RG** |
    | Region | the name of an Azure region into which you can provision Azure VMs |
    | Virtual Network Name | **az801l07a-hv-vnet** |
    | Host Network Interface1Name | **az801l07a-hv-vm-nic1** |
@@ -82,7 +110,7 @@ lab:
 #### Task 3: Deploy a nested VM in the Azure VM
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, select **az801l07a-hv-vm**.
-1. On the **az801l07a-hv-vm** page, select **Connect** and then, in the drop-down menu, select **Bastion**.
+1. On the **az801l07a-hv-vm** page, select Connect, under **Configured connection** section, select **Go to Bastion**.
 1. When prompted, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
@@ -94,8 +122,24 @@ lab:
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the **Server Manager** window, select **Local Server**, select the **On** link next to the **IE Enhanced Security Configuration** label. In the **IE Enhanced Security Configuration** dialog box, select both **Off** options, and then select **OK**.
 1. From the Remote Desktop session, open File Explorer and browse to the **F:** drive. Create two folders **F:\\VHDs** and **F:\\VMs**. 
-1. Within the Remote Desktop session to **az801l07a-hv-vm**, start Microsoft Edge, complete the initial setup, go to [Windows Server Evaluations](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125), provide the requested information, download the Windows Server 2022 **VHD** file, and copy it to the **F:\VHDs** folder. 
-1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start**, select **Windows Administrative Tools**, and then select **Hyper-V Manager**. 
+1. Within the Remote Desktop session to **az801l07a-hv-vm**, start Microsoft Edge, complete the initial setup, go to [Windows Server Evaluations](https://www.microsoft.com/en-in/EvalCenter).
+1. On start your evaluation today page, select **Windows Server 2022**.
+1. On the Windows Server 2022 page, under **Get started for free** select **Download the VHD** and on **Evaluate Windows Server 2022** page provide the requested information for 
+   registeration and click on **Download now**.
+
+   | Setting        | Value      | 
+   | -------------- | ---------- |
+   | First Name     |**ODL**     |
+   | Last Name      |**User**    |
+   | Email          |**<inject key="AzureAdUserEmail"></inject>** |
+   | Country/region | Enter your country |
+   | Company name   | Contoso |
+   | Company size   | 1 |
+   | Job Name       | Enter as you wish |
+   | Phone          | Select your country code and enter phone number |
+   
+1. Server 2022 **VHD** file, and copy it to the **F:\VHDs** folder. 
+1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** menu, search and  select **Hyper-V Manager**. 
 1. In the **Hyper-V Manager** console, select the **az801l07a-hv-vm** node. 
 1. Select **New** and then, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
 1. On the **Before You Begin** page of the **New Virtual Machine Wizard**, select **Next >**.
@@ -112,8 +156,8 @@ lab:
 1. On the **Configure Networking** page of the **New Virtual Machine Wizard**, in the **Connection** drop-down list, select **NestedSwitch**, and then select **Next >**.
 1. On the **Connect Virtual Hard Disk** page of the **New Virtual Machine Wizard**, select the option **Use an existing virtual hard disk**, set location to the **VHD** file you downloaded to the **F:\VHDs** folder, and then select **Next >**.
 1. On the **Summary** page of the **New Virtual Machine Wizard**, select **Finish**.
-1. In the **Hyper-V Manager** console, select the newly created virtual machine, and then select **Start**. 
-1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
+1. In the **Hyper-V Manager** console, select the newly created virtual machine, right click and then select **Start**. 
+1. In the **Hyper-V Manager** console, verify that the virtual machine is running, right click and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Hi there** page, select **Next**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **License terms** page, select **Accept**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd**, and then select **Finish**. 
@@ -159,14 +203,17 @@ lab:
 #### Task 2: Create an Azure Migrate project
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you are using in this lab.
-1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Azure Migrate**, and then, on the **Azure Migrate \| Get Started** page, in the **Servers, databases, and web apps** section, select **Discover, assess, and migrate**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Azure Migrate**, and then, on the **Azure Migrate \| Get Started** page, under **Migration goals** section, select **Servers, databases, and web apps**.
 1. On the **Azure Migrate \| Servers, databases, and web apps** page, select **Create Project**.
+
+    ![](../Media/image4.png)
+   
 1. On the **Create Project** page, specify the following settings (leave others with their default values) and select **Create**:
 
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0702-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0702-RG** |
    | Migrate project | **az801l07a-migrate-project** |
    | Geography | the name of your country or a geographical region |
 
@@ -178,18 +225,23 @@ lab:
    | Setting | Value |
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0703-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0703-RG** |
    | Name | **az801l07a-migration-vnet** |
    | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
-1. On the **IP addresses** tab of the **Create virtual network** page, select the ellipsis symbol (**...**) next to the **+ add a subnet** button, from the dropdown list select **Delete address space**, select **Add an IP address space**.
+1. On the **IP addresses** tab of the **Create virtual network** page,
+    - Remove the default IP Address space by clicking on **Delete the address space**
 
-1. On the **Add an IP address space** page, specify the following settings (leave others with their default values) and select **Add**:
+      ![](../Media/unit4-image2.png)   
+      
+   - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
 
-   |Setting|Value|
-   |---|---|
-   |Starting Address|**10.7.0.0**|
-   |Address space size|**/16 (65536 Addresses)**|
+      ![](../Media/unit4-image3.png)
+
+       |Setting|Value|
+       |---|---|
+       |Starting Address|**10.7.0.0**|
+       |Address space size|**/16 (65536 Addresses)**|
 
 1. On the **IP addresses** tab of the **Create virtual network** page, select **+ Add a subnet**.
 1. On the **Add a subnet** page, specify the following settings (leave others with their default values) and select **Add**:
@@ -212,9 +264,10 @@ lab:
    | Name | **az801l07a-test-vnet** |
    | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
-1. On the **IP addresses** tab of the **Create virtual network** page, select the ellipsis symbol (**...**) next to the **+ add a subnet** button, from the dropdown list select **Delete address space**, select **Add an IP address space**.
+1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address 
+   space**, select **Add IPV4 Address space**
 
-1. On the **Add an IP address space** page, specify the following settings (leave others with their default values) and select **Add**:
+1. On the **Add IPV4 Address space** page, specify the following settings (leave others with their default values) and select **Add**:
 
    |Setting|Value|
    |---|---|
@@ -232,14 +285,14 @@ lab:
 
 1. Back on the **IP addresses** tab of the **Create virtual network** page, select **Review + create**.
 1. On the **Review + create** tab of the **Create virtual network** page, select **Create**.
-1.  In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
-1.  On the **Basics** tab of the **Create a storage account** page, specify the following settings (leave others with their default values):
+1. In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
+1. On the **Basics** tab of the **Create a storage account** page, specify the following settings (leave others with their default values):
 
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Storage account name | any globally unique name between 3 and 24 characters in length consisting of letters and digits | 
+   | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
    | Location | the name of the Azure region in which you created the virtual network earlier in this task |
    | Performance | **Standard** |
    | Redundancy | **Locally redundant storage (LRS)** |
@@ -260,7 +313,7 @@ lab:
 
    >**Note**: Wait for the key generation to complete and record its value. You will need it later in this exercise.
 
-1. On the **Discover** page, in the **Download Azure Migrate appliance** text box, select the **.VHD file** option, select **Download** and then, when prompted, set the download location to the **F:\VMs** folder.
+1. On the **Discover** page, in the **Download Azure Migrate appliance** text box, select the **.VHD file** option, select **Download**.
 
    >**Note**: Wait for the download to complete. This might take about 5 minutes.
 
@@ -293,9 +346,16 @@ lab:
    >**Note**: Within the **Virtual Machine Connection** window to the virtual appliance, a browser window displaying **Appliance Configuration Manager** will automatically open.
 
 1. On the **Appliance Configuration Manager** page, select the **I agree** button and wait for the setup prerequisites to be successfully verified. 
-1. On the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
+1. On the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Verify** and wait for process to complete.
+1. Once verification is completed you will prompted with **New update installed** window, select **Refresh**.
+1. Under **Azure user Login and appliance registration status** select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
 1. On the **Enter code** pane in the newly opened browser tab, paste the code you copied onto the Clipboard, and then select **Next**. When prompted, sign in by providing the credentials of a user account with the Owner role in the subscription you are using in this lab.
-1. When prompted **Are you trying to sign in to Microsoft Azure PowerShell?**, select **Continue**, and then close the newly opened browser tab.
+
+    - Username: <inject key="AzureAdUserEmail"></inject>
+  
+    - Password: <inject key="AzureAdUserPassword"></inject>
+   
+1. When prompted **Are you trying to sign in to Microsoft Azure PowerShell?**, select **Continue**, and then **close** the newly opened browser tab.
 1. In the browser window, on the **Appliance Configuration Manager** page, verify that registration was successful.
 1. On the **Appliance Configuration Manager** page, in the **Manage credentials and discovery sources** section, select **Add credentials**. On the **Add credentials** pane, specify the following settings, and then select **Save**:
 
@@ -309,7 +369,7 @@ lab:
 
    >**Note**: **10.0.2.1** is the IP address of the network interface of the Hyper-V host attached to the internal switch.
 
-1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, enable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery**.
+1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, disable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery**.
 
    >**Note**: It might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
@@ -370,8 +430,6 @@ lab:
 1. Switch to the Azure portal and then, on the **Discover machines** page, in step 1 of the procedure for preparing on-premises Hyper-V hosts, select the **Download** button in order to download the vault registration key.
 1. Switch to the **Provider installation** page of the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard and select **Register**. This will start the **Microsoft Azure Site Recovery Registration Wizard**.
 1. On the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Browse**, browse to the **Downloads** folder, select the vault credentials file, and then select **Open**.
-
-   
 1. Back on the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Next**.
 1. On the **Proxy Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, accept the default settings and select **Next**.
 1. On the **Registration** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Finish**.
@@ -403,7 +461,7 @@ lab:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Replication Storage Account | the name of the storage account you created earlier in this lab | 
+   | Cache Storage Account | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
@@ -439,25 +497,14 @@ lab:
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
 
-#### Task 4: Remove Azure resources deployed in the lab
+## Review
 
-1. On **SEA-SVR2**, in the browser window displaying the Azure portal, open the **Azure Cloud Shell** pane by selecting the **Cloud Shell** button in the Azure portal.
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
+In this lab, you have completed:
 
-   > **Note:** If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**.
++ Prepare the lab environment
++ Prepare for assessment and migration by using Azure Migrate
++ Assess Hyper-V for migration by using Azure Migrate
++ Migrate Hyper-V VMs by using Azure Migrate
 
-1. From the **Cloud Shell** pane, run the following command to list all the resource groups you created in this lab:
+## You have successfully completed the lab.
 
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L070*'
-   ```
-
-   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
-
-1. From the **Cloud Shell** pane, run the following to delete the resource group you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L070*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-   > **Note:** The command executes asynchronously (as determined by the *-AsJob* parameter), so while you will be able to run another PowerShell command immediately after within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
