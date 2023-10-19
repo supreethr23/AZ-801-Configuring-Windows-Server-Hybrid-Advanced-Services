@@ -19,9 +19,9 @@ lab:
 1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
 1. When prompted, in the Azure portal, sign in by using following credentials:
    
-   - username  * Username: <inject key="AzureAdUserEmail"></inject>
+   -   * Username: <inject key="AzureAdUserEmail"></inject>
   
-   - password  * Password: <inject key="AzureAdUserPassword"></inject>
+   -   * Password: <inject key="AzureAdUserPassword"></inject>
   
 1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.):
 
@@ -103,8 +103,20 @@ lab:
 1. On start your evaluation today page, select **Windows Server 2022**.
 1. On the Windows Server 2022 page, under **Get started for free** select **Download the VHD** and on **Evaluate Windows Server 2022** page provide the requested information for 
    registeration and click on **Download now**.
+
+   | Setting        | Value      | 
+   | -------------- | ---------- |
+   | First Name     |**ODL**     |
+   | Last Name      |**User**    |
+   | Email          |**<inject key="AzureAdUserEmail"></inject>** |
+   | Country/region | Enter your country |
+   | Company name   | Contoso |
+   | Company size   | 1 |
+   | Job Name       | Enter as you wish |
+   | Phone          | Select your country code and enter phone number |
+   
 1. Server 2022 **VHD** file, and copy it to the **F:\VHDs** folder. 
-1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start**, select **Windows Administrative Tools**, and then select **Hyper-V Manager**. 
+1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** menu, search and  select **Hyper-V Manager**. 
 1. In the **Hyper-V Manager** console, select the **az801l07a-hv-vm** node. 
 1. Select **New** and then, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
 1. On the **Before You Begin** page of the **New Virtual Machine Wizard**, select **Next >**.
@@ -121,8 +133,8 @@ lab:
 1. On the **Configure Networking** page of the **New Virtual Machine Wizard**, in the **Connection** drop-down list, select **NestedSwitch**, and then select **Next >**.
 1. On the **Connect Virtual Hard Disk** page of the **New Virtual Machine Wizard**, select the option **Use an existing virtual hard disk**, set location to the **VHD** file you downloaded to the **F:\VHDs** folder, and then select **Next >**.
 1. On the **Summary** page of the **New Virtual Machine Wizard**, select **Finish**.
-1. In the **Hyper-V Manager** console, select the newly created virtual machine, and then select **Start**. 
-1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
+1. In the **Hyper-V Manager** console, select the newly created virtual machine, right click and then select **Start**. 
+1. In the **Hyper-V Manager** console, verify that the virtual machine is running, right click and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Hi there** page, select **Next**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **License terms** page, select **Accept**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd**, and then select **Finish**. 
