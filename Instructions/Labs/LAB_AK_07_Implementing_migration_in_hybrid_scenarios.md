@@ -180,14 +180,14 @@ lab:
 #### Task 2: Create an Azure Migrate project
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you are using in this lab.
-1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Azure Migrate**, and then, on the **Azure Migrate \| Get Started** page, in the **Servers, databases, and web apps** section, select **Discover, assess, and migrate**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Azure Migrate**, and then, on the **Azure Migrate \| Get Started** page, under **Migration goals** section, select **Servers, databases, and web apps**.
 1. On the **Azure Migrate \| Servers, databases, and web apps** page, select **Create Project**.
 1. On the **Create Project** page, specify the following settings (leave others with their default values) and select **Create**:
 
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0702-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0702-RG** |
    | Migrate project | **az801l07a-migrate-project** |
    | Geography | the name of your country or a geographical region |
 
@@ -199,7 +199,7 @@ lab:
    | Setting | Value |
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0703-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0703-RG** |
    | Name | **az801l07a-migration-vnet** |
    | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
