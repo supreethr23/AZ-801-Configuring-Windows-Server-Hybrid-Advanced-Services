@@ -17,7 +17,12 @@ lab:
 
 1. Connect to **SEA-SVR2** and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
-1. When prompted, in the Azure portal, sign in by using the credentials of a user account with the Owner role in the subscription you'll be using in this lab.
+1. When prompted, in the Azure portal, sign in by using following credentials:
+   
+   - username  * Username: <inject key="AzureAdUserEmail"></inject>
+  
+   - password  * Password: <inject key="AzureAdUserPassword"></inject>
+  
 1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.):
 
    | Setting | Value | 
@@ -82,7 +87,7 @@ lab:
 #### Task 3: Deploy a nested VM in the Azure VM
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, select **az801l07a-hv-vm**.
-1. On the **az801l07a-hv-vm** page, select **Connect** and then, in the drop-down menu, select **Bastion**.
+1. On the **az801l07a-hv-vm** page, select Connect, under **Configured connection** section, select **Go to Bastion**.
 1. When prompted, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
