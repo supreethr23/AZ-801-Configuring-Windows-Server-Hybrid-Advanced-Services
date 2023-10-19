@@ -438,7 +438,7 @@ In this lab, you will:
    Get-ChildItem -Path 'S:\Data'
    ```
 
-### Review
+## Review
 
 In this lab, you have completed the following:
 - Deployed AD DS domain controllers in Azure.
