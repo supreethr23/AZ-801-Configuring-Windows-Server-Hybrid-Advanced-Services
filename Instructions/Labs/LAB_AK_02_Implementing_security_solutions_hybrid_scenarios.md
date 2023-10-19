@@ -1,19 +1,22 @@
----
-lab:
-    title: 'Lab: Implementing Security Solutions in Hybrid Scenarios'
-    type: 'Answer Key'
-    module: 'Module 2: Implementing Security Solutions in Hybrid Scenarios'
----
-
-# Lab answer key: Implementing Security Solutions in Hybrid Scenarios
+# Lab 02: Implementing Security Solutions in Hybrid Scenarios
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Implementing%20security%20solutions%20in%20hybrid%20scenarios)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Lab objectives
+
+After completing this lab, you'll be able to:
+
+- Creating an Azure Log Analytics workspace and an Azure Automation account
+- Configuring Microsoft Defender for Cloud
+- Provision Azure VMs running Windows Server.
+- Onboard on-premises Windows Server into Defender for Cloud and Azure Automation.
+- Verify the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
 
 ## Exercise 1: Creating an Azure Log Analytics workspace and an Azure Automation account
 
 #### Task 1: Create an Azure Log Analytics workspace 
 
-1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
+1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**
 1. On **SEA-SVR2**, start Microsoft Edge, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you'll be using in this lab.
 1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Log Analytics workspaces**, and then, on the **Log Analytics workspaces** page, select **+ Create**.
 1. On the **Basics** tab of the **Create Log Analytics workspace** page, enter the following settings, select **Review + Create**, and then select **Create**:
@@ -221,6 +224,9 @@ lab:
 1. On **SEA-SVR2**, in the Azure portal, browse to the **Microsoft Defender for Cloud \| Overview** page. 
 1. On the **Microsoft Defender for Cloud \| Overview** page, in the vertical menu on the left side, in the **General** section, select **Security alerts**.
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **az801l02-vm0**.
+
+      > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
+   
 1. Select the security alert, on the **Security alert** page, select **Take action**, and review the possible actions.
 
    > **Note:** To minimize the possibility of future attacks, you should consider implementing security recommendations.
@@ -237,6 +243,9 @@ lab:
 
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal and browse back to the **Microsoft Defender for Cloud \| Security alerts** page.
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **SEA-SVR2**.
+
+   > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
+   
 1. Select the security alert, on the **Security alert** page, select **Take action**, and review the possible actions.
 
    > **Note:** To minimize the possibility of future attacks, you should consider implementing security recommendations.
@@ -277,26 +286,14 @@ lab:
 
    >**Note**: You have the option of scheduling automated deployment of missing updates for both on-premises servers and Azure VMs.
 
-## Exercise 6: Deprovisioning the Azure environment
+### Review
 
-#### Task 1: Start a PowerShell session in Cloud Shell
+In this lab, you have completed:
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Cloud Shell pane by selecting the Cloud Shell icon.
+- Created an Azure Log Analytics workspace and an Azure Automation account.
+- Configured Defender for Cloud.
+- Provisioned Azure VMs running Windows Server.
+- Onboarded on-premises Windows Server into Defender for Cloud and Azure Automation.
+- Verified the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
 
-#### Task 2: Identify all Azure resources provisioned in the lab
-
-1. From the Cloud Shell pane, run the following command to list all resource groups created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L02*'
-   ```
-
-   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
-
-1. Run the following command to delete all the resource groups you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L02*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-   >**Note**: The command executes asynchronously (as determined by the *-AsJob* parameter), so while you'll be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+### You have successfully completed the lab.
