@@ -1,11 +1,4 @@
----
-lab:
-    title: 'Lab: Configuring security in Windows Server'
-    type: 'Answer Key'
-    module: 'Module 1: Windows Server security'
----
-
-# Lab answer key: Configuring security in Windows Server
+# Lab : Configuring security in Windows Server
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Configuring%20security%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
