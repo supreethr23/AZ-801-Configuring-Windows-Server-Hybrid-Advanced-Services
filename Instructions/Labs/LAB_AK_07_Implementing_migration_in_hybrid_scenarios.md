@@ -259,8 +259,8 @@ lab:
 
 1. Back on the **IP addresses** tab of the **Create virtual network** page, select **Review + create**.
 1. On the **Review + create** tab of the **Create virtual network** page, select **Create**.
-1.  In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
-1.  On the **Basics** tab of the **Create a storage account** page, specify the following settings (leave others with their default values):
+1. In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
+1. On the **Basics** tab of the **Create a storage account** page, specify the following settings (leave others with their default values):
 
    | Setting | Value | 
    | --- | --- |
@@ -287,7 +287,7 @@ lab:
 
    >**Note**: Wait for the key generation to complete and record its value. You will need it later in this exercise.
 
-1. On the **Discover** page, in the **Download Azure Migrate appliance** text box, select the **.VHD file** option, select **Download** and then, when prompted, set the download location to the **F:\VMs** folder.
+1. On the **Discover** page, in the **Download Azure Migrate appliance** text box, select the **.VHD file** option, select **Download**.
 
    >**Note**: Wait for the download to complete. This might take about 5 minutes.
 
@@ -320,9 +320,16 @@ lab:
    >**Note**: Within the **Virtual Machine Connection** window to the virtual appliance, a browser window displaying **Appliance Configuration Manager** will automatically open.
 
 1. On the **Appliance Configuration Manager** page, select the **I agree** button and wait for the setup prerequisites to be successfully verified. 
-1. On the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
+1. On the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Verify** and wait for process to complete.
+1. Once verification is completed you will prompted with **New update installed** window, select **Refresh**.
+1. Under **Azure user Login and appliance registration status** select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
 1. On the **Enter code** pane in the newly opened browser tab, paste the code you copied onto the Clipboard, and then select **Next**. When prompted, sign in by providing the credentials of a user account with the Owner role in the subscription you are using in this lab.
-1. When prompted **Are you trying to sign in to Microsoft Azure PowerShell?**, select **Continue**, and then close the newly opened browser tab.
+
+    - Username: <inject key="AzureAdUserEmail"></inject>
+  
+    - Password: <inject key="AzureAdUserPassword"></inject>
+   
+1. When prompted **Are you trying to sign in to Microsoft Azure PowerShell?**, select **Continue**, and then **close** the newly opened browser tab.
 1. In the browser window, on the **Appliance Configuration Manager** page, verify that registration was successful.
 1. On the **Appliance Configuration Manager** page, in the **Manage credentials and discovery sources** section, select **Add credentials**. On the **Add credentials** pane, specify the following settings, and then select **Save**:
 
@@ -336,7 +343,7 @@ lab:
 
    >**Note**: **10.0.2.1** is the IP address of the network interface of the Hyper-V host attached to the internal switch.
 
-1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, enable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery**.
+1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, disable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery**.
 
    >**Note**: It might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
@@ -397,8 +404,6 @@ lab:
 1. Switch to the Azure portal and then, on the **Discover machines** page, in step 1 of the procedure for preparing on-premises Hyper-V hosts, select the **Download** button in order to download the vault registration key.
 1. Switch to the **Provider installation** page of the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard and select **Register**. This will start the **Microsoft Azure Site Recovery Registration Wizard**.
 1. On the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Browse**, browse to the **Downloads** folder, select the vault credentials file, and then select **Open**.
-
-   
 1. Back on the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Next**.
 1. On the **Proxy Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, accept the default settings and select **Next**.
 1. On the **Registration** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Finish**.
@@ -430,7 +435,7 @@ lab:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Replication Storage Account | the name of the storage account you created earlier in this lab | 
+   | Cache Storage Account | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
@@ -465,26 +470,3 @@ lab:
 1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, select the **Replicating servers** entry and then, on the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
-
-#### Task 4: Remove Azure resources deployed in the lab
-
-1. On **SEA-SVR2**, in the browser window displaying the Azure portal, open the **Azure Cloud Shell** pane by selecting the **Cloud Shell** button in the Azure portal.
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
-
-   > **Note:** If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**.
-
-1. From the **Cloud Shell** pane, run the following command to list all the resource groups you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L070*'
-   ```
-
-   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
-
-1. From the **Cloud Shell** pane, run the following to delete the resource group you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L070*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-   > **Note:** The command executes asynchronously (as determined by the *-AsJob* parameter), so while you will be able to run another PowerShell command immediately after within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
