@@ -19,9 +19,9 @@ lab:
 1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
 1. When prompted, in the Azure portal, sign in by using following credentials:
    
-   -   * Username: <inject key="AzureAdUserEmail"></inject>
+   - Username: <inject key="AzureAdUserEmail"></inject>
   
-   -   * Password: <inject key="AzureAdUserPassword"></inject>
+   - Password: <inject key="AzureAdUserPassword"></inject>
   
 1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.):
 
