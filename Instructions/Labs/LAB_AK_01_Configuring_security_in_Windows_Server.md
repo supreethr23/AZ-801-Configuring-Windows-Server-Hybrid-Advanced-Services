@@ -2,6 +2,14 @@
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Configuring%20security%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Lab objectives
+
+After completing this lab, you'll be able to:
+
+- Configure Windows Defender Credential Guard.
+- Locate problematic accounts.
+- Implementing LAPS.
+
 ## Exercise 1: Configuring Windows Defender Credential Guard
 
 > **Note**: In the lab environment, Credential Guard will not be available on VMs because they don't meet the prerequisites. This, however, will not prevent you from stepping through the process of implementing it by using Group Policy and evaluating its readiness by using corresponding tools.
@@ -173,7 +181,7 @@
 
 ### Review
 In this lab, you have completed:
-- Configured Windows Defender Credential Guard
+- Configured Windows Defender Credential Guard.
 - Implemented LAPS.
 
 ### You have successfully completed the lab
