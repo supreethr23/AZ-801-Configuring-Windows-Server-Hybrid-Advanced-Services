@@ -2,6 +2,14 @@
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Implementing%20Azure-based%20recovery%20services)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Lab Objectives
+
+After completing this lab, you'll be able to:
+
+- Create an Azure Site Recovery vault
+- Implementing Hyper-V VM protection by using Azure Site Recovery vault
+- Implementing Azure Backup
+
 ## Exercise 1: Creating and configuring an Azure Site Recovery vault
 
 #### Task 1: Create an Azure Site Recovery vault
