@@ -257,25 +257,6 @@ In this lab, you will:
 
 1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS**.
 
-#### Task 5: Remove Azure resources deployed in the exercise
-
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open a PowerShell session within the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
-1. From the Cloud Shell pane, run the following command to list all resource groups you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L060*'
-   ```
-
-   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
-
-1. From the Cloud Shell pane, run the following command to delete the resource group you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L060*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-   > **Note:** The command executes asynchronously (as determined by the *-AsJob* parameter), so while you will be able to immediately run another PowerShell command within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
-
 ## Exercise 2: Migrating file servers by using Storage Migration Service
 
 #### Task 1: Install Windows Admin Center
