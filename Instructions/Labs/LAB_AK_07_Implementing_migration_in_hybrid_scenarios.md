@@ -23,7 +23,7 @@ lab:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0701-RG** |
+   | Resource group | Select **create new** and enter **AZ801-L0701-RG** |
    | Region | the name of an Azure region into which you can provision Azure VMs |
    | Virtual Network Name | **az801l07a-hv-vnet** |
    | Host Network Interface1Name | **az801l07a-hv-vm-nic1** |
@@ -182,14 +182,19 @@ lab:
    | Name | **az801l07a-migration-vnet** |
    | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
-1. On the **IP addresses** tab of the **Create virtual network** page, select the ellipsis symbol (**...**) next to the **+ add a subnet** button, from the dropdown list select **Delete address space**, select **Add an IP address space**.
+1. On the **IP addresses** tab of the **Create virtual network** page,
+    - Remove the default IP Address space by clicking on **Delete the address space**
 
-1. On the **Add an IP address space** page, specify the following settings (leave others with their default values) and select **Add**:
+      ![](../media/unit4-image2.png)
+      
+   - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
 
-   |Setting|Value|
-   |---|---|
-   |Starting Address|**10.7.0.0**|
-   |Address space size|**/16 (65536 Addresses)**|
+      ![](../media/unit4-image3.png)
+
+       |Setting|Value|
+       |---|---|
+       |Starting Address|**10.7.0.0**|
+       |Address space size|**/16 (65536 Addresses)**|
 
 1. On the **IP addresses** tab of the **Create virtual network** page, select **+ Add a subnet**.
 1. On the **Add a subnet** page, specify the following settings (leave others with their default values) and select **Add**:
@@ -212,9 +217,10 @@ lab:
    | Name | **az801l07a-test-vnet** |
    | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
-1. On the **IP addresses** tab of the **Create virtual network** page, select the ellipsis symbol (**...**) next to the **+ add a subnet** button, from the dropdown list select **Delete address space**, select **Add an IP address space**.
+1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address 
+   space**, select **Add IPV4 Address space**
 
-1. On the **Add an IP address space** page, specify the following settings (leave others with their default values) and select **Add**:
+1. On the **Add IPV4 Address space** page, specify the following settings (leave others with their default values) and select **Add**:
 
    |Setting|Value|
    |---|---|
@@ -239,7 +245,7 @@ lab:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Storage account name | any globally unique name between 3 and 24 characters in length consisting of letters and digits | 
+   | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
    | Location | the name of the Azure region in which you created the virtual network earlier in this task |
    | Performance | **Standard** |
    | Redundancy | **Locally redundant storage (LRS)** |
