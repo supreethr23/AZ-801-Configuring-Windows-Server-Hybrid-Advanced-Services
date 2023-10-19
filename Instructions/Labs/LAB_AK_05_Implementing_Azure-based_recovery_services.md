@@ -511,6 +511,11 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    ```
 
 1. Switch back to the **Recover Data Wizard**, and on the **Browse and Recover Files** page, select **Unmount**, and when prompted to confirm, select **Yes**. 
-   
+
+### Review
+In this lab, you have completed:
+- Created and configured an Azure Site Recovery vault.
+- Implemented Hyper-V VM protection by using Azure Site Recovery vault.
+- Implemented Azure Backup
 
 ## You have successfully completed the lab.
