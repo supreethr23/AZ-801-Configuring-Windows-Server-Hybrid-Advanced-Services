@@ -1,7 +1,35 @@
+# Lab7: Migrating Hyper-V VMs to Azure by using Azure Migrate
+
+## Lab scenario
+
+Despite its ambitions to modernize its workloads as part of the migration to Azure, the Adatum Enterprise Architecture team realizes that, due to aggressive timelines, in many cases, it will be necessary to follow the lift-and-shift approach. To simplify this task, the team starts exploring the capabilities of Azure Migrate. Azure Migrate serves as a centralized hub to assess and migrate to Azure on-premises servers, infrastructure, applications, and data.
+
+Azure Migrate provides the following features:
+
+- Unified migration platform: A single portal to start, run, and track your migration to Azure.
+- Range of tools: A range of tools for assessment and migration. Tools include Azure Migrate: Server Assessment and Migration and modernization. Azure Migrate integrates with other Azure services and with other tools and independent software vendor (ISV) offerings.
+- Assessment and migration: In the Azure Migrate hub, you can assess and migrate:
+    - Servers: Assess on-premises servers and migrate them to Azure virtual machines.
+    - Databases: Assess on-premises databases and migrate them to Azure SQL Database or to SQL Managed Instance.
+    - Web applications: Assess on-premises web applications and migrate them to Azure App Service by using the Azure App Service Migration Assistant.
+    - Virtual desktops: Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Windows Virtual Desktop in Azure.
+    - Data: Migrate large amounts of data to Azure quickly and cost-effectively using Azure Data Box products.
+
+While databases, web apps, and virtual desktops are within the scope of the next stage of the migration initiative, the Adatum Enterprise Architecture team wants to start by evaluating the use of Azure Migrate for migrating their on-premises Hyper-V virtual machines to Azure VM.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Migrating%20Hyper-V%20VMs%20to%20Azure%20by%20using%20Azure%20Migrate)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
 **Note**: You may need to install the latest version of the Microsoft Edge browser. To update the Microsoft Edge browser, select the three dots (ellipsis) icon in the upper-right corner of the window. Select **Help and feedback** from the dropdown menu, then select **About Microsoft Edge**. Edge will automatically check for updates and download any available updates, once the update is downloaded, click on the **Restart**
+
+## Objectives
+  
+After completing this lab, you will be able to:
+
+-  Prepare for assessment and migration by using Azure Migrate.
+-  Assess Hyper-V for migration by using Azure Migrate.
+-  Migrate Hyper-V VMs by using Azure Migrate.
+
+## Estimated Time: 120 minutes
 
 ## Exercise 1: Prepare the lab environment
 
