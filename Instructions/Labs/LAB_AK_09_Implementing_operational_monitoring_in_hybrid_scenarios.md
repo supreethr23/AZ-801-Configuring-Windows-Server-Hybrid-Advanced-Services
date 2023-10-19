@@ -2,6 +2,13 @@
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Implementing%20operational%20monitoring%20in%20hybrid%20scenarios)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Lab objectives
+In this lab, you will complete the following tasks:
++ Exercise 1: Preparing a monitoring environment
++ Exercise 2: Configuring monitoring of on-premises servers
++ Exercise 3: Configuring monitoring of Azure VMs
++ Exercise 4: Evaluating monitoring services
+
 ## Exercise 1: Preparing a monitoring environment
 
 ### Task 1: Deploy an Azure virtual machine
@@ -399,3 +406,13 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    ```
 
    >**Note**: The command executes asynchronously (as determined by the *-AsJob* parameter). So, while you'll be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed. -->
+
+### Review
+In this lab, you have completed:
+- Prepared a monitoring environment.
+- Configured monitoring of on-premises servers.
+- Configured monitoring of Azure VMs.
+- Evaluated monitoring services.
+
+
+### You have successfully completed the lab

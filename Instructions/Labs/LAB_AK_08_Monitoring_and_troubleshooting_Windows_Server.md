@@ -2,13 +2,19 @@
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Monitoring%20and%20troubleshooting%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Lab objectives
+In this lab, you will complete the following tasks:
++ Exercise 1: Establishing a performance baseline
++ Exercise 2: Identifying the source of a performance problem
++ Exercise 3: Viewing and configuring centralized event logs
+
 ## Exercise 1: Establishing a performance baseline
 
 > **Note**: After starting the Data Collector Set, there might be a delay of 10 minutes for the results to appear.
 
 ### Task 1: Create and start a data collector set
 
-<!-- 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**. -->
+1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 
 1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, enter **Perf (1)**, and then, in the **Best match** list, select **Performance Monitor (2)**.
 
@@ -16,7 +22,7 @@
 
 1. In Performance Monitor, expand the **Data Collector Sets** node in the navigation pane, and then select **User Defined**.
 
-1. Right-click or access the context menu for **User Defined**, select **New**, and then select **Data Collector Set**. This will launch the **Create new Data Collector Set** wizard.
+1. Right-click on the **User Defined**, select **New**, and then select **Data Collector Set**. This will launch the **Create new Data Collector Set** wizard.
 
 1. On the **How would you like to create this new data collector set?** page of the **Create new Data Collector Set** wizard, enter **SEA-SVR2 Performance** in the **Name** box.
 
@@ -24,13 +30,13 @@
 
 1. On the **What type of data do you want to include?** page, select the **Performance counter** checkbox, and then select **Next**.
 
-1. On the **Which performance counters would you like to log?** page, select **Add >>**.
+1. On the **Which performance counters would you like to log?** page, select **Add**.
 
 1. In the **Available counters (1)** list, expand **Processor (2)**, select **% Processor Time (3)**, ensure that the **_Total (4)** entry is selected in the **Instances of selected object (5)** section, and then select **Add >> (6)**.
 
    ![](../Media/801-4.png)
 
-1. In the **Available counters** list, expand **Memory**, select **Pages/sec**, and then select **Add**.
+1. In the **Available counters (1)** list, expand **Memory (2)**, select **Pages/sec (3)**, and then select **Add >> (4)**.
 
 1. In the **Available counters (1)** list, expand **PhysicalDisk (2)**, select **% Disk Time (3)**, ensure that the **_Total (4)** entry is selected in the **Instances of selected object (5)** section, and then select **Add >> (6)**.
 
@@ -64,7 +70,7 @@
 
 ### Task 2: Create a typical workload on the server
 
-1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button,search for **Windows PowerShell**, right-click on the **Windows PowerShell** and then select **Run as administrator**.
+1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, search for **Windows PowerShell**, right-click on the **Windows PowerShell** and then select **Run as administrator**.
 
 1. To create a file of a specific size, at the Windows PowerShell command prompt, enter the following command and press Enter:
 
@@ -133,9 +139,9 @@
 
 1. On **SEA-SVR2**, open File Explorer.
 
-1. In File Explorer, browse to **C:\AllFiles\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\Allfiles\Labfiles\Lab08**.
+1. In File Explorer, browse to **C:\Labfiles\Lab08**.
 
-1. Double-click or select **CPUSTRES64.EXE**, and then press Enter.
+1. Double-click on **CPUSTRES64.EXE**.
 
    >**Note**: **CPUSTRES64.EXE** is a SysInternals utility that can be used to simulate CPU activity by running up to 64 threads in a loop.
 
@@ -222,6 +228,8 @@
 
    > **Note**: Verify that the WinRM service is already running and that it's set up for remote management.
 
+   ![](../Media/801-31.png)
+
 1. To ensure that the relevant Windows Defender Firewall with Advanced Security rules are enabled on **SEA-DC1**, enter the following command and press Enter:
 
    ```powershell
@@ -232,11 +240,15 @@
 
 1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, enter **Active**, and then, in the **Best match** list, select **Active Directory Users and Computers**.
 
+   ![](../Media/801-32.png)
+
 1. In the **Active Directory Users and Computers** console, select the **Builtin** container. 
 
-1. In the **Builtin** container, select the **Event Log Readers** group.
+1. In the **Builtin (1)** container, select the **Event Log Readers (2)** group.
 
-1. Right-click or access the context menu for the **Event Log Readers** group, select **Properties**, and then, in the **Event Log Readers Properties** dialog box, select the **Members** tab.
+1. Right-click on the **Event Log Readers** group, select **Properties (3)**, and then, in the **Event Log Readers Properties** dialog box, select the **Members** tab.
+
+   ![](../Media/801-34png)
 
 1. On the **Members** tab, select **Add**.
 
@@ -254,7 +266,9 @@
 
 1. In **Event Viewer**, select **Subscriptions** in the navigation pane.
 
-1. Right-click or access the context menu for **Subscriptions**, and then select **Create Subscription**.
+1. Right-click or access the context menu for **Subscriptions (1)**, and then select **Create Subscription (2)**.
+
+   ![](../Media/801-34.png)
 
 1. In the **Subscription Properties** dialog box, enter **SEA-DC1 Events** in the **Subscription name** box.
 
@@ -270,7 +284,7 @@
 
 1. In the **Logged** drop-down list, select **Last 24 hours**.
 
-1. In the **Query Filter** dialog box, select the **Critical**, **Error**, **Warning**, and **Information** checkboxes.
+1. In the **Event level** dialog box, select the **Critical**, **Error**, **Warning**, and **Information** checkboxes.
 
 1. In the **Event logs** drop-down list, expand **Windows Logs**, and then select the **System** and **Application** checkboxes.
 
@@ -281,3 +295,13 @@
 1. On **SEA-SVR2**, switch to the **Event Viewer** window, and then expand **Windows Logs** in the navigation pane.
 
 1. Select **Forwarded Events** and verify that the forwarded events include those generated on **SEA-DC1**.
+
+   >**Note:** You have to wait for sometime, till the results shows.
+
+### Review
+In this lab, you have completed:
+- Established a performance baseline.
+- Identified the source of a performance problem.
+- Viewied and configured centralized event logs.
+
+### You have successfully completed the lab
