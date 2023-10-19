@@ -1,13 +1,20 @@
----
-lab:
-    title: 'Lab: Upgrade and migrate in Windows Server'
-    type: 'Answer Key'
-    module: 'Module 6 - Upgrade and migrate in Windows Server'
----
 
-# Lab answer key: Upgrade and migrate in Windows Server
+# Lab 06: Upgrade and migrate in Windows Server
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Upgrading%20and%20migrating%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+## Lab scenario
+
+Contoso is exploring the hybrid model for its infrastructure services that would facilitate migration of its on-premises Windows servers to Azure virtual machines (VMs). To assist with this initiative, and you were tasked with evaluating the process of deploying Active Directory Domain Services (AD DS) domain controllers in Azure VMs. Your intention is to identify differences between the manual process currently used for on-premises deployments and the deployment methods available in Azure. In addition, you want to test and document the Storage Migration Services functionality to validate its usage for migrations of on-premises file servers. 
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Upgrading%20and%20migrating%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Objectives
+
+In this lab, you will:
+
+- Deploy AD DS domain controllers in Azure.
+- Migrate file servers by using Storage Migration Service.
+
+## Estimated time: 60 minutes
 
 ## Exercise 1: Deploying AD DS domain controllers in Azure
 
@@ -52,7 +59,7 @@ lab:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0601-RG** |
+   | Resource group | Click on **Create new** and name the resource group as **AZ801-L0601-RG** |
    | Region | the name of an Azure region into which you can provision Azure VMs |
    | Admin Username | **Student** |
    | Admin Password | **Pa55w.rd1234** |
@@ -74,7 +81,7 @@ lab:
 
 #### Task 2: Deploy Azure Bastion 
 
-> **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
+ > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
@@ -100,7 +107,7 @@ lab:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0602-RG** |
+   | Resource group | Click on **Create new** and name the resource group as **AZ801-L0602-RG** |
    | Name | **az801l06a-bastion** |
    | Region | the same Azure region to which you deployed the resources in the previous tasks of this exercise |
    | Tier | **Basic** |
@@ -249,25 +256,6 @@ lab:
    | Password |**Pa55w.rd1234** |
 
 1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS**.
-
-#### Task 5: Remove Azure resources deployed in the exercise
-
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open a PowerShell session within the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
-1. From the Cloud Shell pane, run the following command to list all resource groups you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L060*'
-   ```
-
-   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
-
-1. From the Cloud Shell pane, run the following command to delete the resource group you created in this lab:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'AZ801-L060*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-   > **Note:** The command executes asynchronously (as determined by the *-AsJob* parameter), so while you will be able to immediately run another PowerShell command within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 ## Exercise 2: Migrating file servers by using Storage Migration Service
 
@@ -431,3 +419,10 @@ lab:
    Get-ChildItem -Path 'S:\Data'
    ```
 
+## Review
+
+In this lab, you have completed the following:
+- Deployed AD DS domain controllers in Azure.
+- Migrated file servers by using Storage Migration Service.
+
+## You have successfully completed the lab

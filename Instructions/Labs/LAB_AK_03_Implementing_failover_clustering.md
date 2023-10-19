@@ -1,6 +1,23 @@
-# Lab answer key: Implementing failover clustering
+
+# Lab 03: Implementing failover clustering
+
+## Lab Scenario
+
+As the business of Contoso, Ltd. grows, it's becoming increasingly important that many of the applications and services on its network are always available. Contoso has many services and applications that must be available to internal and external users who work in different time zones around the world. Many of these applications can't be made highly available by using Network Load Balancing (NLB). Therefore, you should use a different technology to make these applications highly available.
+
+As one of the senior network administrators at Contoso, you're responsible for implementing failover clustering on the servers that are running Windows Server to provide high availability for network services and applications. You're also responsible for planning the failover cluster configuration and deploying applications and services on the failover cluster.
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Implementing%20Failover%20Clustering)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Configure a failover cluster.
+- Deploy and configure a highly available file server on the failover cluster.
+- Validate the deployment of the highly available file server.
+
+## Estimated time: **60 minutes**
 
 ## Exercise 1: Configuring iSCSI storage
 
@@ -270,3 +287,15 @@
 1. Switch to File Explorer and verify that you can still access the content of the **\\\\FSCluster\\Docs** folder.
 
 1. Switch to the **Failover Cluster Manager** console, and then, in the list of disks within the **Disks** node, select **Cluster Disk 3** configured as the disk witness, and then, in the Actions pane, select **Bring Online**.
+
+## Review
+
+In this lab, you have completed the following:
+
+- Configuration of iSCSI storage
+- Configuration of  a failover cluster
+- Deployment and configuration of a highly available file server
+- Validate the deployment of the highly available file server
+
+## You have successfully completed the lab.
+
