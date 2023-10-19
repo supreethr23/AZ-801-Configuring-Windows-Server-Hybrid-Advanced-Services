@@ -6,8 +6,8 @@
 
 After completing this lab, you'll be able to:
 
-- Creating an Azure Log Analytics workspace and an Azure Automation account
-- Configuring Microsoft Defender for Cloud
+- Create an Azure Log Analytics workspace and an Azure Automation account
+- Configure Microsoft Defender for Cloud
 - Provision Azure VMs running Windows Server.
 - Onboard on-premises Windows Server into Defender for Cloud and Azure Automation.
 - Verify the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
