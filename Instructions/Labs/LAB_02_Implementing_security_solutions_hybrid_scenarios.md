@@ -6,13 +6,13 @@ lab:
 
 # Lab: Implementing Security Solutions in Hybrid Scenarios
 
-## Scenario
+## Lab scenario
 
 To identify Microsoft Azure security-related integration features with which you can further enhance your on-premises and cloud security environment, you have decided to onboard Windows servers in your proof-of-concept environment into Microsoft Defender for Cloud. You also want to integrate on-premises servers and Azure VMs running Windows Server with Azure Automation-based solutions, including Inventory, Change tracking, and Update management.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Implementing%20security%20solutions%20in%20hybrid%20scenarios)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
-## Objectives
+## Lab objectives
 
 After completing this lab, you'll be able to:
 
@@ -26,7 +26,6 @@ After completing this lab, you'll be able to:
 
 ## Lab setup
 
-Virtual machines: **AZ-801T00A-SEA-DC1**, **AZ-801T00A-SEA-SVR1**, and **AZ-801T00A-SEA-SVR2** must be running. Other VMs can be running, but they aren't required for this lab.
 
 > **Note**: **AZ-801T00A-SEA-DC1**, **AZ-801T00A-SEA-SVR1**, and **AZ-801T00A-SEA-SVR2** virtual machines are hosting the installation of **SEA-DC1**, **SEA-SVR1**, and **SEA-SVR2**, respectively.
 
@@ -296,6 +295,9 @@ In this task, you will validate threat detection capabilities for Azure VMs.
 
 1. On **SEA-ADM1**, in the Azure portal, browse to the **Microsoft Defender for Cloud \| Security alerts** page.
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **az801l02-vm0**.
+   
+  > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
+
 1. Select the security alert, on the **Security alert** page, select **Take action**, and then review the possible actions.
 
    > **Note:** To minimize the possibility of future attacks, you should consider implementing security recommendations.
@@ -314,6 +316,9 @@ In this task, you will validate the threat detection capabilities for on-premise
 
 1. On **SEA-ADM1**, switch to the Microsoft Edge window displaying the Azure portal and browse back to the **Microsoft Defender for Cloud \| Security alerts** page.
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **SEA-SVR2**.
+
+    > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
+    
 1. Select the security alert, on the **Security alert** page, select **Take action**, and review the possible actions.
 
    > **Note:** To minimize the possibility of future attacks, you should consider implementing security recommendations.
@@ -389,12 +394,14 @@ The main tasks for this exercise are:
 
    >**Note**: The command executes asynchronously (as determined by the *-AsJob* parameter), so while you'll be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
-## Results
+### Review
 
-After completing this lab, you have:
+In this lab, you have completed:
 
 - Created an Azure Log Analytics workspace and an Azure Automation account.
 - Configured Defender for Cloud.
 - Provisioned Azure VMs running Windows Server.
 - Onboarded on-premises Windows Server into Defender for Cloud and Azure Automation.
 - Verified the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
+
+### You have successfully completed the lab.
