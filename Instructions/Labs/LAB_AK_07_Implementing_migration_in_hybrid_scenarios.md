@@ -1,11 +1,3 @@
----
-lab:
-    title: 'Lab: Migrating Hyper-V VMs to Azure by using Azure Migrate'
-    type: 'Answer Key'
-    module: 'Module 7: Design for Migration'
----
-
-# Lab answer key: Migrating Hyper-V VMs to Azure by using Azure Migrate
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Migrating%20Hyper-V%20VMs%20to%20Azure%20by%20using%20Azure%20Migrate)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
