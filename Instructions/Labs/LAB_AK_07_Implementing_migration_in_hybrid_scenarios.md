@@ -17,6 +17,9 @@ lab:
 
 1. Connect to **SEA-SVR2** and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
+
+   ![](../Media/image3.png)
+   
 1. When prompted, in the Azure portal, sign in by using following credentials:
    
    - Username: <inject key="AzureAdUserEmail"></inject>
@@ -182,6 +185,9 @@ lab:
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you are using in this lab.
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Azure Migrate**, and then, on the **Azure Migrate \| Get Started** page, under **Migration goals** section, select **Servers, databases, and web apps**.
 1. On the **Azure Migrate \| Servers, databases, and web apps** page, select **Create Project**.
+
+    ![](../Media/image4.png)
+   
 1. On the **Create Project** page, specify the following settings (leave others with their default values) and select **Create**:
 
    | Setting | Value | 
@@ -206,7 +212,7 @@ lab:
 1. On the **IP addresses** tab of the **Create virtual network** page,
     - Remove the default IP Address space by clicking on **Delete the address space**
 
-      ![](../Media/unit4-image2.png)
+      ![](../Media/unit4-image2.png)   
       
    - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
 
