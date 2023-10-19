@@ -206,11 +206,11 @@ lab:
 1. On the **IP addresses** tab of the **Create virtual network** page,
     - Remove the default IP Address space by clicking on **Delete the address space**
 
-      ![](../media/unit4-image2.png)
+      ![](../Media/unit4-image2.png)
       
    - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
 
-      ![](../media/unit4-image3.png)
+      ![](../Media/unit4-image3.png)
 
        |Setting|Value|
        |---|---|
