@@ -28,7 +28,11 @@ lab:
    |Vault name|**az801l05a-rsvault**|
    |Location|the name of an Azure region where you can create an Azure Recovery Services vault and is close to the location of the lab environment|
 
+    ![](../media/01.png)
+
 1. On the **Review + create** tab of the **Create Recovery Services vault** page, select **Create**.
+ 
+   ![](../media/02.png)
 
    > **Note:** Wait until the Recovery Services vault is provisioned. This should take about 2 minutes.
 
