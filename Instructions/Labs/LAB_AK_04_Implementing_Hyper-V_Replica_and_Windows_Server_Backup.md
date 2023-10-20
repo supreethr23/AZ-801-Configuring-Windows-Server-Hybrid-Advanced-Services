@@ -149,8 +149,24 @@ After completing this lab, you'll be able to:
    ```powershell
    Set-VMReplication -Reverse -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
    ```
+1. Switch to **HOSTVM-<inject key="DeploymentID" enableCopy="false"/>** from the dropdown as shown below.
 
-1. To start the newly designated primary VM on **SEA-SVR1**, on **SEA-SVR2**, in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
+   ![](../Media/hostvmlab4.png)
+
+1. Click on the Hyper-V manager and right click on **SEA-SVR1** VM and select **Turn off**.
+
+   ![](../Media/to.png)
+
+1. Right click on Start and select **Windows Powershell(Admin)** and enter the following command and press Enter:
+
+   ```powershell
+   Set-VMProcessor -VMName SEA-SVR1 -ExposeVirtualizationExtensions $true
+   ```
+1. 1. Click on the Hyper-V manager and right click on **SEA-SVR1** VM and select **Start** and notice that the VM state turns to **Running**.
+
+   ![](../Media/start.png)
+
+1. To start the newly designated primary VM on **SEA-SVR1**, Switch to **SEA-SVR2**, and in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
 
    ```powershell
    Start-VM -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
