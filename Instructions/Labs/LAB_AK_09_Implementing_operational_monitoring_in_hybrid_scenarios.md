@@ -393,9 +393,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/AZ-801-tables.png)
 
-   ![](../Media/AZ-801-preview.png)
-
-   >**Note**: Verify that the data includes entries **SEA-SVR2**.
+   >**Note**: Verify that the data includes entries for both **az801l09-vm0** and **SEA-SVR2**.
 
    >**Note**: You might need to wait a few minutes before the update data becomes available.
 
