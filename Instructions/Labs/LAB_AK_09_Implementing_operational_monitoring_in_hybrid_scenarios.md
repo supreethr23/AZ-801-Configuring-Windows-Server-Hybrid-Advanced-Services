@@ -15,7 +15,11 @@ In this lab, you will complete the following tasks:
 
 <!-- 1. Connect to **SEA-SVR2**, and if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**. -->
 
-1. On **SEA-SVR2**, double-click on the **Azure Portal** icon, sign in using this credential, enter the Username: <inject key="AzureAdUserEmail"></inject> and Password: <inject key="AzureAdUserPassword"></inject>.
+1. On **SEA-SVR2**, double-click on the **Azure Portal** icon, and sign in using this credential, enter the Username: <inject key="AzureAdUserEmail"></inject> and Password: <inject key="AzureAdUserPassword"></inject>
+
+   >**Note:** On **Stay signed in?** page, select **Yes**.
+   
+   >**Note:** Select **Maybe later**, on the **Welcome to Microsoft Azure** page.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 
@@ -25,15 +29,21 @@ In this lab, you will complete the following tasks:
 
    ![](../Media/801-19.png)
 
-   > **Note:** If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**.
+   > **Note:** If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, select **Show advanced settings**, and enter the following credentials.
 
-      ![](../Media/801-20.png)
+   | Settings | Value |
+   |----------|-------|
+   | Resource group| Use existing > **az-801**|
+   | Storage account | Create new > **blob<inject key="DeploymentID" enableCopy="false"/>**|
+   | File share | Create new > **fs<inject key="DeploymentID" enableCopy="false"/>**|
+
+1. Select **Create storage**.
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.json** into the Cloud Shell home directory.
 
 1. Repeat the previous step to upload the **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.parameters.json** file into the Cloud Shell home directory.
 
-1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with the <inject key="Location"></inject>:
+1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with **<inject key="Region"></inject>**):
 
    ```powershell 
    $location = '<Azure_region>'
@@ -46,8 +56,6 @@ In this lab, you will complete the following tasks:
    ```powershell 
    New-AzResourceGroupDeployment -Name az801l0901deployment -ResourceGroupName $rgName -TemplateFile ./L09-rg_template.json -TemplateParameterFile ./L09-rg_template.parameters.json -AsJob
    ```
-
-   >**Note**: Do not wait for the deployment to complete but instead proceed to the next task. The deployment should take about 3 minutes.
 
 ### Task 2: Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers
 
@@ -77,7 +85,7 @@ In this lab, you will complete the following tasks:
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | the name of a new resource group **AZ801-L0901-RG** |
    | Log Analytics Workspace | **workspace<inject key="DeploymentID" enableCopy="false"/>** |
-   | Region | **<inject key="Location"></inject>** |
+   | Region | **<inject key="Region"></inject>** |
 
    >**Note**: Make sure that you specify the same region into which you deployed virtual machines in the previous task.
 
@@ -88,6 +96,12 @@ In this lab, you will complete the following tasks:
 1. On the workspace blade, from the left-hand navigation pane, under **Settings**, select **Agents**, under **Log Analytics agent instructions**, record the values of the **Workspace ID** and **Primary key**. You will need them in the next exercise.
 
    ![](../Media/801-23.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 4: Install Service Map solution
 
@@ -169,9 +183,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **az801l09-vm0** page, in the **Monitoring** section, select **Diagnostic settings**.
 
-1. On the **Overview** tab of the **az801l09-vm0 \| Diagnostic settings** page, under **Diagnostics storage account**, select the storage account **az10411mxln5rjb46b7g**, then select **Enable guest-level monitoring**.
+1. On the **Overview** tab of the **az801l09-vm0 \| Diagnostic settings** page, under **Diagnostics storage account**, select the storage account with the name like this **az10411xxxxxxxxxxxxxx**, then select **Enable guest-level monitoring**.
 
-   >**Note**: Wait for the operation to take effect. This might take about 3 minutes.
+   >**Note**: Wait for the operation to take effect. This might take about a minutes.
 
 1. Switch to the **Performance counters** tab of the **az801l09-vm0 \| Diagnostic settings** page and review the available counters.
 
@@ -203,9 +217,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **az801l09-vm0 \| Metrics** page, select the **Diagnostic settings** from the left-hand navigation pane under **Monitoring** section, select the **Sinks** tab, in the **Azure Monitor (Preview)** section, select **Enable Azure Monitor**, and then select **Apply**. 
 
-   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Now re-do the step-12 again.
+   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
 
-1. Browse back to the **az801l09-vm0 \| Metrics** page, on the default chart, note that at this point, the **Metric Namespace** drop-down list, in addition to the **Virtual Machine Host** and **Guest (classic)** entries, also includes the **Virtual Machine Guest** entry.
+1. From the left-hand navigation, under **Monitoring** section, select **Metrics**. On the default chart, note that at this point, the **Metric Namespace** drop-down list, in addition to the **Virtual Machine Host** and **Guest (classic)** entries, also includes the **Virtual Machine Guest** entry.
 
    >**Note**: You might need to refresh the page for the **Virtual Machine Guest** entry to appear.
 
@@ -221,9 +235,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **az801l09-vm0 \| Logs** page, from the left-hand navigation side pane, under the **Monitoring** section, select **Insights**.
 
-1. If needed, on the **az801l09-vm0 \| Insights** page, select **Enable**.
+<!-- 1. If needed, on the **az801l09-vm0 \| Insights** page, select **Enable**.
 
-   >**Note**: This setting provides the Azure VM Insights functionality. VM Insights is an Azure Monitor solution that facilitates monitoring performance and health of both Azure VMs and on-premises computers running Windows or Linux.
+   >**Note**: This setting provides the Azure VM Insights functionality. VM Insights is an Azure Monitor solution that facilitates monitoring performance and health of both Azure VMs and on-premises computers running Windows or Linux. -->
 
 1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Monitor**, and then, on the **Monitor \| Overview** page, from the left-hand navigation pane, under **Insights** section, select **Virtual Machines**.
 
@@ -271,7 +285,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Action group name | **az801l09-ag1** |
    | Display name | **az801l09-ag1** |
 
-1. On the **Notifications** tab of the **Create an action group** page, in the **Notification type** drop-down list, select **Email/SMS message/Push/Voice**. In the **Name** text box, type **admin email**, and then select the **Edit details** (pencil) icon.
+1. On the **Notifications** tab of the **Create an action group** page, in the **Notification type** drop-down list, select **Email/SMS message/Push/Voice**. In the **Name** text box, type **admin email**.
 
 1. On the **Email/SMS message/Push/Voice** page, select the **Email** checkbox, type your email address in the **Email** textbox, leave others with their default values, and then select **OK**. Back on the **Notifications** tab of the **Create an action group** page, select **Next: Actions  >**.
 
@@ -284,7 +298,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Settings | Value |
    | --- | --- |
    | Alert rule name | **CPU Percentage above the test threshold** |
-   | Description | **CPU Percentage above the test threshold** |
+   | Alert rule description | **CPU Percentage above the test threshold** |
    | Resource group | **AZ801-L0901-RG** |
    | Severity | **Sev 3** |
    |select **Advanced options**|
@@ -296,7 +310,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. In the Azure portal, search for and select **Virtual machines**, and on the **Virtual machines** page, select **az801l09-vm0**.
 
-1. On the **az801l09-vm0** page, from the left-hand navigation pane, under **Payload** section, select **Run command**, and then select **RunPowerShellScript**.
+1. On the **az801l09-vm0** page, from the left-hand navigation pane, under **Operations** section, select **Run command**, and then select **RunPowerShellScript**.
 
 1. On the **Run Command Script** page, in the **PowerShell Script** section, enter the following commands and select **Run** to increase the CPU utilization within the target operating system:
 
@@ -319,9 +333,17 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. Note the number of **Sev 3** alerts, and then select the **Sev 3** row.
 
-   >**Note**: You might need to wait for a few minutes and select **Refresh**.
+   >**Note**: You might need to wait for a few minutes and try to **Refresh** the page.
 
 1. On the **All Alerts** page, review generated alerts.
+
+   ![](../Media/AZ-801-Alerts.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 2: Review Azure Monitor VM Insights functionality
 
@@ -330,6 +352,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. On the **az801l09-vm0** virtual machine page, from the left-hand side navigatione pane, under **Monitoring** section, select **Insights**.
 
 1. On the **az801l09-vm0 \| Insights** page, on the **Performance** tab, review the default set of metrics, including logical disk performance, CPU utilization, available memory, as well as bytes sent and received rates.
+
+   ![](../Media/AZ-801-insights.png)
 
 <!-- 1. On the **az801l09-vm0 \| Insights** page, select the **Map** tab and review the autogenerated map. -->
 
@@ -357,17 +381,21 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | render timechart
    ```
 
-1. Select **Queries** in the toolbar, in the **Queries** pane, expand the **Virtual Machines** node, select **Track VM availability using Heartbeat** tile, select the **Run** button.
+1. Select **Queries** in the toolbar, in the **Queries** pane, expand the **Virtual Machines** node, hover on  **Track VM availability using Heartbeat** tile, and select the **Run** button.
 
    ![](../Media/801-30.png)
 
-1. On the **New Query 1** tab, select the **Tables** header, and expand the **Azure Resources** section, to review the list of tables.
+1. On the **New Query 1** tab, select the **Tables (1)** header, and expand the **Azure Resources** section, to review the list of tables.
 
    >**Note**: The names of several tables correspond to the solutions you installed earlier in this lab. In particular, **InsightMetrics** is used by Azure VM Insights to store performance metrics.
 
-1. Move the cursor over the **VMComputer** entry, select the **See Preview data** icon, and review the results.
+1. Move the cursor over the **VMComputer (2)** entry, select the **See Preview data (3)** icon, and review the results.
 
-   >**Note**: Verify that the data includes entries for both **az801l09-vm0** and **SEA-SVR2.contoso.com**.
+   ![](../Media/AZ-801-tables.png)
+
+   ![](../Media/AZ-801-preview.png)
+
+   >**Note**: Verify that the data includes entries **SEA-SVR2**.
 
    >**Note**: You might need to wait a few minutes before the update data becomes available.
 
