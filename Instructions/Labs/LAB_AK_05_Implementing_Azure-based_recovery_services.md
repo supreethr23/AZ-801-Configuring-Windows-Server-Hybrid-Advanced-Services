@@ -16,13 +16,15 @@ After completing this lab, you'll be able to:
 
 1. Connect to **SEA-SVR2**, and if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, start Microsoft Edge, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you'll be using in this lab.
+
+
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Recovery Services vaults**, and on the **Recovery Services vaults** page, select **+ Create**.
 1. On the **Basics** tab of the **Create Recovery Services vault** page, specify the following settings (leave others with their default values) and select **Review + create (5)**:
 
    |Setting|Value|
    |---|---|
    |**Subscription (1)**|the name of the Azure subscription you will be using in this lab|
-   |**Resource group (2)**|the name of a new resource group **AZ801-L0501-RG**|
+   |**Resource group (2)**|**AZ801-L0501-RG**|
    |**Vault name (3)**|**az801l05a-rsvault**|
    |**Location (4)**|the name of an Azure region where you can create an Azure Recovery Services vault and is close to the location of the lab environment|
 
@@ -68,7 +70,7 @@ After completing this lab, you'll be able to:
    |Setting|Value|
    |---|---|
    |**Subscription (1)**|the name of the Azure subscription you are using in this lab|
-   |**Resource group (2)**|the name of a new resource group **AZ801-L0502-RG**|
+   |**Resource group (2)**|**AZ801-L0502-RG**|
    |**Virtual network Name (3)**|**az801l05-dr-vnet**|
    |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab|
 
@@ -90,7 +92,7 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |Name|**subnet0 (2)**|
+   |Name|**subnet (2)**|
    |Starting Address|**10.5.0.0 (3)**|
    |Subnet size|**/24 (256 Addresses) (4)**|
 
@@ -129,7 +131,7 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |Name|**subnet0 (1)**|
+   |Name|**subnet (1)**|
    |Starting Address|**10.5.0.0 (2)**|
    |Subnet size|**/24 (256 Addresses) (3)**|
 
@@ -197,13 +199,15 @@ After completing this lab, you'll be able to:
 
    ![](../media/21.png)
 
-1. Open Windows PowerShell, run the following commands to update Group Policy and update Windows Update services: 
+1. Open **Windows PowerShell**, run the following commands to update Group Policy and update Windows Update services: 
 
    ```powershell
    Invoke-GPUpdate -Force
    Get-Service wuauserv | Set-Service -StartupType Manual
    Get-Service wuauserv | Start-Service
    ```
+
+   ![](../media/68.png)
 
 1. Switch back to the Microsoft Edge window displaying the Azure portal, on the **Source settings** tab of the **Prepare infrastructure** page, select the **Add Hyper-V server (1)** link. 
 1. on the **Add Server** page, select the **Download (2)** link in step 3 of the procedure for adding on-premises Hyper-V hosts in order to download the installer for Microsoft Azure Site Recovery Provider.
@@ -289,7 +293,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    |**Storage account (3)**|the name of the storage account you created in the first task of this exercise|
    |**Azure network (4)**|Configure now for selected machines|
    |**Virtual network (5)**|**az801l05-dr-vnet**|
-   |**Subnet (6)**|**subnet0 (10.5.0.0/24)**|
+   |**Subnet (6)**|**subnet (10.5.0.0/24)**|
 
    ![](../media/35.png)
 
@@ -298,6 +302,9 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
     ![](../media/36.png)
 
 1. On the **Replication settings** tab of the **Enable replication** page, in the **Defaults** row and **OS type** column, select **Windows** from the drop-down list and select **Next**.
+
+   ![](../media/66.png)
+
 1. On the **Replication policy** tab of the **Enable replication** page, accept the default settings and select **Next**.
 1. On the **Review** tab of the **Enable replication** page, select **Enable replication**.
 
@@ -382,6 +389,9 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    > **Note:** If you are getting an error message that says the installation has failed, then restart the VM and try again. 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l05a-rsvault** Recovery Services vault page, on the vertical menu on the left side, in the **Getting started** section, select **Backup**.
+
+   ![](../media/67.png)
+
 1. On the **az801l05a-rsvault \|Backup (1)** page, specify the following settings:
 
    |Settings| Value|
@@ -462,6 +472,9 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **Specify Backup Schedule** page, ensure that the **Day** option is selected, in the first drop-down list box below the **At following times (Maximum allowed is three times a day)** box, select **4:30 AM**, and then select **Next**.
 1. On the **Select Retention Policy** page, accept the defaults, and then select **Next**.
+
+   ![](../media/68.png)
+
 1. On the **Choose Initial Backup type** page, accept the defaults, and then select **Next**.
 1. On the **Confirmation** page, select **Finish**. When the backup schedule is created, select **Close**.
 
@@ -476,6 +489,9 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 1. In the **Back Up Now Wizard**, on the **Select Backup Item** page, ensure that the **Files and Folders** option is selected and select **Next**.
 1. On the **Retain Backup Till** page, accept the default setting and select **Next**.
 1. On the **Confirmation** page, select **Back Up**.
+
+    ![](../media/72.png)
+
 1. When the backup is complete, select **Close**.
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal, browse back to the **az801l05a-rsvault** Recovery Services vault page and select **Backup items**. 
 1. On the **az801l05a-rsvault \| Backup items** page, select the **Azure Backup Agent** entry.
@@ -489,15 +505,23 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 #### Task 4: Perform file recovery by using Azure Recovery Services agent
 
 1. On **SEA-SVR2**, open File Explorer, browse to the **C:\\Windows\\System32\\drivers\\etc\\** folder and delete the **hosts** file.
+
+   ![](../media/69.png)
+
 1. Switch to the Microsoft Azure Backup window and select **Recover data**. This will start the **Recover Data Wizard**.
 1. On the **Getting Started** page of the **Recover Data Wizard**, ensue that **This server (sea-svr2.contoso.com)** option is selected and select **Next**.
 1. On the **Select Recovery Mode** page, ensure that **Individual files and folders** option is selected, and select **Next**.
 1. On the **Select Volume and Date** page, in the **Select the volume** drop-down list, select **C:\\**, accept the default selection of the available backup, and select **Mount**. 
 
+    ![](../media/71.png)
+
    > **Note:** Wait for the mount operation to complete. This might take about 2 minutes.
 
 1. On the **Browse And Recover Files** page, note the drive letter of the recovery volume, select **Browse**, and review the tip regarding the use of **Robocopy**. 
 1. Select **Start**, expand the **Windows System** folder, and then select **Command Prompt**.
+
+     ![](../media/70.png)
+
 1. From the **Administrator: Command Prompt** window, run the following to copy the restore the **hosts** file to the original location (replace the `<recovery_volume>` placeholder with the drive letter of the recovery volume you identified earlier):
 
    ```cmd
