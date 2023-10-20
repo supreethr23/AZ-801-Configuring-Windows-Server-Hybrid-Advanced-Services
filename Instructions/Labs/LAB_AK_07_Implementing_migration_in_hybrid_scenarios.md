@@ -51,7 +51,7 @@ After completing this lab, you will be able to:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | Select **create new** and enter **AZ801-L0701-RG** |
+   | Resource group | Select  **AZ801-L0701-RG** |
    | Region | the name of an Azure region into which you can provision Azure VMs |
    | Virtual Network Name | **az801l07a-hv-vnet** |
    | Host Network Interface1Name | **az801l07a-hv-vm-nic1** |
@@ -92,11 +92,11 @@ After completing this lab, you will be able to:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | **AZ801-L0701-RG** |
+   | Resource group | Select **AZ801-L0701-RG** |
    | Name | **az801l07a-bastion** |
    | Region | the same Azure region to which you deployed the resources in the previous tasks of this exercise |
    | Tier | **Basic** |
-   | Virtual network | **az801l07a-hv-vnet** |
+   | Virtual network | Select **az801l07a-hv-vnet** |
    | Subnet | **AzureBastionSubnet (10.0.7.0/24)** |
    | Public IP address | **Create new** |
    | Public IP name | **az801l07a-hv-vnet-ip** |
