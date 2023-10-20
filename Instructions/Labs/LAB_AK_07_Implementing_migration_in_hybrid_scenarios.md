@@ -105,7 +105,7 @@ After completing this lab, you will be able to:
 
 1. On the **Review + create** tab of the **Create a Bastion** page, select **Create**:
 
-   > **Note**: Wait for the deployment to complete before you proceed to the next task. The deployment might take about 5 minutes.
+   > **Note**: Wait for the deployment to complete before you proceed to the next task. The deployment might take about 10 minutes.
 
 #### Task 3: Deploy a nested VM in the Azure VM
 
