@@ -369,7 +369,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **Select a scope** page, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab, and then select **Apply**.
 
-1. In the query window, paste the following query, select **Run**, and review the resulting chart:
+1. In the query window, paste the following query, select **Run**:
 
    ```kql
    // Virtual Machine available memory
@@ -393,9 +393,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/AZ-801-tables.png)
 
-   >**Note**: Verify that the data includes entries for both **az801l09-vm0** and **SEA-SVR2**.
+   ![](../Media/AZ-801-preview.png)
 
-   >**Note**: You might need to wait a few minutes before the update data becomes available.
+   >**Note**: Verify that the data includes entry **SEA-SVR2**.
 
 1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Log Analytics workspaces**, and then, from the **Log Analytics workspaces** page, select the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab.
 
