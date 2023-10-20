@@ -97,9 +97,9 @@ After completing this lab, you will be able to:
    | Region | the same Azure region to which you deployed the resources in the previous tasks of this exercise |
    | Tier | **Basic** |
    | Virtual network | Select **az801l07a-hv-vnet** |
-   | Subnet | **AzureBastionSubnet (10.0.7.0/24)** |
-   | Public IP address | **Create new** |
-   | Public IP name | **az801l07a-hv-vnet-ip** |
+   | Subnet | Select **AzureBastionSubnet (10.0.7.0/24)** |
+   | Public IP address | Select **Create new** |
+   | Public IP name | Select **az801l07a-hv-vnet-ip** |
 
    > **Note**: The bastion must be created in the same Azure region as the virtual network.
 
