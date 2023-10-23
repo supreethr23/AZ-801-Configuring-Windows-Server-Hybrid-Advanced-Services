@@ -52,7 +52,7 @@ After completing this lab, you will be able to:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | Select  **AZ801-L0701-RG** |
-   | Region | the name of an Azure region into which you can provision Azure VMs |
+   | Region | select **<inject key="Region" enableCopy="false"/>** |
    | Virtual Network Name | **az801l07a-hv-vnet** |
    | Host Network Interface1Name | **az801l07a-hv-vm-nic1** |
    | Host Network Interface2Name | **az801l07a-hv-vm-nic2** |
@@ -198,7 +198,7 @@ After completing this lab, you will be able to:
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | Select **create new** and enter **AZ801-L0703-RG** |
    | Name | **az801l07a-migration-vnet** |
-   | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
+   | Region | **<inject key="Region" enableCopy="false"/>** |
 
 1. On the **IP addresses** tab of the **Create virtual network** page,
     - Remove the default IP Address space by clicking on **Delete the address space**
@@ -233,7 +233,7 @@ After completing this lab, you will be able to:
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
    | Name | **az801l07a-test-vnet** |
-   | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
+   | Region | **<inject key="Region" enableCopy="false"/>** |
 
 1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address 
    space**, select **Add IPV4 Address space**
@@ -264,7 +264,7 @@ After completing this lab, you will be able to:
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
    | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** | 
-   | Location | the name of the Azure region in which you created the virtual network earlier in this task |
+   | Location | **<inject key="Region" enableCopy="false"/>** |
    | Performance | **Standard** |
    | Redundancy | **Geo-redundant storage(GRS)** |
 
@@ -387,7 +387,7 @@ After completing this lab, you will be able to:
    | Setting | Value | 
    | --- | --- |
    | Are your machines virtualized? | **Yes, with Hyper-V** |
-   | Target region | the name of the Azure region you are using in this lab | 
+   | Target region | **<inject key="Region" enableCopy="false"/>** | 
    | Confirm the target region for migration | selected | 
 
    >**Note**: This step automatically triggers provisioning of an Azure Site Recovery vault.
@@ -399,6 +399,9 @@ After completing this lab, you will be able to:
 1. Once the download completes, select the **Open file** link in the browser **Downloads** section. This will start the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard.
 1. On the **Microsoft Update** page of the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard, select **Off**, and then select **Next**.
 1. On the **Provider installation** page of the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard, select **Install**.
+
+   >**Note**: Please don't exit **Provider installation** page.
+
 1. Switch to the Azure portal and then, on the **Discover machines** page, in step 1 of the procedure for preparing on-premises Hyper-V hosts, select the **Download** button in order to download the vault registration key.
 1. Switch to the **Provider installation** page of the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard and select **Register**. This will start the **Microsoft Azure Site Recovery Registration Wizard**.
 1. On the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Browse**, browse to the **Downloads** folder, select the vault credentials file, and then select **Open**.
@@ -433,7 +436,7 @@ After completing this lab, you will be able to:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Cache Storage Account | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
+   | Cache Storage Account | **str<inject key="DeploymentID" enableCopy="false"/>** | 
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
@@ -468,6 +471,9 @@ After completing this lab, you will be able to:
 1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, select the **Replicating servers** entry and then, on the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
 
    >**Note**: Wait for the download to complete. This might take about 10 minutes.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, note the entry representing the 
+   newly replicated virtual machine **az801l07a-vm1**.
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
 
