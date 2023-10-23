@@ -64,7 +64,7 @@ After completing this lab, you will be able to:
 
    > **Note**: Wait for the deployment to complete. The deployment might take about 10 minutes.
 
-1. Once deployment is successfully in search bar, search for and select **Public IP addresses**
+1. Once deployment is successfully, in the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Public IP addresses**.
 1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following:
    
    | Setting | Value | 
@@ -72,6 +72,7 @@ After completing this lab, you will be able to:
    | Resource group | Select  **AZ801-L0701-RG** |
    | Name |**az801l07a-hv-vnet-ip** |
 
+1. Select **Review + create** and **create**.
 1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
 1. On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**.
 2. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
@@ -355,6 +356,7 @@ After completing this lab, you will be able to:
    | --- | --- |
    | Target location | the name of the Azure region you are using in this lab |
    | Storage type | **Premium managed disks** |
+   | Savings options  | **None** |
    | Reserved instances | **No reserved instances** |
    | Sizing criteria | **As on premises** |
    | VM series | **Dsv3_series** |
@@ -369,7 +371,7 @@ After completing this lab, you will be able to:
 1. Back on the **Basics** tab of the **Create assessment** page, select **Next** to display the **Select servers to assess** tab.
 1. On the **Select servers to assess** tab, set **Assessment name** to **az801l07a-assessment**.
 1. Ensure that the **Create new** option of the **Select or create a group** setting is selected, set the group name to **az801l07a-assessment-group**, and then, in the list of machines to be added to the group, select **az801l07a-vm1**.
-1. Select **Next** and then select **Create assessment**. 
+1. Select **Next: Review + create assessment** and then select **Create assessment**. 
 1. Back on the **Azure Migrate \| Servers, databases and web apps** page, select **Refresh**. In the **Azure Migrate: Discovery and Assessment** section, verify that the **Assessments** **Total** line contains the **1** entry, and select it.
 1. On the **Azure Migrate: Discovery and Assessment \| Assessments** page, select the newly created assessment **az801l07a-assessment**. 
 1. On the **az801l07a-assessment** page, review the information indicating Azure readiness and monthly cost estimate for both compute and storage. 
