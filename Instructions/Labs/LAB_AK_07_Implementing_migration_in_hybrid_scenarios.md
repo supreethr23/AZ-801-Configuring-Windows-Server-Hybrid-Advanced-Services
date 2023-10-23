@@ -82,15 +82,13 @@ After completing this lab, you will be able to:
 #### Task 2: Deploy a nested VM in the Azure VM
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, select **az801l07a-hv-vm**.
-1. On the **az801l07a-hv-vm** page, select Connect, under **Configured connection** section, select **Go to Bastion**.
+1. On the **az801l07a-hv-vm** page, select Connect, under Native RDP click on Select and on Native RDP window select and Download RDP file.
 1. When prompted, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
    | --- | --- |
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
-
-   > **Note**: **Edge** by default will block popups. To allow popups for **Bastion** go to **Settings** in **Edge**, select **Cookies and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** off.
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the **Server Manager** window, select **Local Server**, select the **On** link next to the **IE Enhanced Security Configuration** label. In the **IE Enhanced Security Configuration** dialog box, select both **Off** options, and then select **OK**.
 1. From the Remote Desktop session, open File Explorer and browse to the **F:** drive. Create two folders **F:\\VHDs** and **F:\\VMs**. 
@@ -109,8 +107,9 @@ After completing this lab, you will be able to:
    | Company size   | 1 |
    | Job Name       | Enter as you wish |
    | Phone          | Select your country code and enter phone number |
-   
-1. Server 2022 **VHD** file, and copy it to the **F:\VHDs** folder. 
+
+1. Before downloading the VHD file please change the dowload location to **F:\VHDs** folder.
+1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**   
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** menu, search and  select **Hyper-V Manager**. 
 1. In the **Hyper-V Manager** console, select the **az801l07a-hv-vm** node. 
 1. Left right navigation pane, under **Actions** select **New** and then, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
@@ -264,10 +263,10 @@ After completing this lab, you will be able to:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
+   | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** | 
    | Location | the name of the Azure region in which you created the virtual network earlier in this task |
    | Performance | **Standard** |
-   | Redundancy | **Locally redundant storage (LRS)** |
+   | Redundancy | **Geo-redundant storage(GRS)** |
 
 1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
 1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
@@ -308,7 +307,7 @@ After completing this lab, you will be able to:
    >**Note**: Wait for the import to complete.
 
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, select **Rename**, and then set its name to **az801l07a-vma1**.
-1. Increase the memory size of the virtual machine to 4096 MB.
+1. Right click - select **Setttings** and select memory and replace the memory size of the virtual machine to 4096 MB.
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, and then select **Start**. 
 1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to the virtual appliance, on the **License terms** page, select **Accept**. 
@@ -466,6 +465,8 @@ After completing this lab, you will be able to:
 1. On the **az801l07a-vm1** replicating machines page, select the **Migrate** link. 
 1. On the **Migrate** page, ensure that **Yes** is selected in the **Shutdown virtual machines and perform a planned migration with no data loss?** drop-down list, and then select **Migrate**.
 1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, select the **Replicating servers** entry and then, on the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
+
+   >**Note**: Wait for the download to complete. This might take about 10 minutes.
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
 
