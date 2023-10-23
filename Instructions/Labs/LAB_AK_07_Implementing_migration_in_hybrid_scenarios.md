@@ -64,50 +64,22 @@ After completing this lab, you will be able to:
 
    > **Note**: Wait for the deployment to complete. The deployment might take about 10 minutes.
 
-#### Task 2: Deploy Azure Bastion 
-
-> **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
-
-1. On **SEA-SVR2**, in the browser window displaying the Azure portal, open the **Azure Cloud Shell** pane by selecting the **Cloud Shell** button in the Azure portal.
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
-
-   > **Note:** If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**.
-
-1. From the PowerShell session on the **Cloud Shell** pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network **az801l07a-hv-vnet** you created earlier in this exercise:
-
-   ```powershell
-   $resourceGroupName = 'AZ801-L0701-RG'
-   $vnet = Get-AzVirtualNetwork -ResourceGroupName $resourceGroupName -Name 'az801l07a-hv-vnet'
-   $subnetConfig = Add-AzVirtualNetworkSubnetConfig `
-    -Name 'AzureBastionSubnet' `
-    -AddressPrefix 10.0.7.0/24 `
-    -VirtualNetwork $vnet
-   $vnet | Set-AzVirtualNetwork
-   ```
-
-1. Close the **Cloud Shell** pane.
-1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Bastions** and then, on the **Bastions** page, select **+ Create**.
-1. On the **Basic** tab of the **Create a Bastion** page, specify the following settings and select **Review + create**:
-
+1. Once deployment is successfully in search bar, search for and select **Public IP addresses**
+1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following:
+   
    | Setting | Value | 
    | --- | --- |
-   | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | Select **AZ801-L0701-RG** |
-   | Name | **az801l07a-bastion** |
-   | Region | the same Azure region to which you deployed the resources in the previous tasks of this exercise |
-   | Tier | **Basic** |
-   | Virtual network | Select **az801l07a-hv-vnet** |
-   | Subnet | Select **AzureBastionSubnet (10.0.7.0/24)** |
-   | Public IP address | Select **Create new** |
-   | Public IP name | Select **az801l07a-hv-vnet-ip** |
+   | Resource group | Select  **AZ801-L0701-RG** |
+   | Name |**az801l07a-hv-vnet-ip** |
 
-   > **Note**: The bastion must be created in the same Azure region as the virtual network.
-
-1. On the **Review + create** tab of the **Create a Bastion** page, select **Create**:
-
-   > **Note**: Wait for the deployment to complete before you proceed to the next task. The deployment might take about 10 minutes.
-
-#### Task 3: Deploy a nested VM in the Azure VM
+1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
+1. On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**.
+2. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
+3. Back on **az801l07a-hv-vm | Networking** page, select Network Interface link under **Settings** section select **IP configurations** and select **ipconfig**.
+4. On **Edit IP configuration** page select checkbox for **Associate public IP address** and for **Public IP address** select **az801l07a-hv-vnet-ip**.
+1. Click on **Save**.
+ 
+#### Task 2: Deploy a nested VM in the Azure VM
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, select **az801l07a-hv-vm**.
 1. On the **az801l07a-hv-vm** page, select Connect, under **Configured connection** section, select **Go to Bastion**.
