@@ -351,6 +351,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. In the Azure portal, browse back to the **az801l05a-rsvault** page, and on the vertical menu on the left side, in the **Monitoring** section, select **Site Recovery jobs**. Wait until the status of the **Test failover** job is listed as **Successful**.
 
+     ![](../media/74.png)
+
    > **Note:** The time required for the test failover to complete depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated. 
 
    > **Note:** While waiting for the test failover to complete, proceed to Exercise 3, and after you finish it, step through the remaining portion of this exercise.
@@ -494,12 +496,16 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. In the **Back Up Now Wizard**, on the **Select Backup Item** page, ensure that the **Files and Folders** option is selected and select **Next**.
 1. On the **Retain Backup Till** page, accept the default setting and select **Next**.
+
+    ![](../media/75.png)
+
 1. On the **Confirmation** page, select **Back Up**.
 
     ![](../media/72.png)
 
 1. When the backup is complete, select **Close**.
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal, browse back to the **az801l05a-rsvault** Recovery Services vault page and select **Backup items**. 
+
 1. On the **az801l05a-rsvault \| Backup items** page, select the **Azure Backup Agent** entry.
 
    ![](../media/60.png)
@@ -539,6 +545,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    ```cmd
    dir C:\Windows\system32\drivers\etc\hosts
    ```
+
+    ![](../media/73.png)
 
 1. Switch back to the **Recover Data Wizard**, and on the **Browse and Recover Files** page, select **Unmount**, and when prompted to confirm, select **Yes**. 
 
