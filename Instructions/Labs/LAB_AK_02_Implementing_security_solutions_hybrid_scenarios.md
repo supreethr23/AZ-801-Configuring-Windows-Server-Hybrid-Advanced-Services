@@ -89,7 +89,7 @@ After completing this lab, you'll be able to:
 
 1. On the **Settings \| Defender plans** page, select the tile **Enable all plans**.
 
-	![](../Media/az-801(7).png)
+	![](../Media/AZ-801((7)).png)
 
    > **Note:** Note that you can selectively disable individual Microsoft Defender plans listed on the same page.
 
