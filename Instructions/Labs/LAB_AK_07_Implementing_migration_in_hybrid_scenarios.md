@@ -317,7 +317,7 @@ After completing this lab, you will be able to:
 1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to the virtual appliance, on the **License terms** page, select **Accept**. 
 1. In the **Virtual Machine Connection** window to the virtual appliance, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd**, and then select **Finish**. 
-1. In the **Virtual Machine Connection** window to the virtual appliance, in the **Action** menu, select **Ctrl + Alt + Delete** and then, when prompted, sign in by using the newly set password.
+1. In the **Virtual Machine Connection** window to the virtual appliance, in the **Action** menu, select first icon **Ctrl + Alt + Delete** and then, when prompted, sign in by using the newly set password.
 
    >**Note**: Within the **Virtual Machine Connection** window to the virtual appliance, a browser window displaying **Appliance Configuration Manager** will automatically open.
 
