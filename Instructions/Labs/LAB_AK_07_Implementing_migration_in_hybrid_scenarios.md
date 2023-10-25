@@ -275,7 +275,18 @@ After completing this lab, you will be able to:
 1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
 1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
 1.  On the **Review** tab, select **Create**.
-
+1.  In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
+1.  To create another storage account specify the following details:
+  
+       | Setting | Value | 
+       | --- | --- |
+       | Subscription | the name of the Azure subscription you are using in this lab |
+       | Resource group | **AZ801-L0703-RG** |
+       | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
+       | Location | **<inject key="Region" enableCopy="false"/>** |
+       | Performance | **Standard** |
+       | Redundancy | **Locally redundant storage (LRS)** |
+      
 ## Exercise 3: Assess Hyper-V for migration by using Azure Migrate
   
 #### Task 1: Deploy and configure the Azure Migrate appliance
@@ -457,7 +468,10 @@ After completing this lab, you will be able to:
 1. On the **Disks** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Tags** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Review + Start replication** tab of the **Replicate** page, select **Replicate**.  
-1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Replicating servers** entry. On the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines.
+1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Overview** 
+   and on the **Azure Migrate: Migration and modernization** page, under **Manage** section select **Replicating machines**.
+
+1. On the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines.
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
 
    >**Note**: You will need to to refresh the **Migration and modernization | Replicating machines** to update the **Status** information.
