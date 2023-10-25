@@ -416,6 +416,9 @@ After completing this lab, you will be able to:
 1. On the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Browse**, browse to the **Downloads** folder, select the vault credentials file, and then select **Open**.
 1. Back on the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Next**.
 1. On the **Proxy Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, accept the default settings and select **Next**.
+
+    >**Note**: Registration process may take 2 - 3 mins kindly wait to complete.
+
 1. On the **Registration** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Finish**.
 1. Refresh the browser window displaying the **Discover** page. This will redirect you to the **Azure Migrate | Servers, databases and web apps** page.
 1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover** link. 
