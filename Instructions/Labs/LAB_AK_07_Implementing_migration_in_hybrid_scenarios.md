@@ -312,7 +312,7 @@ After completing this lab, you will be able to:
    >**Note**: Wait for the import to complete.
 
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, select **Rename**, and then set its name to **az801l07a-vma1**.
-1. Right click on **az801l07a-vma1** VM, select **Setttings** and under **Hardware** select Memory and in **Specify the amount of memory that the virtual machine can user** in **RAM** replace the memory size of the virtual machine to 4096 MB and click on **OK**.
+1. Right click on **az801l07a-vma1** VM, select **Setttings** and under **Hardware** select Memory and under **Specify the amount of memory that the virtual machine can user** in **RAM** replace the memory size of the virtual machine to 4096 MB and click on **OK**.
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, and then select **Start**. 
 1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to the virtual appliance, on the **License terms** page, select **Accept**. 
