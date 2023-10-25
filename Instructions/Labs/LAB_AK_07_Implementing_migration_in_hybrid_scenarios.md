@@ -320,6 +320,7 @@ After completing this lab, you will be able to:
 1. In the **Virtual Machine Connection** window to the virtual appliance, in the **Action** menu, select first icon **Ctrl + Alt + Delete** and then, when prompted, sign in by using the newly set password.
 
    >**Note**: Within the **Virtual Machine Connection** window to the virtual appliance, a browser window displaying **Appliance Configuration Manager** will automatically open.
+   >**Note**: Please wait it might take some time to load **Appliance Configuration Manager** page.
 
 1. On the **Appliance Configuration Manager** page, select the **I agree** button and wait for the setup prerequisites to be successfully verified. 
 1. On the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Verify** and wait for process to complete.
