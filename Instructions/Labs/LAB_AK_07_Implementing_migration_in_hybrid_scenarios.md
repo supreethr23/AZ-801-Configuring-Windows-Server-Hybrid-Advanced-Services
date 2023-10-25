@@ -68,7 +68,7 @@ After completing this lab, you will be able to:
 1. On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**.
 1. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
 1. Once deployment is successfully in search bar, search for and select **Public Ip address**.
-1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following:
+1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following (Leave others with their default values.):
    
    | Setting | Value | 
    | --- | --- |
@@ -109,7 +109,11 @@ After completing this lab, you will be able to:
    | Job Name       | Enter as you wish |
    | Phone          | Select your country code and enter phone number |
 
-1. Before downloading the VHD file please change the dowload location to **F:\VHDs** folder.
+1. Before downloading the VHD file please change the download location to **F:\VHDs** folder.
+
+   >**Note**: You can change download settings location by navigating to Microsoft edge, select (...) icon at top right of the corner, select **Download** and on **Download** windown click on **(...) icon and select 
+   **Downloads settings** and in location field click on change to set the location.
+   
 1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**.
 
    >**Note**: Wait for download to complete.
