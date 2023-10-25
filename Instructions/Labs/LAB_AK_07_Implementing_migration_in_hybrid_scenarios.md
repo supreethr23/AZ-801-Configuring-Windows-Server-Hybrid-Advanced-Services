@@ -136,7 +136,7 @@ After completing this lab, you will be able to:
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Hi there** page, select **Next**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **License terms** page, select **Accept**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd**, and then select **Finish**. 
-1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, in the **Action** menu, select **Ctrl + Alt + Delete** and then, when prompted, sign in by using **Pa55w.rd** password.
+1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, in the **Action** menu, select first iscon **Ctrl + Alt + Delete** and then, when prompted, sign in by using **Pa55w.rd** password.
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, select **Start**. In the **Start** menu, select **Windows PowerShell** and then, in the **Administrator: Windows PowerShell** window, run the following to set the computer name. 
 
    ```powershell
