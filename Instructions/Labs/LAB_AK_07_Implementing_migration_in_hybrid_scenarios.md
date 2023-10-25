@@ -143,6 +143,12 @@ After completing this lab, you will be able to:
    Rename-Computer -NewName 'az801l07a-vm1' -Restart
    ```
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## Exercise 2: Prepare for assessment and migration by using Azure Migrate
   
 #### Task 1: Configure Hyper-V environment
@@ -286,7 +292,17 @@ After completing this lab, you will be able to:
        | Location | **<inject key="Region" enableCopy="false"/>** |
        | Performance | **Standard** |
        | Redundancy | **Locally redundant storage (LRS)** |
-      
+
+1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
+1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
+1.  On the **Review** tab, select **Create**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## Exercise 3: Assess Hyper-V for migration by using Azure Migrate
   
 #### Task 1: Deploy and configure the Azure Migrate appliance
@@ -503,6 +519,12 @@ After completing this lab, you will be able to:
    newly replicated virtual machine **az801l07a-vm1**.
 
    >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Review
 
