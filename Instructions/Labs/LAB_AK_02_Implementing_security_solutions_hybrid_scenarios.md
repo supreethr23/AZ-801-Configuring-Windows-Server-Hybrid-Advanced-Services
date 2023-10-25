@@ -48,13 +48,20 @@ After completing this lab, you'll be able to:
 
 1. On the deployment page, select **Go to resource**.
 1. On the **Automation account** page, in the **Configuration Management** section, select **Inventory**.
+
+	![](../Media/az-801(1).png)
+   
 1. On the **Inventory** page, in the **Log Analytics workspace** drop-down list, select the Log Analytics workspace you created earlier in this task and select **Enable**.
+
+	![](../Media/az-801(2).png)
 
    >**Note**: Wait for the installation of the corresponding Log Analytics solution to complete. This might take about 3 minutes. 
 
    >**Note**: This automatically installs the **Change tracking** solution as well.
 
 1. On the **Automation account** page, in the **Update Management** section, select **Update management** and select **Enable**.
+
+	![](../Media/az-801(3).png)
 
    >**Note**: Wait for the installation to complete. This might take about 5 minutes.
 
@@ -65,33 +72,66 @@ After completing this lab, you'll be able to:
 1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Microsoft Defender for Cloud**.
 1. On the **Microsoft Defender for Cloud \| Getting started** page, select **Upgrade**, and then select **Install agents**.
 
+	![](../Media/az-801(4).png)
+	![](../Media/az-801(5).png)
+
    > **Note:** Your subscription may already have the enhanced security of Defender for Cloud enabled, in which case, continue to the next task.
 
 #### Task 2: Enable enhanced security of Defender for Cloud
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **Microsoft Defender for Cloud | Overview** page, in the **Management** section of the vertical menu on the left, select **Environment settings**.
+
+	![](../Media/az-801(6).png)
+
 1. On the **Environment settings** page, select the entry representing your Azure subscription.
-1. On the **Settings \| Defender plans** page, select the tile **Enable all Microsoft Defender for Cloud plans**.
+
+	![](../Media/sub.png)
+
+1. On the **Settings \| Defender plans** page, select the tile **Enable all plans**.
+
+	![](../Media/AZ-801((7)).png)
 
    > **Note:** Note that you can selectively disable individual Microsoft Defender plans listed on the same page.
 
 1. Set all of the plans to **Off** except for the **Servers** and select **Save**.
+
+	![](../Media/az-801(8).png)
+
 1. On the **Settings \| Defender plans** page, on the top side, select **Settings & monitoring**.
-1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent/Azure Monitor agent** entry, select the **Edit configuration** link.
+1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent** entry, select the **Edit configuration** link.
+
+	![](../Media/az-801(9).png)
+
 1. On the **Auto-provisioning configuration**, in the **Workspace selection** section, select the option **Custom workspace**, in the drop-down menu, select the entry representing the workspace you created in the previous exercise, and then select **Apply**.
+
+	![](../Media/az-801(10).png)
+
 1. On the **Settings & monitoring** page, in the list of extensions, set **Guest Configuration agent (preview)** to **On**.
 1. On the **Settings & monitoring** page, in the list of extensions, set **Vulnerability assessment for machines** to **On**. To the right side, select the **Edit configuration** link.
-1. On the **Extension deployment configuration** page, ensure that the **Microsoft threat and vulnerability management** option is selected, and then select **Apply**.
+
+	![](../Media/az-801(11).png)
+
+1. On the **Extension deployment configuration** page, ensure that the **Microsoft defender vulnerability management** option is selected, and then select **Apply**.
+
+	![](../Media/az-801(12).png)
+
 1. On the **Settings & monitoring** page, select **Continue**.   
 1. On the **Defender plan** page, select **Save** and then close the page.
 1. Browse back to the **Microsoft Defender for Cloud | Overview** page, and then, in the **Management** section of the vertical menu on the left, select **Environment settings**.
 1. On the **Environment settings** page, expand the entry representing your Azure subscription and select the entry representing the Log Analytics workspace you created in the previous exercise.
-1. On the **Settings \| Defender plans** page, select the tile **Enable all Microsoft Defender for Cloud plans**, and then select **Save**.
+
+	![](../Media/log.png)
+
+1. On the **Settings \| Defender plans** page, select the tile **Enable all plans**, and then select **Save**.
+
+	![](../Media/az-801(13).png)
 
    > **Note:** To enable all Defender for Cloud features including threat protection capabilities, you must enable enhanced security features on the subscription containing the applicable workloads. Enabling it at the workspace level doesn't enable just-in-time VM access, adaptive application controls, and network detections for Azure resources. In addition, the only Microsoft Defender plans available at the workspace level are Microsoft Defender for servers and Microsoft Defender for SQL servers on machines.
 
 1. On the **Settings \| Defender plans** page, in the vertical menu on the left side, in the **Settings** section, select **Data collection**.
 1. On the **Settings \| Data collection**, select **All Events**, and then select **Save**.
+
+	![](../Media/az-801(14).png)
 
    > **Note:** Selecting a data collection tier in Defender for Cloud only affects the storage of security events in your Log Analytics workspace. The Log Analytics agent will still collect and analyze the security events required for Defender for Cloud's threat protection, regardless of the level of security events you choose to store in your workspace. Choosing to store security events enables investigation, search, and auditing of those events in your workspace.
 
@@ -107,6 +147,9 @@ After completing this lab, you'll be able to:
 #### Task 2: Deploy an Azure VM by using an Azure Resource Manager template
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload**, and upload the file **C:\\Labfiles\\Lab02\\L02-sub_template.json** into the Cloud Shell home directory.
+   
+	![](../Media/az-801(15).png)
+
 1. Repeat the previous step twice to upload the **C:\\Labfiles\\Lab02\\L02-rg_template.json** and **C:\\Labfiles\\Lab02\\L02-rg_template.parameters.json** files into the Cloud Shell home directory.
 1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with the name of an Azure region where you intend to deploy resources in this lab):
 
@@ -133,18 +176,29 @@ After completing this lab, you'll be able to:
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Microsoft Defender for Cloud \| Overview** page, and then, in the **General** section of the vertical menu on the left, select **Inventory**.
 1. On the **Microsoft Defender for Cloud \| Inventory** page, select **+ Add non-Azure servers**.
+
+	![](../Media/az-801(16).png)
+
 1. On the **Onboard servers to Defender for Cloud** page, next to the entry representing the Log Analytics workspace you provisioned earlier in this lab, select **Upgrade**.
 
    > **Note:** After the upgrade completes successfully, the label of the **Upgrade** button will change to **+ Add Servers**.
+   
+	![](../Media/az-801(17).png)
 
 1. Select the **+ Add Servers** button. This will automatically display the **Agents management** page, from which you can download the Log Analytics agent installers and identify the workspace ID and keys necessary to complete the agent installation.
 1. On the **Agents management** page, record the values of **Workspace ID** and **Primary key**. You will need them later in this task.
+
+	![](../Media/az-801(18).png)
+
 1. On the **Agents management** page, select the **Download Windows Agent (64 bit)** link.
 1. After the download completes, select **Open file**. This will start the **Microsoft Monitoring Agent Setup** wizard.
 1. On the **Welcome to the Microsoft Monitoring Agent Setup Wizard** page of the **Microsoft Monitoring Agent Setup** wizard, select **Next**.
 1. On the **Important Notice** page of the **Microsoft Monitoring Agent Setup** wizard, select **I agree**.
 1. On the **Destination Folder** page of the **Microsoft Monitoring Agent Setup** wizard, select **Next**.
 1. On the **Agent Setup Options** page of the **Microsoft Monitoring Agent Setup** wizard, select the **Connect the agent to Azure Log Analytics (OMS)** checkbox, and then select **Next**.
+
+	![](../Media/az-801(19).png)
+
 1. On the **Azure Log Analytics** page of the **Microsoft Monitoring Agent Setup** wizard, enter the values of **Workspace ID** and **Workspace Key** you recorded earlier in this task, and then select **Next**.
 1. On the **Ready to Install** page of the **Microsoft Monitoring Agent Setup** wizard, select **Install**.
 1. After the installation completes, on the **Microsoft Monitoring Agent configuration completed successfully** page, select **Finish**.
@@ -182,7 +236,12 @@ After completing this lab, you'll be able to:
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal, and browse to the Azure Automation account page you provisioned earlier in this lab. 
 1. On the **Automation account** page, in the **Configuration Management** section, select **Inventory**.
 1. On the **Inventory** page, in the toolbar, select **+ Add Azure VMs**.
+
+	![](../Media/az-801(20).png)
+
 1. On the **Enable Inventory** page, in the list of VMs, ensure that the checkbox next to the **az801l02-vm0** entry is selected and select **Enable**.
+
+	![](../Media/az-801(21).png)
 
    > **Note:** The VM has to be connected to the Log Analytics workspace associated with the Automation Account solutions in order to be listed as **ready to enable**.
 
@@ -196,7 +255,12 @@ After completing this lab, you'll be able to:
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Automation account** page, and then, in the **Configuration Management** section, select **Inventory**.
 1. On the **Inventory** page, select the **Click to manage machines** link.
+   
+	![](../Media/az-801(22).png)
+
 1. On the **Manage Machines** page, select the **Enable on all available and future machines** option, and then select **Enable**.
+
+	![](../Media/az-801(23).png)
 
    > **Note:** This option applies to on-premises servers that have the Log Analytics agent installed and registered with the Azure Log Analytics workspace associated with the Azure Automation account hosting the Inventory, Change Tracking, and Update Management solutions.
 
@@ -214,6 +278,10 @@ After completing this lab, you'll be able to:
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines**.
 1. On the **Virtual machines** page, select **az801l02-vm0**.
 1. On the **az801l02-vm0** page, in the **Operations** section, select **Run command**, and then select **RunPowerShellScript**.
+
+	![](../Media/az-801(24).png)
+	![](../Media/az-801(25).png)
+
 1. On the **Run Command Script** page, in the **PowerShell Script** section, enter the following commands, and then select **Run** to trigger a threat detection alert:
 
    ```powershell
