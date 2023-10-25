@@ -360,7 +360,7 @@ After completing this lab, you will be able to:
 
    | Setting | Value | 
    | --- | --- |
-   | Target location | the name of the Azure region you are using in this lab |
+   | Target location | **<inject key="Region" enableCopy="false"/>** |
    | Storage type | **Premium managed disks** |
    | Savings options  | **None** |
    | Reserved instances | **No reserved instances** |
