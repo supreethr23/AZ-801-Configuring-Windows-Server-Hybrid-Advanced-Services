@@ -425,7 +425,7 @@ After completing this lab, you will be able to:
 1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover**. 
 1. On the **Discover** page, select **Finalize registration**.
 
-   >**Note**: It might take up to 15 minutes for the discovery of virtual machines to complete.
+   >**Note**: It might take up to 5 minutes for the discovery of virtual machines to complete.
 
 #### Task 2: Configure replication of Hyper-V VMs
 
