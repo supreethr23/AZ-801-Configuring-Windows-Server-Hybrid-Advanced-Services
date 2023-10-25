@@ -420,8 +420,9 @@ After completing this lab, you will be able to:
     >**Note**: Registration process may take 2 - 3 mins kindly wait to complete.
 
 1. On the **Registration** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Finish**.
-1. Refresh the browser window displaying the **Discover** page. This will redirect you to the **Azure Migrate | Servers, databases and web apps** page.
-1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover** link. 
+1. Refresh the browser window displaying the **Discover** page.
+1. In the portal search and select **Azure migrate** and under **Migration goals** section select **Azure Migrate | Servers, databases and web apps**.
+1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover**. 
 1. On the **Discover** page, select **Finalize registration**.
 
    >**Note**: It might take up to 15 minutes for the discovery of virtual machines to complete.
