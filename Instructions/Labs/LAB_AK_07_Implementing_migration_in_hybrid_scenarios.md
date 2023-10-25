@@ -76,7 +76,10 @@ After completing this lab, you will be able to:
    | Name |**az801l07a-hv-vnet-ip** |
 
 1. Select **Review + create** and **create**.
-1. Back on **az801l07a-hv-vm | Networking** page, select Network Interface link next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
+1. Back on **az801l07a-hv-vm | Networking** page, select **az801l07a-hv-vm-nic1** next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
+
+   ![](../Media/lab7-4.png)
+
 1. On **Edit IP configuration** page select checkbox for **Associate public IP address** and for **Public IP address** select **az801l07a-hv-vnet-ip**.
 1. Click on **Save**.
  
@@ -84,7 +87,9 @@ After completing this lab, you will be able to:
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, select **az801l07a-hv-vm**.
 1. On the **az801l07a-hv-vm** page, select Connect, under Native RDP click on Select and on Native RDP window select and Download RDP file.
-1. When prompted, provide the following credentials, and then select **Connect**:
+    ![](../Media/image-l7-1.png)
+
+1. Open the downloaded file and when prompted, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
    | --- | --- |
@@ -355,7 +360,11 @@ After completing this lab, you will be able to:
 
 1. On the **Appliance Configuration Manager** page, select the **I agree** button and wait for the setup prerequisites to be successfully verified. 
 1. On the **Appliance Configuration Manager** page, in the **Verification of Azure Migrate project key** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Verify** and wait for process to complete.
-   >**Note**: You may not be able to copy and paste the content within nested VM session so kindly select **Clipboard** at top of page in menu bar and from **Clipborad** list select **Type clipboard text** to paste the content.
+   
+   >**Note**: You may not be able to copy and paste the content within nested VM session so kindly select **Clipboard** at top of page in menu bar and from **Clipborad** list select **Type clipboard text** to paste the content and follow the same to step to copy and paste the content
+
+    ![](../Media/lab7-2.png)
+   
 1. Once verification is completed you will prompted with **New update installed** window, select **Refresh** and again click on **Verify**.
    >**Note**: Wait until verification process completes.
 1. Under **Azure user Login and appliance registration status** select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
