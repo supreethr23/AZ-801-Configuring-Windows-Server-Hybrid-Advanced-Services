@@ -300,7 +300,7 @@ After completing this lab, you will be able to:
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, switch to the **Hyper-V Manager** console, select the **AZ801L07A-VM1** node, and then select **Import Virtual Machine**. This will start the **Import Virtual Machine** wizard.
 1. On the **Before You Begin** page of the **Import Virtual Machine** wizard, select **Next >**.
-1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance\Virtual Machines\***
+1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance\Virtual Machines\**
    and select **Next >**.
 1. On the **Select Virtual Machine** page of the **Import Virtual Machine** wizard, select **Next >**.
 1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Register the virtual machine in-place (use the existing unique ID)**, and then select **Next >**.
