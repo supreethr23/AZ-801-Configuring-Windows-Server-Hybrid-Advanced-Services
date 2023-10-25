@@ -423,7 +423,7 @@ After completing this lab, you will be able to:
 1. Refresh the browser window displaying the **Discover** page.
 1. In the portal search and select **Azure migrate** and under **Migration goals** section select **Azure Migrate | Servers, databases and web apps**.
 1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover**. 
-1. On the **Discover** page, select **Finalize registration**.
+1. On the **Discover** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Next**, select **Finalize registration**.
 
    >**Note**: It might take up to 5 minutes for the discovery of virtual machines to complete.
 
@@ -441,7 +441,7 @@ After completing this lab, you will be able to:
    | Import migration settings from an Azure Migrate assessment | **Yes, apply migration settings from an Azure Migrate assessment** |
    | Select group | **az801l07a-assessment-group** |
    | Select assessment | **az801l07a-assessment** |
-   | Virtual machines | **az801l07a-vm1** |
+   | Virtual machines | Select **az801l07a-vm1** |
 
 1. On the **Target settings** tab of the **Replicate** page, specify the following settings (leave others with their default values) and select **Next**:
 
