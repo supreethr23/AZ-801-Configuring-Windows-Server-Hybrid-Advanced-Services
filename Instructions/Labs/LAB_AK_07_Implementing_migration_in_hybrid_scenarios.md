@@ -460,7 +460,7 @@ After completing this lab, you will be able to:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0703-RG** |
-   | Cache Storage Account | **str<inject key="DeploymentID" enableCopy="false"/>** | 
+   | Cache Storage Account | select **str<inject key="DeploymentID" enableCopy="false"/>** | 
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
