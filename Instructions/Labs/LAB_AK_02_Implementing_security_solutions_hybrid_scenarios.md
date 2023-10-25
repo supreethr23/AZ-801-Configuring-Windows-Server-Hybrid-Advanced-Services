@@ -293,7 +293,7 @@ After completing this lab, you'll be able to:
 1. On the **Microsoft Defender for Cloud \| Overview** page, in the vertical menu on the left side, in the **General** section, select **Security alerts**.
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **az801l02-vm0**.
 
-      > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
+      > **Note:** Microsoft Defender will take some time to show the alert result (upto 24 hours), you can proceed with the next task.
    
 1. Select the security alert, on the **Security alert** page, select **Take action**, and review the possible actions.
 
