@@ -147,7 +147,9 @@ After completing this lab, you will be able to:
   
 #### Task 1: Configure Hyper-V environment
 
-1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to [https://aka.ms/migrate/script/hyperv](https://aka.ms/migrate/script/hyperv), and download the Azure Migrate configuration PowerShell script.
+1. Navigate back to Remote Desktop session to **az801l07a-hv-vm** and within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to [https://aka.ms/migrate/script/hyperv](https://aka.ms/migrate/script/hyperv), and download the Azure Migrate configuration PowerShell script.
+
+   >**Note**: Before downloading **Azure Migrate configuration PowerShell script** kindly change download location to **Download** 
 
    >**Note**: The script performs the following tasks:
 
@@ -200,7 +202,7 @@ After completing this lab, you will be able to:
    | Setting | Value |
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | Select **create new** and enter **AZ801-L0703-RG** |
+   | Resource group | Select **AZ801-L0703-RG** |
    | Name | **az801l07a-migration-vnet** |
    | Region | **<inject key="Region" enableCopy="false"/>** |
 
