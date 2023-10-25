@@ -40,7 +40,7 @@ After completing this lab, you will be able to:
 
    ![](../Media/image3.png)
    
-1. When prompted, in the Azure portal, sign in by using following credentials:
+1. If prompted, in the Azure portal, sign in by using following credentials:
    
    - Username: <inject key="AzureAdUserEmail"></inject>
   
