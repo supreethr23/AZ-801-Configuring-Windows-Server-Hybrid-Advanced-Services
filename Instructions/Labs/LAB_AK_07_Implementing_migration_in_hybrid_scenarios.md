@@ -76,7 +76,7 @@ After completing this lab, you will be able to:
    | Name |**az801l07a-hv-vnet-ip** |
 
 1. Select **Review + create** and **create**.
-1. Back on **az801l07a-hv-vm | Networking** page, select Network Interface link under **Settings** section select **IP configurations** and select **ipconfig**.
+1. Back on **az801l07a-hv-vm | Networking** page, select Network Interface link next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
 1. On **Edit IP configuration** page select checkbox for **Associate public IP address** and for **Public IP address** select **az801l07a-hv-vnet-ip**.
 1. Click on **Save**.
  
