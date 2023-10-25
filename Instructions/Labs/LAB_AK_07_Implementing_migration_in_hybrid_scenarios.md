@@ -110,7 +110,10 @@ After completing this lab, you will be able to:
    | Phone          | Select your country code and enter phone number |
 
 1. Before downloading the VHD file please change the dowload location to **F:\VHDs** folder.
-1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**   
+1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**.
+
+   >**Note**: Wait for download to complete.
+
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** menu, search and  select **Hyper-V Manager**. 
 1. In the **Hyper-V Manager** console, select the **az801l07a-hv-vm** node. 
 1. Left right navigation pane, under **Actions** select **New** and then, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
