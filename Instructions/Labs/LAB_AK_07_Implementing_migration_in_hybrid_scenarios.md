@@ -149,7 +149,7 @@ After completing this lab, you will be able to:
 
 1. Navigate back to Remote Desktop session to **az801l07a-hv-vm** and within the Remote Desktop session to **az801l07a-hv-vm**, in the browser window, go to [https://aka.ms/migrate/script/hyperv](https://aka.ms/migrate/script/hyperv), and download the Azure Migrate configuration PowerShell script.
 
-   >**Note**: Before downloading **Azure Migrate configuration PowerShell script** kindly change download location to **Download** 
+   >**Note**: Before downloading **Azure Migrate configuration PowerShell script** kindly change download location to **C:\Users\Student\Downloads** 
 
    >**Note**: The script performs the following tasks:
 
