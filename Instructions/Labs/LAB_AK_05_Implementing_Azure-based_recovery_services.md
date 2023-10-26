@@ -127,7 +127,6 @@ After completing this lab, you'll be able to:
    |Starting Address|**10.5.0.0**|
    |Address space size|**/22 (1024 Addresses)**|
 
-
    ![](../media/07.png)
 
    > **Note:** Ignore the warning regarding the overlapping IP address space. This is intentional, so the IP address space of the test environment matches the IP address space of the disaster recovery environment.
