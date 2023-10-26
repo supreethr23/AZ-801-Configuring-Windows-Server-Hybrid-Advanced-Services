@@ -101,7 +101,7 @@ After completing this lab, you will be able to:
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, start Microsoft Edge, complete the initial setup, go to [Windows Server Evaluations](https://www.microsoft.com/en-in/EvalCenter).
 1. On start your evaluation today page, select **Windows Server 2022**.
 1. On the Windows Server 2022 page, under **Get started for free** select **Download the VHD** and on **Evaluate Windows Server 2022** page provide the requested information for 
-   registeration and click on **Download now**.
+   registration and click on **Download now**.
 
    | Setting        | Value      | 
    | -------------- | ---------- |
@@ -116,7 +116,7 @@ After completing this lab, you will be able to:
 
 1. Before downloading the VHD file please change the download location to **F:\VHDs** folder.
 
-   >**Note**: You can change download settings location by navigating to Microsoft edge, select (...) icon at top right of the corner, select **Download** and on **Download** windown click on **(...) icon and select 
+   >**Note**: You can change download settings location by navigating to Microsoft edge, select (...) icon at top right of the corner, select **Download** and on **Download** window click on **(...) icon and select 
    **Downloads settings** and in location field click on change to set the location.
    
 1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**.
@@ -145,7 +145,7 @@ After completing this lab, you will be able to:
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Hi there** page, select **Next**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **License terms** page, select **Accept**. 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd**, and then select **Finish**. 
-1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, in the **Action** menu, select first iscon **Ctrl + Alt + Delete** and then, when prompted, sign in by using **Pa55w.rd** password.
+1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, in the **Action** menu, select first icon **Ctrl + Alt + Delete** and then, when prompted, sign in by using **Pa55w.rd** password.
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, select **Start**. In the **Start** menu, select **Windows PowerShell** and then, in the **Administrator: Windows PowerShell** window, run the following to set the computer name. 
 
    ```powershell
@@ -348,7 +348,7 @@ After completing this lab, you will be able to:
    >**Note**: Wait for the import to complete.
 
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, select **Rename**, and then set its name to **az801l07a-vma1**.
-1. Right click on **az801l07a-vma1** VM, select **Setttings** and under **Hardware** select Memory and under **Specify the amount of memory that the virtual machine can user** in **RAM** replace the memory size of the virtual machine to 4096 MB and click on **OK**.
+1. Right click on **az801l07a-vma1** VM, select **Settings** and under **Hardware** select Memory and under **Specify the amount of memory that the virtual machine can user** in **RAM** replace the memory size of the virtual machine to 4096 MB and click on **OK**.
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, and then select **Start**. 
 1. In the **Hyper-V Manager** console, verify that the virtual machine is running, and then select **Connect**. 
 1. In the **Virtual Machine Connection** window to the virtual appliance, on the **License terms** page, select **Accept**. 
@@ -361,11 +361,11 @@ After completing this lab, you will be able to:
 1. On the **Appliance Configuration Manager** page, select the **I agree** button and wait for the setup prerequisites to be successfully verified. 
 1. On the **Appliance Configuration Manager** page, in the **Verification of Azure Migrate project key** section, in the **Register Hyper-V appliance by pasting the key here** text box, paste the key you copied into Notepad earlier in this exercise, select **Verify** and wait for process to complete.
    
-   >**Note**: You may not be able to copy and paste the content within nested VM session so kindly select **Clipboard** at top of page in menu bar and from **Clipborad** list select **Type clipboard text** to paste the content and follow the same to step to copy and paste the content
+   >**Note**: You may not be able to copy and paste the content within nested VM session so kindly select **Clipboard** at top of page in menu bar and from **Clipboard** list select **Type clipboard text** to paste the content and follow the same to step to copy and paste the content
 
     ![](../Media/lab7-2.png)
    
-1. Once verification is completed you will prompted with **New update installed** window, select **Refresh** and again click on **Verify**.
+1. Once verification is completed you will prompt with **New update installed** window, select **Refresh** and again click on **Verify**.
    >**Note**: Wait until verification process completes.
 1. Under **Azure user Login and appliance registration status** select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
 1. On the **Enter code** pane in the newly opened browser tab, paste the code you copied onto the Clipboard, and then select **Next**. When prompted, sign in by providing the credentials of a user account with the Owner role in the subscription you are using in this lab.
@@ -503,7 +503,7 @@ After completing this lab, you will be able to:
 1. On the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines.
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
 
-   >**Note**: You will need to to refresh the **Migration and modernization | Replicating machines** to update the **Status** information.
+   >**Note**: You will need to refresh the **Migration and modernization | Replicating machines** to update the **Status** information.
 
 #### Task 3: Perform migration of Hyper-V VMs
 
