@@ -127,10 +127,9 @@ After completing this lab, you'll be able to:
    |Starting Address|**10.5.0.0**|
    |Address space size|**/22 (1024 Addresses)**|
 
+   ![](../media/07.png)
 
-     ![](../media/07.png)
-
-     > **Note:** Ignore the warning regarding the overlapping IP address space. This is intentional, so the IP address space of the test environment matches the IP address space of the disaster recovery environment.
+   > **Note:** Ignore the warning regarding the overlapping IP address space. This is intentional, so the IP address space of the test environment matches the IP address space of the disaster recovery environment.
 
 1. On the **IP addresses** tab of the **Create virtual network** page, select **+ Add a subnet**.
 1. On the **Add a subnet** page, specify the following settings (leave others with their default values) and select **Add (4)**:
