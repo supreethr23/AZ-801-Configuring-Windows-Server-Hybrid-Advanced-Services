@@ -26,9 +26,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../Media/res.png)
+
+2. To Switch between the Virtual Machines, select the required VM from the dropdown.
+
+![](../media/switch.png)
  
 ## Let's Get Started with Azure Portal
  
