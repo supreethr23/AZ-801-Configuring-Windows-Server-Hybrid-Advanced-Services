@@ -38,13 +38,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
-    ![Manage Your Virtual Machine](../media/gext.png)
+    ![Manage Your Virtual Machine](../Media/gext.png)
 
     >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
 2. Click **OK** to extend your lab duration.
  
-   ![Manage Your Virtual Machine](../media/gext2.png)
+   ![Manage Your Virtual Machine](../Media/gext2.png)
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
 
