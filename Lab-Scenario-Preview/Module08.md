@@ -8,9 +8,9 @@ This lab introduces performance baseline establishment, identification of perfor
   
 After completing this lab, you will be able to:
 
-+ Exercise 1: Establishing a performance baseline
-+ Exercise 2: Identifying the source of a performance problem
-+ Exercise 3: Viewing and configuring centralized event logs
++  Establishing a performance baseline
++  Identifying the source of a performance problem
++ Viewing and configuring centralized event logs
 
 
    >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/99fddfc3-3388-4378-a87b-e3039b87921f), prior to launching your environment.
