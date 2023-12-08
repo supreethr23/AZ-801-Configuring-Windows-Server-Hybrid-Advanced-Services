@@ -12,5 +12,5 @@ After completing this lab, you will be able to:
    - Implement backup and restore with Windows Server Backup.
 
    
-   >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/), prior to launching your environment.
+   >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/64ed5450-b340-473f-a379-b22695ca2c88), prior to launching your environment.
 

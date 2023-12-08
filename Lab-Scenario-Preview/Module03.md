@@ -13,5 +13,5 @@ After completing this lab, you will be able to:
   - Validate the deployment of the highly available file server.
 
 
-   >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/), prior to launching your environment.
+   >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/87cca1ea-5b8f-42f2-ab2e-63c69b26888a), prior to launching your environment.
 
