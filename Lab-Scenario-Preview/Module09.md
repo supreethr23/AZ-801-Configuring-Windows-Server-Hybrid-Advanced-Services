@@ -8,10 +8,10 @@ This lab focuses on establishing a comprehensive operational monitoring strategy
   
 After completing this lab, you will be able to:
 
-+ Exercise 1: Preparing a monitoring environment
-+ Exercise 2: Configuring monitoring of on-premises servers
-+ Exercise 3: Configuring monitoring of Azure VMs
-+ Exercise 4: Evaluating monitoring services
+- Preparing a monitoring environment
+- Configuring monitoring of on-premises servers
+- Configuring monitoring of Azure VMs
+- Evaluating monitoring services
 
    >**Note**: Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located at the top right corner which leads you to the lab environment and lab guide interface . You can also have a detailed preview of the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/f6a68ca3-138c-4871-99b0-7f1ca682c0b9), prior to launching your environment.
 
