@@ -17,24 +17,43 @@ After completing this lab, you'll be able to:
 #### Task 1: Enable Windows Defender Credential Guard using Group Policy
 
 1. Connect to **SEA-SVR2** and, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
+
 1. In the **Type here to search** text box next to the **Start** button, enter **Group Policy Management**.
+
 1. In the list of results, select **Group Policy Management**.
-1. In the **Group Policy Management** console, expand **Forest: contoso.com**, expand **Domains**, expand **contoso.com**, right-click or access the **context** menu for the **IT** Organizational Unit (OU), and then select **Create a GPO in this domain, and Link it here**.
-   ![](../Media/lab1-image1.png)
+
+1. In the **Group Policy Management** console, expand **Forest: contoso.com**, expand **Domains**, expand **contoso.com**, right-click or access the **context** menu for 
+    the **IT** Organizational Unit (OU), and then select **Create a GPO in this domain, and Link it here**.
+
+    ![](../Media/lab1-image1.png)
+
 1. In the **New GPO** dialog box, in the **Name** text box, enter **CredentialGuard_GPO**, and then select **OK**.
-   ![](../Media/lab1-image2.png)
+
+    ![](../Media/lab1-image2.png)
+
 1. In the **Group Policy Management** window, expand **IT**, right-click or access the **context** menu for **CredentialGuard_GPO**, and then select **Edit**.
+
    ![](../Media/lab1-image3.png)
+
 1. In the **Group Policy Management Editor**, expand **Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard**.
+
    ![](../Media/lab1-image4.png)
+
 1. Select **Turn On Virtualization Based Security**, and then select the **policy setting** link.
    ![](../Media/lab1-image5.png)
+
 1. In the **Turn On Virtualization Based Security** window, select the **Enabled** option.
+
 1. In the **Select Platform Security Level** drop-down list, ensure that the **Secure Boot and DMA Protection** entry is selected.
+
 1. In the **Credential Guard Configuration** drop-down list, select the **Enabled with UEFI lock** entry.
+
 1. In the **Secure Launch Configuration** drop-down list, select the **Enabled** entry, and then select **OK**.
-   ![](../Media/lab1-image6.png)
+
+    ![](../Media/lab1-image6.png)
+
 1. Close the **Group Policy Management Editor** window.
+
 1. Close the **Group Policy Management** console window.
 
 #### Task 2: Enable Windows Defender Credential Guard using the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool
