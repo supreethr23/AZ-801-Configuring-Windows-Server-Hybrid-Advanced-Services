@@ -272,7 +272,7 @@ In this lab, you will:
 1. On the **Additional Options** page, select **Next**.
 1. On the **Paths** page, change the drive of the path settings from **C:** to **F:** for the **Database** folder, **Log files** folder, and **SYSVOL** folder, and then select **Next**.
 
-   ![](../Media/sysvol.png)
+   ![](../Media/PATH.png)
 
 1. On the **Review Options** page, select **Next**.
 1. On the **Prerequisite Check** page, note the warnings regarding network adapter not having static IP address, and then select **Install**.
