@@ -22,7 +22,7 @@ After completing this lab, you'll be able to:
 1. In the **Group Policy Management** console, expand **Forest: contoso.com**, expand **Domains**, expand **contoso.com**, right-click or access the **context** menu for the **IT** Organizational Unit (OU), and then select **Create a GPO in this domain, and Link it here**.
 1. In the **New GPO** dialog box, in the **Name** text box, enter **CredentialGuard_GPO**, and then select **OK**.
 1. In the **Group Policy Management** window, under **IT**, right-click or access the **context** menu for **CredentialGuard_GPO**, and then select **Edit**.
-1. In the **Group Policy Management Editor**, browse to **Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard**.
+1. In the **Group Policy Management Editor**, expand **Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard**.
 1. Select **Turn On Virtualization Based Security**, and then select the **policy setting** link.
 1. In the **Turn On Virtualization Based Security** window, select the **Enabled** option.
 1. In the **Select Platform Security Level** drop-down list, ensure that the **Secure Boot and DMA Protection** entry is selected.
