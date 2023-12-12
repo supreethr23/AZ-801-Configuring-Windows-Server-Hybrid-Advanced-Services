@@ -1,4 +1,3 @@
-
 # Lab 06: Upgrade and migrate in Windows Server
 
 ## Lab scenario
