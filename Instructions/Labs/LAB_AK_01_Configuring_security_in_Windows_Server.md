@@ -35,7 +35,7 @@ After completing this lab, you'll be able to:
 
    ![](../Media/lab1-image3.png)
 
-1. In the **Group Policy Management Editor**, expand **Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard**.
+1. In the **Group Policy Management Editor**, expand **Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard** and select Device Guard.
 
    ![](../Media/lab1-image4.png)
 
