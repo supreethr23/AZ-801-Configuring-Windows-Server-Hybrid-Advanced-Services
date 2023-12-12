@@ -233,7 +233,8 @@ In this lab, you will:
     and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** 
     off.
 
-1. Within the Remote Desktop session to **az801l06a-dc2**, select **Start**, and then select **Windows PowerShell**.
+1. Within the Remote Desktop session to **az801l06a-dc2**, select **Start**, and then select **Windows PowerShell** and select **Run as Administrator**.
+   
 1. To install the AD DS and DNS server roles, at the Windows PowerShell command prompt, enter the following command, and then press Enter:
 	
    ```powershell
@@ -423,7 +424,7 @@ In this lab, you will:
 #### Task 4: Validate migration outcome
 
 1. On **SEA-SVR2**, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
-1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell**.
+1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell** and select **Run as Administrator**.
 1. To identify the IPv4 addresses assigned to the network interface of **SEA-SVR2**, in the **Windows PowerShell** console, enter the following command, and then press Enter:
 	
    ```powershell
