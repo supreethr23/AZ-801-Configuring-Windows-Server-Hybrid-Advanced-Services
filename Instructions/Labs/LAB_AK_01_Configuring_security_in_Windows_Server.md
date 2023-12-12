@@ -119,6 +119,8 @@ After completing this lab, you'll be able to:
 
    ```powershell
    New-ADOrganizationalUnit -Name "Seattle_Servers"
+   ```
+   ```powershell
    Get-ADComputer SEA-SVR1 | Move-ADObject –TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
    ```
 
