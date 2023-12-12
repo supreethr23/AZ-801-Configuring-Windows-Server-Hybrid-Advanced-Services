@@ -237,7 +237,18 @@ In this lab, you will:
    ```powershell
    Install-WindowsFeature -Name AD-Domain-Services,DNS -IncludeManagementTools
    ```
-
+   > **Note**: To copy the command from the lab guide to the bastion, follow the below steps:
+   
+   Step: 1- Click on the **>>** button on the left pane of the bastion.
+   
+   	![](../Media/arrow.png)
+   
+   Step: 2- Paste the command in clipboard and hit **Enter**
+   
+   	![](../Media/clipboard.png)
+   
+   Step: 3- On the bastion, press **Ctrl+V**.
+   
    > **Note**: Wait for the installation to complete. This might take about 3 minutes.
 
 1. To configure the data disk, at the Windows PowerShell prompt, enter the following commands, and after entering each command, press Enter:
@@ -268,7 +279,7 @@ In this lab, you will:
 
    > **Note**: The warning is expected because the static IP address is assigned on the platform level, rather than within the operating system.
 
-   > **Note**: The operating system will restart automatically to complete the promotion process.
+   > **Note**: The operating system will restart automatically to complete the promotion process. It may take a while.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Bastion**.  
 1. On the Bastion page, provide the following credentials, and then select **Connect**:
