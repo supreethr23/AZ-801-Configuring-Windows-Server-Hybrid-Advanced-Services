@@ -131,6 +131,8 @@ After completing this lab, you'll be able to:
 1. On the **Welcome to the Local Administrator Password Solution Setup Wizard** page of the **Local Administrator Password Solution Setup** wizard, select **Next**.
 1. On the **End-User License Agreement** page of the **Local Administrator Password Solution Setup** wizard, select **I accept the terms in the License Agreement**, and then select **Next**.
 1. On the **Custom Setup** page of the **Local Administrator Password Solution Setup** wizard, in the drop-down menu next to **Management Tools**, select **Entire feature will be installed on the local hard drive**, and then select **Next**.
+   ![](../Media/intall.png)
+
 1. On the **Ready to install Local Administrator Password Solution** page of the **Local Administrator Password Solution Setup** wizard, select **Install**. 
 1. Once the installation completes, on the final page of the **Local Administrator Password Solution Setup** wizard, select **Finish**.
 1. To enable the Windows Defender Firewall with Advanced Security rule that allows incoming Server Message Block (SMB) connections from other domain-joined servers, at the Windows PowerShell command prompt, enter the following commands and, after each, press Enter:
@@ -156,14 +158,26 @@ After completing this lab, you'll be able to:
 1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, enter **Group Policy Management**.
 1. In the list of results, select **Group Policy Management**.
 1. In the **Group Policy Management** console, expand **Forest: contoso.com**, expand **Domains**, expand **contoso.com**, right-click or access the **context** menu for the **Seattle_Servers** OU, and then select **Create a GPO in this domain, and Link it here**.
+
+   ![](../Media/lab1-2-image1.png)
+
 1. In the **New GPO** dialog box, in the **Name** text box, enter **LAPS_GPO**, and then select **OK**.
+   ![](../Media/lab1-2-image2.png)
+   
 1. In the **Group Policy Management** window, under **Seattle_Servers**, right-click or access the **context** menu for **LAPS_GPO**, and then select **Edit**.
 1. In the **Group Policy Management Editor** window, under **Computer Configuration**, expand the **Policies** node, expand the **Administrative Templates** node, and then select **LAPS**.
 1. Select the **Enable local admin password management** policy, and then select the **policy settings** link.
+   ![](../Media/lab1-2-image3.png)
+
 1. In the **Enable local admin password management** window, select **Enabled**, and then select **OK**.
+   ![](../Media/lab1-2-image4.png)
+
 1. Select the **Password Settings** policy, and then select the **policy settings** link.
-1. In the **Password Settings** policy dialog box, select **Enabled**, and then configure **Password Length** to **20**.
-1. Verify that the **Password Age (Days)** is configured to **30**, and then select **OK**.
+   ![](../Media/lab1-2-image5.png)
+
+1. In the **Password Settings** policy dialog box, select **Enabled**, and then configure **Password Length** to **20**, Verify that the **Password Age (Days)** is configured to **30**, and then select **OK**.
+   ![](../Media/lab1-2-image6.png)
+
 1. Close the Group Policy Management Editor.
 
 #### Task 3: Deploy LAPS client-side extension
@@ -193,7 +207,11 @@ After completing this lab, you'll be able to:
 1. Switch to the console session to **SEA-SVR2**.
 1. Select **Start**. In the **Start** menu, select **LAPS**, and then select **LAPS UI**.
 1. In the **LAPS UI** dialog box, in the **Computer name** text box, enter **SEA-SVR1**, and then select **Search**.
+
+   ![](../Media/lab1-2-image7.png)
+
 1. Review the **Password** and the **Password expires** values, and then select **Exit**.
+
 1. Switch to the **Windows PowerShell** console and then, to verify the value of the password, at the Windows PowerShell command prompt, enter the following command and press Enter:
 
    ```powershell
