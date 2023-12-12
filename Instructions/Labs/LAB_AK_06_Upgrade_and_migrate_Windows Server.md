@@ -361,13 +361,7 @@ In this lab, you will:
 1. On the **Inventory servers** tab, in the **Install required features** pane, select **Next**.
 1. On the **Inventory servers** tab, in the **Add and scan devices** pane, select **+ Add a device**.
 1. On the **Add source device**, ensure that the **Device name** option is selected, in the **Name** text box, enter **SEA-SVR1.contoso.com**, and then select **Add**.
-1. In the **Specify your credentials** pane, select the **Use another account for this connection** option , enter the following credentials, select **Use these credentials for all connections**, and then select **Continue**:
-
-   - Username: **CONTOSO\\Administrator**
-   - Password: **Pa55w.rd**
-
-   > **Note**: To perform single sign-on, you would need to set up Kerberos constrained delegation<!--Marcin can this be 'a Kerberos constrained delegation'?-->.
-
+   
 1. On the list of devices, select the newly added **SEA-SVR1.contoso.com** entry, in the **Add and scan devices** pane, in the toolbar, select the ellipsis (**...**) symbol, and then, in the drop-down menu, select **Start scan**.
 
    >**Note:** Wait until the scan completes successfully. This should take about 1 minute.
