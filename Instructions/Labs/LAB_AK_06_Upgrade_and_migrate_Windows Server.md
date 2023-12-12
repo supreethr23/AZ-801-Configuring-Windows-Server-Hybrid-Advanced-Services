@@ -21,8 +21,6 @@ In this lab, you will:
 
 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 
-   >**Note**: In case of disconnection, navigate to the **HOST-VM** from the drop down and navigate to Hyper-V manager, right click on the vm which has turned off and select **Start**
-
 1. On **SEA-SVR2**, start Microsoft Edge, and access a customized version of the QuickStart template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**. 
 
 1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, select **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** page in the Azure portal.
