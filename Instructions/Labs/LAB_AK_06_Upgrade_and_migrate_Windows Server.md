@@ -61,10 +61,16 @@ In this lab, you will:
    > **Note**: Configuring the custom DNS server virtual network setting that points to the Azure VM running the domain controller with the DNS server role ensures that any Azure VM subsequently deployed into the same virtual network will automatically use that DNS server for name resolution, effectively providing the domain join functionality.
 
 1. On the **Edit template** page, select **Discard**.
+   > **Note**: Please click on **Save** if there were any changes made.
+   
 1. Back on the **Create an Azure VM with a new AD Forest** page, select **Edit parameters**.
+   
 1. On the **Edit parameters** page, select **Load file**, in the **File Upload** dialog box, browse to the **C:\\Labfiles\\Lab06** folder, select the **L06-rg_template.parameters.json** file, and then select **Open**.
-1. On the **Edit template** page, select **Save**.
+   
+1. On the **Edit parameters** page, select **Save**.
+   
 1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **Create new**, in the **Name** text box, enter **AZ801-L0601-RG**, and then select **OK**.
+   
 1. On the **Create an Azure VM with a new AD Forest** page, if needed, adjust the deployment settings so they have the following values (leave others with their default values):
 
    | Setting | Value | 
