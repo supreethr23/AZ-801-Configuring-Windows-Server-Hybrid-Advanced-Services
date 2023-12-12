@@ -105,17 +105,18 @@ In this lab, you will:
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
 1. If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message.
-   Step:1- Click on **Show Advanced settings**<br>
+1. Click on **Show Advanced settings**<br>
+	
+   	![](../Media/cs.png)
 
-  	 ![](../Media/cs.png)
+1. Provide the values for:
    
-   Step:2- Provide the values for:<br>
-          **Resource Group** - Select **Use existing** and choose the **AZ801-L0601-RG**<br>
-   	  **Storage Account** - Select **Create New** and enter **cloudstore<inject key="Deployment-id" enableCopy="false"></inject>**
-          **File Share** - Select **Create New** and enter **fileshare<inject key="Deployment-id" enableCopy="false"></inject>**<br>
-   	  and click on **Create storage**.<br>
+     * **Resource Group** - Select **Use existing** and choose the **AZ801-L0601-RG**<br>
+     * **Storage Account** - Select **Create New** and enter **cloudstore<inject key="Deployment-id" enableCopy="false"></inject>**
+     * **File Share** - Select **Create New** and enter **fileshare<inject key="Deployment-id" enableCopy="false"></inject>**<br>
+     and click on **Create storage**.<br>
       
-	![](../Media/cs1.png)
+   	![](../Media/cs1.png)
 
 1. From the PowerShell session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network **az801l06a-vnet** you created earlier in this exercise:
 
