@@ -255,11 +255,11 @@ In this lab, you will:
    
    Step: 1- Click on the **>>** button on the left pane of the bastion.
    
-   	![](../Media/arrow.png)
+   ![](../Media/arrow.png)
    
    Step: 2- Paste the command in clipboard and hit **Enter**
    
-   	![](../Media/clipboard.png)
+   ![](../Media/clipboard.png)
    
    Step: 3- On the bastion, press **Ctrl+V**.
    
