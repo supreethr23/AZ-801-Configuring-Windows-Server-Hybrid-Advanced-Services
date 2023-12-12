@@ -319,7 +319,9 @@ In this lab, you will:
 
    >**Note:** Wait for the script to complete. This should take about 1 minute.
 
-   >**Note:** The script initializes an extra data disk on **SEA-SVR1** and **SEA-SVR2**, creates an NTFS volume on each, assigns the **S:** drive letter to each volume, creates a share named **Data** using the **S:\Data** folder on **SEA-SVR1**, and adds to it sample files with a total size of about 1 GB. 
+   >**Note:** The script initializes an extra data disk on **SEA-SVR1** and **SEA-SVR2**, creates an NTFS volume on each, assigns the **S:** drive letter to each volume, creates a share named **Data** using the **S:\Data** folder on **SEA-SVR1**, and adds to it sample files with a total size of about 1 GB.
+
+   >**Note:** Click on **Run Once** when the pop-up comes up.
 
 #### Task 3: Perform migration by using Storage Migration Service
 
