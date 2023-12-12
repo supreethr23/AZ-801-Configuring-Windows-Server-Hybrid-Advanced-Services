@@ -281,7 +281,7 @@ In this lab, you will:
 
    > **Note**: The operating system will restart automatically to complete the promotion process. It may take a while.
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Bastion**.  
+1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Connect via Bastion**.  
 1. On the Bastion page, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
@@ -289,7 +289,7 @@ In this lab, you will:
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
 
-1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS**.
+1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS** on the left side.
 
 ## Exercise 2: Migrating file servers by using Storage Migration Service
 
