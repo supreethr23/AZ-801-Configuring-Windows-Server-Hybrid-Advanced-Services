@@ -219,7 +219,7 @@ In this lab, you will:
    > **Note**: Assigning static IP address to a network interface of an Azure VM will trigger a restart of its operating system.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **az801l06a-dc2** page.
-1. On the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Bastion**. 
+1. On the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Connect via Bastion**. 
 1. On the Bastion page, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
