@@ -107,7 +107,7 @@ In this lab, you will:
 1. If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message.
 1. Click on **Show Advanced settings**<br>
 	
-   	![](../Media/cs.png)
+   ![](../Media/cs.png)
 
 1. Provide the values for:
    
