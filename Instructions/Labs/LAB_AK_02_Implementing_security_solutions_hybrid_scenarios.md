@@ -151,7 +151,7 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(15).png)
 
 1. Repeat the previous step twice to upload the **C:\\Labfiles\\Lab02\\L02-rg_template.json** and **C:\\Labfiles\\Lab02\\L02-rg_template.parameters.json** files into the Cloud Shell home directory.
-1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with the name of an Azure region where you intend to deploy resources in this lab):
+1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` (example: eastus) placeholder with the name of an Azure region where you intend to deploy resources in this lab):
 
    >**Note**: You can use the **(Get-AzLocation).Location** command to list the names of available Azure regions:
 
