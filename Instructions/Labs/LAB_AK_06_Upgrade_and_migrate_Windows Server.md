@@ -1,4 +1,3 @@
-
 # Lab 06: Upgrade and migrate in Windows Server
 
 ## Lab scenario
@@ -42,11 +41,15 @@ In this lab, you will:
 
    > **Note**: To review the script, you can use the following steps:
 
-1. On **SEA-SVR2**, open another tab in the Microsoft Edge window, and again access the customized version of QuickStart template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**.
+	1. On **SEA-SVR2**, open another tab in the Microsoft Edge window, and again access the customized version of QuickStart 
+        template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart- 
+        templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**.
 
-1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, in the listing of the repository content, select the **DSC** folder, and then select **CreateADPDC.ps1** file.
-1. On the **azure-quickstart-templates/application-workloads/active-directory/active-directory-new-domain/DSC/CreateADPDC.ps1** page, review the content of the script and note that it installs a number of server roles, including Active Directory Domain Services and DNS, placing the NTDS database and logs, as well as the SYSOVL share on drive **F**. 
-1. Close the Microsoft Edge tab and switch back to the one displaying the **Edit template** page in the Azure portal.
+	1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, in the listing of the repository content, 	select the **DSC** folder, and then select **CreateADPDC.ps1** file.
+    
+	1. On the **azure-quickstart-templates/application-workloads/active-directory/active-directory-new-domain/DSC/CreateADPDC.ps1** 	page, review the content of the script and note that it installs a number of server roles, including Active Directory Domain 		Services and DNS, placing the NTDS database and logs, as well as the SYSOVL share on drive **F**.
+     
+	1. Close the Microsoft Edge tab and switch back to the one displaying the **Edit template** page in the Azure portal.
 
 1. On the **Edit template** page, browse to the section that provisions an availability set (starting with the line **110**) and note that the template creates an availability set and deploys the VM into it (as indicated by the **dependsOn** element on line **181**).
 
@@ -61,10 +64,15 @@ In this lab, you will:
    > **Note**: Configuring the custom DNS server virtual network setting that points to the Azure VM running the domain controller with the DNS server role ensures that any Azure VM subsequently deployed into the same virtual network will automatically use that DNS server for name resolution, effectively providing the domain join functionality.
 
 1. On the **Edit template** page, select **Discard**.
+   
+   > **Note**: Please click on **Save** if there were any changes made.
+   
 1. Back on the **Create an Azure VM with a new AD Forest** page, select **Edit parameters**.
+   
 1. On the **Edit parameters** page, select **Load file**, in the **File Upload** dialog box, browse to the **C:\\Labfiles\\Lab06** folder, select the **L06-rg_template.parameters.json** file, and then select **Open**.
-1. On the **Edit template** page, select **Save**.
-1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **Create new**, in the **Name** text box, enter **AZ801-L0601-RG**, and then select **OK**.
+   
+1. On the **Edit parameters** page, select **Save**.
+   
 1. On the **Create an Azure VM with a new AD Forest** page, if needed, adjust the deployment settings so they have the following values (leave others with their default values):
 
    | Setting | Value | 
@@ -96,8 +104,18 @@ In this lab, you will:
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
+1. If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message.
+   Step:1- Click on **Show Advanced settings**<br>
 
-   > **Note:** If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**.
+  	 ![](../Media/cs.png)
+   
+   Step:2- Provide the values for:<br>
+          **Resource Group** - Select **Use existing** and choose the **AZ801-L0601-RG**<br>
+   	  **Storage Account** - Select **Create New** and enter **cloudstore<inject key="Deployment-id" enableCopy="false"></inject>**
+          **File Share** - Select **Create New** and enter **fileshare<inject key="Deployment-id" enableCopy="false"></inject>**<br>
+   	  and click on **Create storage**.<br>
+      
+	![](../Media/cs1.png)
 
 1. From the PowerShell session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network **az801l06a-vnet** you created earlier in this exercise:
 
@@ -213,7 +231,7 @@ In this lab, you will:
    > **Note**: Assigning static IP address to a network interface of an Azure VM will trigger a restart of its operating system.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **az801l06a-dc2** page.
-1. On the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Bastion**. 
+1. On the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Connect via Bastion**. 
 1. On the Bastion page, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
@@ -221,15 +239,29 @@ In this lab, you will:
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
 
-> **Note**: **Edge** by default will block popups. To allow popups for **Bastion** go to **Settings** in **Edge**, select **Cookies and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** off.
+   > **Note**: **Edge** by default will block popups. To allow popups for **Bastion** go to **Settings** in **Edge**, select **Cookies 
+    and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** 
+    off.
 
-1. Within the Remote Desktop session to **az801l06a-dc2**, select **Start**, and then select **Windows PowerShell**.
+1. Within the Remote Desktop session to **az801l06a-dc2**, select **Start**, and then select **Windows PowerShell** and select **Run as Administrator**.
+   
 1. To install the AD DS and DNS server roles, at the Windows PowerShell command prompt, enter the following command, and then press Enter:
 	
    ```powershell
    Install-WindowsFeature -Name AD-Domain-Services,DNS -IncludeManagementTools
    ```
-
+   > **Note**: To copy the command from the lab guide to the bastion, follow the below steps:
+   
+   Step: 1- Click on the **>>** button on the left pane of the bastion.
+   
+   	![](../Media/arrow.png)
+   
+   Step: 2- Paste the command in clipboard and hit **Enter**
+   
+   	![](../Media/clipboard.png)
+   
+   Step: 3- On the bastion, press **Ctrl+V**.
+   
    > **Note**: Wait for the installation to complete. This might take about 3 minutes.
 
 1. To configure the data disk, at the Windows PowerShell prompt, enter the following commands, and after entering each command, press Enter:
@@ -253,16 +285,16 @@ In this lab, you will:
 1. On the **Additional Options** page, select **Next**.
 1. On the **Paths** page, change the drive of the path settings from **C:** to **F:** for the **Database** folder, **Log files** folder, and **SYSVOL** folder, and then select **Next**.
 
-   ![](../Media/sysvol.png)
+   ![](../Media/PATH.png)
 
 1. On the **Review Options** page, select **Next**.
 1. On the **Prerequisite Check** page, note the warnings regarding network adapter not having static IP address, and then select **Install**.
 
    > **Note**: The warning is expected because the static IP address is assigned on the platform level, rather than within the operating system.
 
-   > **Note**: The operating system will restart automatically to complete the promotion process.
+   > **Note**: The operating system will restart automatically to complete the promotion process. It may take a while.
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Bastion**.  
+1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l06a-dc2** page, select **Connect**, from the drop-down menu, select **Connect via Bastion**.  
 1. On the Bastion page, provide the following credentials, and then select **Connect**:
 
    | Setting | Value | 
@@ -270,7 +302,7 @@ In this lab, you will:
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
 
-1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS**.
+1. Within the Remote Desktop session to **az801l06a-dc2**, wait until the **Server Manager** window opens and verify that the list of locally installed roles includes **AD DS** and **DNS** on the left side.
 
 ## Exercise 2: Migrating file servers by using Storage Migration Service
 
@@ -302,7 +334,9 @@ In this lab, you will:
 
    >**Note:** Wait for the script to complete. This should take about 1 minute.
 
-   >**Note:** The script initializes an extra data disk on **SEA-SVR1** and **SEA-SVR2**, creates an NTFS volume on each, assigns the **S:** drive letter to each volume, creates a share named **Data** using the **S:\Data** folder on **SEA-SVR1**, and adds to it sample files with a total size of about 1 GB. 
+   >**Note:** The script initializes an extra data disk on **SEA-SVR1** and **SEA-SVR2**, creates an NTFS volume on each, assigns the **S:** drive letter to each volume, creates a share named **Data** using the **S:\Data** folder on **SEA-SVR1**, and adds to it sample files with a total size of about 1 GB.
+
+   >**Note:** Click on **Run Once** when the pop-up comes up.
 
 #### Task 3: Perform migration by using Storage Migration Service
 
@@ -342,13 +376,7 @@ In this lab, you will:
 1. On the **Inventory servers** tab, in the **Install required features** pane, select **Next**.
 1. On the **Inventory servers** tab, in the **Add and scan devices** pane, select **+ Add a device**.
 1. On the **Add source device**, ensure that the **Device name** option is selected, in the **Name** text box, enter **SEA-SVR1.contoso.com**, and then select **Add**.
-1. In the **Specify your credentials** pane, select the **Use another account for this connection** option , enter the following credentials, select **Use these credentials for all connections**, and then select **Continue**:
-
-   - Username: **CONTOSO\\Administrator**
-   - Password: **Pa55w.rd**
-
-   > **Note**: To perform single sign-on, you would need to set up Kerberos constrained delegation<!--Marcin can this be 'a Kerberos constrained delegation'?-->.
-
+   
 1. On the list of devices, select the newly added **SEA-SVR1.contoso.com** entry, in the **Add and scan devices** pane, in the toolbar, select the ellipsis (**...**) symbol, and then, in the drop-down menu, select **Start scan**.
 
    >**Note:** Wait until the scan completes successfully. This should take about 1 minute.
@@ -406,7 +434,7 @@ In this lab, you will:
 #### Task 4: Validate migration outcome
 
 1. On **SEA-SVR2**, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
-1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell**.
+1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell** and select **Run as Administrator**.
 1. To identify the IPv4 addresses assigned to the network interface of **SEA-SVR2**, in the **Windows PowerShell** console, enter the following command, and then press Enter:
 	
    ```powershell
