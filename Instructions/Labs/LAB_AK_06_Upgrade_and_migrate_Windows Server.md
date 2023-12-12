@@ -227,7 +227,9 @@ In this lab, you will:
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
 
-> **Note**: **Edge** by default will block popups. To allow popups for **Bastion** go to **Settings** in **Edge**, select **Cookies and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** off.
+   > **Note**: **Edge** by default will block popups. To allow popups for **Bastion** go to **Settings** in **Edge**, select **Cookies 
+    and site permissions** on the left, **Pop-ups and redirects** under **All permissions** and finally toggle **Block (recommended)** 
+    off.
 
 1. Within the Remote Desktop session to **az801l06a-dc2**, select **Start**, and then select **Windows PowerShell**.
 1. To install the AD DS and DNS server roles, at the Windows PowerShell command prompt, enter the following command, and then press Enter:
