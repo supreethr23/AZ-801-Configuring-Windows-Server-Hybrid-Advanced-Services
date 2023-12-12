@@ -21,6 +21,8 @@ In this lab, you will:
 
 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 
+   >**Note**: In case of disconnection of the server, please deallocate and start the resources.
+
 1. On **SEA-SVR2**, start Microsoft Edge, and access a customized version of the QuickStart template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**. 
 
 1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, select **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** page in the Azure portal.
@@ -60,6 +62,7 @@ In this lab, you will:
    > **Note**: Configuring the custom DNS server virtual network setting that points to the Azure VM running the domain controller with the DNS server role ensures that any Azure VM subsequently deployed into the same virtual network will automatically use that DNS server for name resolution, effectively providing the domain join functionality.
 
 1. On the **Edit template** page, select **Discard**.
+   
    > **Note**: Please click on **Save** if there were any changes made.
    
 1. Back on the **Create an Azure VM with a new AD Forest** page, select **Edit parameters**.
@@ -67,8 +70,6 @@ In this lab, you will:
 1. On the **Edit parameters** page, select **Load file**, in the **File Upload** dialog box, browse to the **C:\\Labfiles\\Lab06** folder, select the **L06-rg_template.parameters.json** file, and then select **Open**.
    
 1. On the **Edit parameters** page, select **Save**.
-   
-1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **Create new**, in the **Name** text box, enter **AZ801-L0601-RG**, and then select **OK**.
    
 1. On the **Create an Azure VM with a new AD Forest** page, if needed, adjust the deployment settings so they have the following values (leave others with their default values):
 
