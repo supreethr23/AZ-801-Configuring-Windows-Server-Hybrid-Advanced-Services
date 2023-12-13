@@ -65,6 +65,12 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(3).png)
 
    >**Note**: Wait for the installation to complete. This might take about 5 minutes.
+   
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Exercise 2: Configuring Microsoft Defender for Cloud
 
@@ -170,6 +176,12 @@ After completing this lab, you'll be able to:
    >**Note**: Wait for deployment to complete. This should take about 3 minutes.
 
 1. Close Cloud Shell.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Exercise 4: Onboarding on-premises Windows Server into Microsoft Defender for Cloud and Azure Automation
 
