@@ -198,12 +198,6 @@ After completing this lab, you'll be able to:
 
    > **Note**: If you want to verify the results of this exercise by using graphical tools, you can use Hyper-V Manager on **SEA-SVR2**, and then add the **SEA-SVR1** and **SEA-SVR2** servers to the **Hyper-V** console. You can then verify that the **SEA-CORE1** VM exists on both **SEA-SVR1** and **SEA-SVR2** and that replication is running from **SEA-SVR2** to **SEA-SVR1**.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ## Exercise 2: Implementing backup and restore with Windows Server Backup
 
 #### Task1: Configure Windows Server Backup settings
@@ -287,12 +281,6 @@ After completing this lab, you'll be able to:
    > **Note**: Wait until the backup completes. This should take about 1 minute.
 
 1. On **SEA-SVR2**, switch to File Explorer, browse to **C:\\BackupShare**, and verify that the folder includes the newly created backup in the **WindowsImageBackup** subfolder.
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Review
 In this lab, you have completed:
