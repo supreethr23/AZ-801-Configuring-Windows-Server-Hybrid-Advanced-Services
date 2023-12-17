@@ -74,7 +74,7 @@ After completing this lab, you will be able to:
    | Name |**az801l07a-hv-vnet-ip** |
 
 1. Select **Review + create** and **create**.
-1. Back on **az801l07a-hv-vm | Networking** page, select **az801l07a-hv-vm-nic1** next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
+1. Back on **az801l07a-hv-vm | Network settings** page, select **az801l07a-hv-vm-nic1** next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
 
    ![](../Media/lab7-4.png)
 
