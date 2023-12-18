@@ -62,7 +62,7 @@ After completing this lab, you will be able to:
    > **Note**: Wait for the deployment to complete. The deployment might take about 10 minutes.
 
 1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
-1. Please follow 1a or 1b based on the experience provided in the portal to add inbound port rule.
+1. Please follow **1a** or **1b** based on the experience provided in the portal to add inbound port rule.
     * 1a - On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**
     * 1b - On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.(New experience)
 1. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
