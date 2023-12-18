@@ -33,8 +33,7 @@ After completing this lab, you will be able to:
 
 #### Task 1: Deploy an Azure VM by using an Azure Resource Manager QuickStart template
 
-1. Connect to **SEA-SVR2** and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
-1. On **SEA-SVR2**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
+1. On **Lab-VM**, start Microsoft Edge, go to the **[301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network)** and select **Deploy to Azure**. (You'll find the button **Deploy to Azure** in the `README.md` file after the list of resources created by the template.) This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal.
 
    ![](../Media/image3.png)
    
@@ -64,8 +63,8 @@ After completing this lab, you will be able to:
 
 1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
 1. Please follow 1a or 1b based on the experience provided in the portal to add inbound port rule.
-    * 1a. On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**
-    * 1b. On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.(New experience)
+    * 1a - On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**
+    * 1b - On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.(New experience)
 1. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
 1. Once deployment is successfully in search bar, search for and select **Public Ip address**.
 1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following (Leave others with their default values.):
