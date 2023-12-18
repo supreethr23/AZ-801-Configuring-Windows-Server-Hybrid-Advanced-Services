@@ -63,7 +63,9 @@ After completing this lab, you will be able to:
    > **Note**: Wait for the deployment to complete. The deployment might take about 10 minutes.
 
 1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
-1. On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.
+1. Please follow 1a or 1b based on the experience provided in the portal to add inbound port rule.
+    * 1a. On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**
+    * 1b. On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.(New experience)
 1. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
 1. Once deployment is successfully in search bar, search for and select **Public Ip address**.
 1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following (Leave others with their default values.):
@@ -74,12 +76,12 @@ After completing this lab, you will be able to:
    | Name |**az801l07a-hv-vnet-ip** |
 
 1. Select **Review + create** and **create**.
-1. Back on **az801l07a-hv-vm | Network settings** page, select **az801l07a-hv-vm-nic1** next to **Network Interface** and under **Settings** section select **IP configurations** and select **ipconfig**.
-
-   ![](../Media/lab7-4.png)
-
-1. On **Edit IP configuration** page select checkbox for **Associate public IP address** and for **Public IP address** select **az801l07a-hv-vnet-ip**.
-1. Click on **Save**.
+1. Search and select **Public IP addresses** from the portal.
+   ![](../Media/s2.png)
+1. Select **az801l07a-hv-vnet-ip** from the list.
+   ![](../Media/s3.png)
+1. From the Overview page, select **Associate** and select **Network interface** for Resource type dropdown and select **az801l07a-hv-vm-nic1** from the Network interface dropdown and select **OK**.
+   ![](../Media/s4.png)   
  
 #### Task 2: Deploy a nested VM in the Azure VM
 
@@ -109,7 +111,7 @@ After completing this lab, you will be able to:
    | Country/region | Enter your country |
    | Company name   | Contoso |
    | Company size   | 1 |
-   | Job Name       | Enter as you wish |
+   | Job Role       | Server Administrator |
    | Phone          | Select your country code and enter phone number |
 
 1. Before downloading the VHD file please change the download location to **F:\VHDs** folder.
