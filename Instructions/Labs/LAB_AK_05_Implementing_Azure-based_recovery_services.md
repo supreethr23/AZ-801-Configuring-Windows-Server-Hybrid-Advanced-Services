@@ -62,7 +62,7 @@ After completing this lab, you'll be able to:
    > **Note:** Storage replication type cannot be changed after you implement protection.
 
 1. On the **az801l05a-rsvault | Properties** page, select the **Update** link under the **Security Settings** label.
-1. On the **Security settings** page, Select **disable(1)** for Soft Delete (For workloads running in azure), and select **Save (2)**
+1. On the **Security settings** page, Select **Disable(1)** for Soft Delete (For workloads running in azure), and select **Save (2)**
 
      ![](../Media/p2.png)
 
