@@ -29,10 +29,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|the name of the Azure subscription you will be using in this lab|
+   |**Subscription (1)**|Leave the default subscription|
    |**Resource group (2)**|**AZ801-L0501-RG**|
    |**Vault name (3)**|**az801l05a-rsvault**|
-   |**Location (4)**|the name of an Azure region where you can create an Azure Recovery Services vault and is close to the location of the lab environment|
+   |**Location (4)**|Leave the default region|
 
     ![](../media/01.png)
 
@@ -75,10 +75,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|the name of the Azure subscription you are using in this lab|
+   |**Subscription (1)**|Leave the default subscription|
    |**Resource group (2)**|**AZ801-L0502-RG**|
    |**Virtual network Name (3)**|**az801l05-dr-vnet**|
-   |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab|
+   |**Region (4)**|Leave the default region|
 
     ![](../media/09.png)
 
@@ -114,10 +114,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|the name of the Azure subscription you are using in this lab|
+   |**Subscription (1)**|Leave the default subscription|
    |**Resource group (2)**|**AZ801-L0502-RG**|
    |**Virtual network Name (3)**|**az801l05-test-vnet**|
-   |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab|
+   |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab (Leave the default region)|
 
    ![](../media/06.png)
    
@@ -159,10 +159,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|the name of the Azure subscription you are using in this lab|
+   |**Subscription (1)**|Leave the default subscription|
    |**Resource group (2)**|**AZ801-L0502-RG**|
    |**Storage account name (3)**|storage<inject key="DeploymentID" enableCopy="false"/>|
-   |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab|
+   |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab (Leave the default region)|
    |**Performance(5)**|Standard|
    |**Redundancy (6)**|Locally redundant storage (LRS)|
 
@@ -202,7 +202,7 @@ After completing this lab, you'll be able to:
 
     ![](../media/19.png)
 
-1. Select Computer Configuration/Policies/Administrative Templates/Windows Components/Windows Update. Select the policy Configure Automatic Updates.
+1. Select Computer Configuration/Policies/Administrative Templates/Windows Components/Windows Update. Select the policy Configure Automatic Updates and click on policy setting.
 
     ![](../media/20.png)
 
@@ -217,8 +217,6 @@ After completing this lab, you'll be able to:
    Get-Service wuauserv | Set-Service -StartupType Manual
    Get-Service wuauserv | Start-Service
    ```
-
-   ![](../media/68.png)
 
 1. Switch back to the Microsoft Edge window displaying the Azure portal, on the **Source settings** tab of the **Prepare infrastructure** page, select the **Add Hyper-V server (1)** link. 
 1. on the **Add Server** page, select the **Download (2)** link in step 3 of the procedure for adding on-premises Hyper-V hosts in order to download the installer for Microsoft Azure Site Recovery Provider.
@@ -432,6 +430,10 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/49.png)
 
+1. On the **Microsoft Update Opt-in** page of the **Microsoft Azure Recovery Services Agent Setup Wizard**, select **I do not want to use Microsoft Update** and select **Next**
+
+   ![](../Media/p4.png)
+   
 1. On the **Installation** page of the **Microsoft Azure Recovery Services Agent Setup Wizard**, select **Install**.
 
    ![](../media/50.png)
@@ -527,6 +529,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. Switch to the Microsoft Azure Backup window and select **Recover data**. This will start the **Recover Data Wizard**.
 1. On the **Getting Started** page of the **Recover Data Wizard**, ensue that **This server (sea-svr2.contoso.com)** option is selected and select **Next**.
+1.  On the **Select Recovery Location** page, leave all the default values and select **Next** 
 1. On the **Select Recovery Mode** page, ensure that **Individual files and folders** option is selected, and select **Next**.
 1. On the **Select Volume and Date** page, in the **Select the volume** drop-down list, select **C:\\**, accept the default selection of the available backup, and select **Mount**. 
 
