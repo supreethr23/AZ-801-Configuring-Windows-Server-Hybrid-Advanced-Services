@@ -120,30 +120,33 @@ After completing this lab, you'll be able to:
    |**Region (4)**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab|
 
    ![](../media/06.png)
+   
+1. On the **IP addresses** tab of the **Create virtual network** page,
+    - Remove the default IP Address space by clicking on **Delete the address space**
 
-1. On the **IP addresses** tab of the **Create virtual network** page, select the ellipsis symbol (**...**) next to the **+ add a subnet** button, from the dropdown list select **Delete address space**, select **Add an IP address space**.
+      ![](../Media/unit4-image2.png)   
+      
+   - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
 
-1. On the **Add an IP address space** page, specify the following settings (leave others with their default values) and select **Add**:
+      ![](../Media/unit4-image3.png)
 
-   |Setting|Value|
-   |---|---|
-   |Starting Address|**10.5.0.0**|
-   |Address space size|**/22 (1024 Addresses)**|
-
-   ![](../media/07.png)
+       |Setting|Value|
+       |---|---|
+       |Starting Address|**10.5.0.0**|
+       |Address space size|**/22 (1024 Addresses)**|
 
    > **Note:** Ignore the warning regarding the overlapping IP address space. This is intentional, so the IP address space of the test environment matches the IP address space of the disaster recovery environment.
 
 1. On the **IP addresses** tab of the **Create virtual network** page, select **+ Add a subnet**.
-1. On the **Add a subnet** page, specify the following settings (leave others with their default values) and select **Add (4)**:
+1. On the **Add a subnet** page, specify the following settings (leave others with their default values) and select **Add**:
 
    |Setting|Value|
    |---|---|
-   |Name|**subnet (1)**|
-   |Starting Address|**10.5.0.0 (2)**|
-   |Subnet size|**/24 (256 Addresses) (3)**|
+   |Name|**subnet0**|
+   |Starting Address|**10.5.0.0**|
+   |Subnet size|**/24 (256 Addresses)**|
 
-   ![](../media/08.png)
+      ![](../Media/p3.png)
 
 1. Back on the **IP addresses** tab of the **Create virtual network** page, select **Review + create**.
 1. On the **Review + create** tab of the **Create virtual network** page, select **Create**.
