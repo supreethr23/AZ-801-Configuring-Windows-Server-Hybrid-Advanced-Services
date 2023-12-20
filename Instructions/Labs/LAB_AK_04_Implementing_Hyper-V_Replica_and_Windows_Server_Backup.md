@@ -162,7 +162,7 @@ After completing this lab, you'll be able to:
    ```powershell
    Set-VMProcessor -VMName SEA-SVR1 -ExposeVirtualizationExtensions $true
    ```
-1. 1. Click on the Hyper-V manager and right click on **SEA-SVR1** VM and select **Start** and notice that the VM state turns to **Running**.
+1. Click on the Hyper-V manager and right click on **SEA-SVR1** VM and select **Start** and notice that the VM state turns to **Running**.
 
    ![](../Media/start.png)
 
