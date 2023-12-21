@@ -178,45 +178,77 @@ After completing this lab, you'll be able to:
 
 1. On **SEA-SVR2**, select **Start**, in the **Start** menu, select **Server Manager**, and then, in **Server Manager**, select **Failover Cluster Manager** in the **Tools** menu.
 
+      ![](../Media/lab03-03.png)  
+
    > **Note:** **Failover Cluster Manager** console will be automatically connected to **SEA-CL03** because **SEA-SVR2** is one of the cluster nodes.
 
 1. Expand the **SEA-CL03.contoso.com** node, select **Roles** and verify that the cluster does not host any roles at this point.
 
+    ![](../Media/lab03-04.png) 
+
 1. Select the **Nodes** node and verify that the **SEA-SVR1** and **SEA-SVR2** nodes are displayed with the **Up** status.
+
+    ![](../Media/lab03-05.png) 
 
 1. Expand the **Storage** node and select **Disks**. Notice that three cluster disks are displayed with the **Online** status.
 
+   ![](../Media/lab03-06.png) 
+
 1. On the **Failover Cluster Manager** page, right-click or access the context menu for **Roles**, and then select **Configure Role**. This will start **High Availability Wizard**.
+
+   ![](../Media/lab03-16.png) 
 
 1. On the **Before You Begin** page of **High Availability Wizard**, select **Next**.
 
+   ![](../Media/lab03-07.png) 
+
 1. On the **Select Role** page of **High Availability Wizard**, select **File Server**, and then select **Next**.
 
+   ![](../Media/lab03-08.png) 
+
 1. On the **File Server Type** page of **High Availability Wizard**, ensure that the **File Server for general use** option is selected, and then select **Next**.
+
+   ![](../Media/lab03-09.png) 
 
 1. On the **Client Access Point** page of **High Availability Wizard**, in the **Name** box, enter **FSCluster**.
 
 1. In the **Address** box, enter **172.16.10.130**, and then select **Next**.
 
+    ![](../Media/lab03-10.png) 
+
 1. On the **Select Storage** page of **High Availability Wizard**, select **Cluster Disk 1** and **Cluster Disk 2**, and then select **Next**.
+
+   ![](../Media/lab03-11.png) 
 
 1. On the **Confirmation** page of **High Availability Wizard**, select **Next**.
 
+   ![](../Media/lab03-12.png) 
+
 1. On the **Summary** page of **High Availability Wizard**, select **Finish**.
 
+    ![](../Media/lab03-13.png) 
+
    > **Note:** In the **Storage** node, with the **Disks** node selected, verify that three cluster disks are online. **Cluster Disk 1** and **Cluster Disk 2** should be assigned to **FSCluster**.
+
+     ![](../Media/lab03-14.png) 
 
 #### Task 2: Add a shared folder to a highly available file server
 
 1. On **SEA-SVR2**, in **Failover Cluster Manager**, select **Roles**, select **FSCluster**, and then in the Actions pane, select **Add File Share**. 
 
+    ![](../Media/lab03-15.png) 
+
    > **Note:** This will start the **New Share Wizard**.
 
 1. On the **Select Profile** page, ensure that the **SMB Share - Quick** profile is selected, and then select **Next**.
 
+    ![](../Media/lab03-17.png) 
+
 1. On the **Share Location** page, select **Next**.
 
 1. On the **Share Name** page, enter **Docs** for the share name, and then select **Next**.
+
+    ![](../Media/lab03-18.png) 
 
 1. On the **Other Settings** page, select **Next**.
 
@@ -224,11 +256,17 @@ After completing this lab, you'll be able to:
 
 1. On the **Confirmation** page, select **Create**.
 
+    ![](../Media/lab03-19.png) 
+
 1. On the **View results** page, select **Close**.
+
+   ![](../Media/lab03-20.png) 
 
 ### Task 3: Configure the failover and failback settings
 
 1. **On SEA-SVR2**, in the **Failover Cluster Manager** console, with the **FSCluster** selected in the **Roles** node, in the Actions pane, select **Properties**.
+
+   ![](../Media/lab03-21.png) 
 
 1. Select the **Failover** tab, and then select the **Allow failback** option.
 
@@ -237,10 +275,13 @@ After completing this lab, you'll be able to:
    - **4** in the first text box
    - **5** in the second text box.
 
+     ![](../Media/lab03-22.png) 
+
 1. Select the **General** tab.
 
 1. In the **Preferred owners** section, ensure that **SEA-SVR1** is listed as the first entry, and then select **OK**.
 
+   ![](../Media/lab03-23.png) 
 
 ## Exercise 4: Validating the deployment of the highly available file server
 
@@ -250,9 +291,17 @@ After completing this lab, you'll be able to:
 
 1. Inside the **Docs** folder, right-click or access the context menu in an empty area of the folder, select **New**, and then select **Text Document**.
 
+    ![](../Media/lab03-24.png) 
+
 1. To accept the default name of the document as **New Text Document.txt**, press Enter.
 
-1. On **SEA-SVR2**, switch to the **Failover Cluster Manager** console, right-click or access the context menu for **FSCluster**, select **Move**, select **Select Node**, select **SEA-SVR1**, and then select **OK**.
+1. On **SEA-SVR2**, switch to the **Failover Cluster Manager** console, right-click or access the context menu for **FSCluster**, select **Move**, select **Select Node**.
+
+   ![](../Media/lab03-26.png) 
+
+1. Select **SEA-SVR1**, and then select **OK**.
+
+   ![](../Media/lab03-27.png) 
 
 1. On **SEA-SVR2**, switch back to File Explorer and verify that you can still access the content of the **\\\\FSCluster\\Docs** folder.
 
@@ -260,33 +309,51 @@ After completing this lab, you'll be able to:
 
 1. On **SEA-SVR2**, switch to the **Failover Cluster Manager** console and identify the current owner of the **FSCluster** role.
 
+    ![](../Media/lab03-28.png) 
+
 1. Select **Nodes**, and then right-click or access the context menu of the node you identified in the previous step.
 
 1. In the context menu, select **More Actions**, and then select **Stop Cluster Service**.
+
+    ![](../Media/lab03-30.png) 
 
 1. Switch to File Explorer and verify that you can still access the content of **\\\\FSCluster\\Docs** folder.
 
 1. Switch to the **Failover Cluster Manager** console, and then, right-click or access the context menu of the node with the **Down** status.
 
+    ![](../Media/lab03-31.png) 
+
 1. In the context menu, select **More Actions**, and then select **Start Cluster Service**.
 
+   ![](../Media/lab03-32.png) 
+
 1. In the **Failover Cluster Manager** console, right-click or access the context menu for the **SEA-CL03.Contoso.com** cluster, select **More Actions**, and then select **Configure Cluster Quorum Settings**. This will start the **Configure Cluster Quorum Wizard**.
+
+    ![](../Media/lab03-33.png) 
 
 1. On the **Before You Begin** page, select **Next**.
 
 1. On the **Select Quorum Configuration Option** page, ensure that the **Use default quorum configuration** option is selected, and then select **Next**.
 
-1. On the **Confirmation** page, note that, by default, **Cluster Disk 3** is selected as the **Disk Witness**, and select **Next**. 
+    ![](../Media/lab03-34.png) 
+
+1. On the **Confirmation** page, note that, by default, **Cluster Disk 3** is selected as the **Disk Witness**, and select **Next**.
+
+   ![](../Media/lab03-35.png) 
 
 1. On the **Summary** page, select **Finish**.
 
 1. In the **Failover Cluster Manager** console, browse to the **Disks** node, select **Cluster Disk 3** configured as the disk witness, and then, in the Actions pane, select **Take Offline**.
+
+   ![](../Media/lab3-02.png)  
 
 1. When prompted for confirmation, select **Yes**.
 
 1. Switch to File Explorer and verify that you can still access the content of the **\\\\FSCluster\\Docs** folder.
 
 1. Switch to the **Failover Cluster Manager** console, and then, in the list of disks within the **Disks** node, select **Cluster Disk 3** configured as the disk witness, and then, in the Actions pane, select **Bring Online**.
+
+   ![](../Media/lab3-01.png)  
 
 ## Review
 
