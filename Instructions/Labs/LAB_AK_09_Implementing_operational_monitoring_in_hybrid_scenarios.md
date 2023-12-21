@@ -33,11 +33,13 @@ In this lab, you will complete the following tasks:
 
    | Settings | Value |
    |----------|-------|
-   | Resource group| Use existing > **az-801**|
-   | Storage account | Create new > **blob<inject key="DeploymentID" enableCopy="false"/>**|
-   | File share | Create new > **fs<inject key="DeploymentID" enableCopy="false"/>**|
+   | Resource group| Use existing > **az-801 (1)**|
+   | Storage account | Create new > **blob<inject key="DeploymentID" enableCopy="false"/> (2)**|
+   | File share | Create new > **fs<inject key="DeploymentID" enableCopy="false"/> (3)**|
 
-1. Select **Create storage**.
+1. Select **Create storage (4)**.
+
+    ![](../Media/lab9-05.png)
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.json** into the Cloud Shell home directory.
 
@@ -74,7 +76,7 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create and configure an Azure Log Analytics workspace
 
-1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Log Analytics workspaces**, and then, from the **Log Analytics workspaces** page, select **+ Create**.
+1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Log Analytics workspaces (1)**, and then, from the **Log Analytics workspaces (2)** page, select **+ Create**.
 
    ![](../Media/801-21.png)
 
@@ -217,6 +219,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **az801l09-vm0 \| Metrics** page, select the **Diagnostic settings** from the left-hand navigation pane under **Monitoring** section, select the **Sinks** tab, in the **Azure Monitor (Preview)** section, select **Enable Azure Monitor**, and then select **Apply**. 
 
+    ![](../Media/lab9-04.png)
+
    >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
 
 1. From the left-hand navigation, under **Monitoring** section, select **Metrics**. On the default chart, note that at this point, the **Metric Namespace** drop-down list, in addition to the **Virtual Machine Host** and **Guest (classic)** entries, also includes the **Virtual Machine Guest** entry.
@@ -260,6 +264,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. In the **Metric** drop-down list, select **Percentage CPU**, ensure that **Avg** appears in the **Aggregation** drop-down list, and review the resulting chart.
 
 1. On the **Monitor \| Metrics** page, in the **Avg Percentage CPU for az801l09-vm0** pane, select **New alert rule**.
+
+    ![](../Media/lab9-03.png)
 
    >**Note**: Creating an alert rule from Metrics is not supported for metrics from the Guest (classic) metric namespace. This can be accomplished by using Azure Resource Manager templates, as described in the document **[Send Guest OS metrics to the Azure Monitor metric store using a Resource Manager template for a Windows virtual machine](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/collect-custom-metrics-guestos-resource-manager-vm)**.
 
@@ -403,7 +409,11 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. In the list of solutions, select **ServiceMap**, and then, on the **Summary** page, select the **Service Map** tile.
 
+    ![](../Media/lab9-02.png)
+
 1. On the **ServiceMap** page, on the **Machines** tab, select **SEA-SVR2** to display is service map.
+
+    ![](../Media/lab9-01.png)
 
 1. Zoom in to review the map illustrating the network ports available on **SEA-SVR2**, select different ports and review the corresponding connection information.
 
