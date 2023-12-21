@@ -246,17 +246,25 @@ In this lab, you will complete the following tasks:
 
 1. In the **Builtin (1)** container, select the **Event Log Readers (2)** group.
 
+    ![](../Media/lab8-06.png)
+
 1. Right-click on the **Event Log Readers** group, select **Properties (3)**, and then, in the **Event Log Readers Properties** dialog box, select the **Members** tab.
 
-   ![](../Media/801-34png)
+    ![](../Media/lab8-05.png)
 
 1. On the **Members** tab, select **Add**.
+
+    ![](../Media/lab8-04.png)
 
 1. In the **Select Users, Contacts, Computers, Service Accounts or Groups** dialog box, select **Object Types**.
 
 1. In the **Object Types** dialog box, select the **Computers** checkbox, and then select **OK**.
 
+   ![](../Media/lab8-03.png)
+
 1. In the **Select Users, Computers, Service Accounts or Groups** dialog box, enter **SEA-SVR2** in the **Enter the object names to select** box, and then select **OK**.
+
+    ![](../Media/lab8-02.png)
 
 1. In the **Event Log Readers Properties** dialog box, select **OK**.
 
@@ -287,6 +295,8 @@ In this lab, you will complete the following tasks:
 1. In the **Event level** dialog box, select the **Critical**, **Error**, **Warning**, and **Information** checkboxes.
 
 1. In the **Event logs** drop-down list, expand **Windows Logs**, and then select the **System** and **Application** checkboxes.
+
+    ![](../Media/lab8-01.png)
 
 1. In the **Query Filter** dialog box, select **OK**.
 
