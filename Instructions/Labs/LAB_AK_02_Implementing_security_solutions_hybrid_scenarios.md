@@ -164,13 +164,15 @@ After completing this lab, you'll be able to:
 
    ```powershell 
    $location = '<Azure_region>'
-   New-AzSubscriptionDeployment -Location $location -Name az801l2001deployment -TemplateFile ./L02-sub_template.json -rgLocation $location -rgName 'AZ801-L0202-RG'
+   $deploymentname1 = "az801l2001deployment" + (Get-Random)
+   New-AzSubscriptionDeployment -Location $location -Name $deploymentname1 -TemplateFile ./L02-sub_template.json -rgLocation $location -rgName 'AZ801-L0202-RG'
    ```
 
 1. To deploy an Azure virtual machine (VM) into the newly created resource group, enter the following command and press Enter:
 
-   ```powershell 
-   New-AzResourceGroupDeployment -Name az801l2002deployment -ResourceGroupName AZ801-L0202-RG -TemplateFile ./L02-rg_template.json -TemplateParameterFile ./L02-rg_template.parameters.json
+   ```powershell
+   $deploymentname2 = "az801l2002deployment" + (Get-Random)
+   New-AzResourceGroupDeployment -Name $deploymentname2 -ResourceGroupName AZ801-L0202-RG -TemplateFile ./L02-rg_template.json -TemplateParameterFile ./L02-rg_template.parameters.json
    ```
 
    >**Note**: Wait for deployment to complete. This should take about 3 minutes.
