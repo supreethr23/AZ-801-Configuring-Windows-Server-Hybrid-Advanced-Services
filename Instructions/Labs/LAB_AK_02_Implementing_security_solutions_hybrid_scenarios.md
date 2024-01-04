@@ -25,7 +25,7 @@ After completing this lab, you'll be able to:
    | Settings | Value |
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0201-RG** |
+   | Resource group | click on **Create new** and enter the name of a new resource group as **AZ801-L0201-RG** |
    | Log Analytics Workspace | any unique name |
    | Region | choose a region near you |
 
