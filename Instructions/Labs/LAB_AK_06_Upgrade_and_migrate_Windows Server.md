@@ -221,7 +221,7 @@ In this lab, you will:
 #### Task 4: Manually promote a domain controller in an Azure VM
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the deployment page, select **Go to resource**.
-1. On the **az801l06a-dc2** page, on the vertical menu of the left side, in the **Settings** section, select **Networking**.
+1. On the **az801l06a-dc2** page, on the vertical menu of the left side, in the **Networking** section, select **Network settings**.
 1. On the **az801l06a-dc2 \| Networking** page, select the link to the network interface of the **az801l06a-dc2** virtual machine.
 1. On the network interface page, on the vertical menu of the left side, in the **Settings** section, select **IP Configurations**.
 1. On the **IP Configurations** page, select **ipconfig1** entry.
@@ -331,7 +331,7 @@ In this lab, you will:
 
    >**Note:** This will automatically open the file **L06_SetupFS.ps1** in the script pane of Windows PowerShell ISE.
 
-1. In the Windows PowerShell ISE script pane, review the script, and then execute it by selecting the **Run Script** icon in the toolbar or by pressing F5. 
+1. In the Windows PowerShell ISE script pane, review the script, and then execute it by selecting the **Run Script** icon in the toolbar or by pressing F5 then select **Run once**. 
 
    >**Note:** Wait for the script to complete. This should take about 1 minute.
 
