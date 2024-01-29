@@ -285,22 +285,7 @@ After completing this lab, you will be able to:
    | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** | 
    | Location | **<inject key="Region" enableCopy="false"/>** |
    | Performance | **Standard** |
-   | Redundancy | **Geo-redundant storage(GRS)** |
-
-1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
-1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
-1.  On the **Review** tab, select **Create**.
-1.  In the Azure portal, search for and select **Storage accounts**. Then, on the **Storage accounts** page, select **+ Create** on the command bar.
-1.  To create another storage account specify the following details:
-  
-    | Setting | Value | 
-    | --- | --- |
-    | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **AZ801-L0703-RG** |
-    | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>** | 
-    | Location | **<inject key="Region" enableCopy="false"/>** |
-    | Performance | **Standard** |
-    | Redundancy | **Locally redundant storage (LRS)** |
+   | Redundancy | **Locally redundant storage (LRS)** |
 
 1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
 1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
