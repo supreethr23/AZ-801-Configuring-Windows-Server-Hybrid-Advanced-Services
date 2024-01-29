@@ -455,12 +455,12 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **Encryption Setting** page of the **Register Server Wizard**, select **Generate Passphrase**.
 
-    ![](../media/ex-3-t1-s18.png)
+    ![](../Media/ex-3-t1-s18.png)
 
 1. On the **Encryption Setting** page of the **Register Server Wizard**, uncheck **Save passphrase securely to Azure Key vault (Recommended)** if prompt **Encryption Setting** select **Yes**.
 1. On the **Encryption Setting** page of the **Register Server Wizard**, select the **Browse** button next to the **Enter a location to save the passphrase** drop-down list.
 
-     ![](../media/ex-3-t1-s18.png)
+     ![](../Media/ex-3-t1-s20.png)
 
 1. In the **Browse For Folder** dialog box, expand **This PC** node, select the **Documents** subfolder, and then select **OK**.
 1. Select **Finish**, review the **Microsoft Azure Backup** warning, select **Yes**, and wait for the registration to complete.
