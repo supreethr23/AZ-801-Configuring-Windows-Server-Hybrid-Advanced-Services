@@ -83,11 +83,11 @@ After completing this lab, you'll be able to:
     ![](../media/09.png)
 
 1. On the **IP addresses** tab of the **Create virtual network** page,
-    - Remove the default IP Address space by clicking on **Delete the address space**
+    - Remove the default IP Address space by clicking on **Delete address space**
 
       ![](../Media/unit4-image2.png)   
       
-   - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
+   - After deleting **address space**, select **Add IPV4 address space** specify the following settings (leave others with their default values).
 
       ![](../Media/unit4-image3.png)
 
@@ -122,11 +122,11 @@ After completing this lab, you'll be able to:
    ![](../media/06.png)
    
 1. On the **IP addresses** tab of the **Create virtual network** page,
-    - Remove the default IP Address space by clicking on **Delete the address space**
+    - Remove the default IP Address space by clicking on **Delete address space**
 
       ![](../Media/unit4-image2.png)   
       
-   - After deleting **address space**, select **Add IPV4 Address space** specify the following settings (leave others with their default values).
+   - After deleting **address space**, select **Add IPV4 address space** specify the following settings (leave others with their default values).
 
       ![](../Media/unit4-image3.png)
 
@@ -202,7 +202,7 @@ After completing this lab, you'll be able to:
 
     ![](../media/19.png)
 
-1. Select Computer Configuration/Policies/Administrative Templates/Windows Components/Windows Update. Select the policy Configure Automatic Updates and click on policy setting.
+1. Select Computer **Configuration>Policies>Administrative Templates>Windows Components>Windows Update**. Select the policy **Configure Automatic Updates** and click on **policy setting**.
 
     ![](../media/20.png)
 
@@ -298,11 +298,12 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    |---|---|
    |**Subscription (1)**|the name of the Azure subscription you are using in this lab|
    |**Post-failover resource group (2)**|**AZ801-L0502-RG**|
-   |Post-failover deployment model|**Resource Manager**|
-   |**Storage account (3)**|the name of the storage account you created in the first task of this exercise|
-   |**Azure network (4)**|Configure now for selected machines|
-   |**Virtual network (5)**|**az801l05-dr-vnet**|
-   |**Subnet (6)**|**subnet (10.5.0.0/24)**|
+   |**Post-failover deployment model (3)**|**Resource Manager**|
+   |**Storage type (4)**|Storage account|
+   |**Storage account (5)**|storage<inject key="DeploymentID" enableCopy="false"/>|
+   |**Network**|Configure now for selected machines|
+   |**Virtual network (6)**|**az801l05-dr-vnet**|
+   |**Subnet (7)**|**subnet (10.5.0.0/24)**|
 
    ![](../media/35.png)
 
@@ -410,7 +411,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    |Where is your workload running?|**On-premises (2)**|
    |What do you want to back up?|**Files and folders (3)**|
 
-1. On the **az801l05a-rsvault \|Backup** page, select **Prepare infrastructure (4)**.
+1. On the **az801l05a-rsvault \|Backup** page, select **Prepare Infrastructure (4)**.
 
    ![](../media/44.png)
 
@@ -454,12 +455,12 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **Encryption Setting** page of the **Register Server Wizard**, select **Generate Passphrase**.
 
-   ![](../media/54.png)
+    ![](../Media/ex-3-t1-s18.png)
 
-1. On the **Encryption Setting** page of the **Register Server Wizard**, uncheck **save password securely with Azure Key vault (preview)** if prompt **Encryption Setting**.
+1. On the **Encryption Setting** page of the **Register Server Wizard**, uncheck **Save passphrase securely to Azure Key vault (Recommended)** if prompt **Encryption Setting** select **Yes**.
 1. On the **Encryption Setting** page of the **Register Server Wizard**, select the **Browse** button next to the **Enter a location to save the passphrase** drop-down list.
 
-    ![](../media/55.png)
+     ![](../Media/ex-3-t1-s20.png)
 
 1. In the **Browse For Folder** dialog box, expand **This PC** node, select the **Documents** subfolder, and then select **OK**.
 1. Select **Finish**, review the **Microsoft Azure Backup** warning, select **Yes**, and wait for the registration to complete.
@@ -486,11 +487,12 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    ![](../media/59.png)
 
 1. On the **Specify Backup Schedule** page, ensure that the **Day** option is selected, in the first drop-down list box below the **At following times (Maximum allowed is three times a day)** box, select **4:30 AM**, and then select **Next**.
-1. On the **Select Retention Policy** page, accept the defaults, and then select **Next**.
 
    ![](../media/68.png)
 
-1. On the **Choose Initial Backup type** page, accept the defaults, and then select **Next**.
+1. On the **Select Retention Policy (Files and Folders)** page, accept the defaults, and then select **Next**.
+
+1. On the **Choose Initial Backup type (Files and Folders)** page, accept the defaults, and then select **Next**.
 1. On the **Confirmation** page, select **Finish**. When the backup schedule is created, select **Close**.
 
 #### Task 3: Perform an on-demand backup
@@ -502,6 +504,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
    ![](../media/62.png)
 
 1. In the **Back Up Now Wizard**, on the **Select Backup Item** page, ensure that the **Files and Folders** option is selected and select **Next**.
+1. In the **Back Up Now Wizard**, on the **Select Items to Backup** page, ensure that the **C:** option is selected and select **Next**.
 1. On the **Retain Backup Till** page, accept the default setting and select **Next**.
 
     ![](../media/75.png)

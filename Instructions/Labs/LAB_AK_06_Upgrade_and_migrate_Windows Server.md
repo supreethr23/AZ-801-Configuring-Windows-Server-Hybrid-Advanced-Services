@@ -6,7 +6,7 @@ Contoso is exploring the hybrid model for its infrastructure services that would
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-801%20Lab%20Simulation%20-%20Upgrading%20and%20migrating%20in%20Windows%20Server)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
-## Objectives
+## Lab Objectives
 
 In this lab, you will:
 
@@ -55,7 +55,7 @@ In this lab, you will:
 
    > **Note**: Later in this exercise, you will deploy another Azure VM into the same availability set and configure it as an additional domain controller in the same domain. The use of an availability set provides additional resiliency.
 
-1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **110**) and note that the private IP address allocation method is set to **Static** (on line **164**).
+1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **152**) and note that the private IP address allocation method is set to **Static** (on line **164**).
 
    > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
 
@@ -221,7 +221,7 @@ In this lab, you will:
 #### Task 4: Manually promote a domain controller in an Azure VM
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the deployment page, select **Go to resource**.
-1. On the **az801l06a-dc2** page, on the vertical menu of the left side, in the **Settings** section, select **Networking**.
+1. On the **az801l06a-dc2** page, on the vertical menu of the left side, in the **Networking** section, select **Network settings**.
 1. On the **az801l06a-dc2 \| Networking** page, select the link to the network interface of the **az801l06a-dc2** virtual machine.
 1. On the network interface page, on the vertical menu of the left side, in the **Settings** section, select **IP Configurations**.
 1. On the **IP Configurations** page, select **ipconfig1** entry.
@@ -331,7 +331,7 @@ In this lab, you will:
 
    >**Note:** This will automatically open the file **L06_SetupFS.ps1** in the script pane of Windows PowerShell ISE.
 
-1. In the Windows PowerShell ISE script pane, review the script, and then execute it by selecting the **Run Script** icon in the toolbar or by pressing F5. 
+1. In the Windows PowerShell ISE script pane, review the script, and then execute it by selecting the **Run Script** icon in the toolbar or by pressing F5 then select **Run once**. 
 
    >**Note:** Wait for the script to complete. This should take about 1 minute.
 
