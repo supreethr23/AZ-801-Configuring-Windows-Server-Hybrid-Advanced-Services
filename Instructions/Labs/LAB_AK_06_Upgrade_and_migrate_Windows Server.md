@@ -55,7 +55,7 @@ In this lab, you will:
 
    > **Note**: Later in this exercise, you will deploy another Azure VM into the same availability set and configure it as an additional domain controller in the same domain. The use of an availability set provides additional resiliency.
 
-1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **110**) and note that the private IP address allocation method is set to **Static** (on line **164**).
+1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **152**) and note that the private IP address allocation method is set to **Static** (on line **164**).
 
    > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
 
