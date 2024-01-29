@@ -288,7 +288,7 @@ After completing this lab, you will be able to:
    | Redundancy | **Locally redundant storage (LRS)** |
 
 1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
-1.  On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
+1.  On the **Data protection** tab of the **Create a storage account** page, uncheck the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
 1.  On the **Review** tab, select **Create**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
