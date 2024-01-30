@@ -394,6 +394,14 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 >**Note**: Alerts may take a while to appear on the portal, but if you set up email notifications when creating the alert rule, you will receive instant email notifications.
 
+1. Alternatively, you can choose the **View as timeline (preview)** option to review the alerts that have been generated.
+
+   ![](../Media/ex-4-t1-s19-1.png)
+
+1. Navigate to the subscription group, expand it, open the **AZ801-L0901-RG** resource group, choose the entry for the **az801l09-vm0** virtual machine within that resource group, select the count of generated alerts. i.e. **4** in this case and you will find the generated alerts.
+
+   ![](../Media/ex-4-t1-s19-2.png)
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
