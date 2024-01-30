@@ -86,7 +86,7 @@ In this lab, you will complete the following tasks:
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
    | Resource group | the name of a new resource group **AZ801-L0901-RG** |
-   | Log Analytics Workspace | **workspace<inject key="DeploymentID" enableCopy="false"/>** |
+   | Name | **workspace<inject key="DeploymentID" enableCopy="false"/>** |
    | Region | **<inject key="Region"></inject>** |
 
    >**Note**: Make sure that you specify the same region into which you deployed virtual machines in the previous task.
@@ -241,11 +241,12 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 <!-- 1. If needed, on the **az801l09-vm0 \| Insights** page, select **Enable**.
 
-   >**Note**: This setting provides the Azure VM Insights functionality. VM Insights is an Azure Monitor solution that facilitates monitoring performance and health of both Azure VMs and on-premises computers running Windows or Linux. -->
+>**Note**: This setting provides the Azure VM Insights functionality. VM Insights is an Azure Monitor solution that facilitates monitoring performance and health of both Azure VMs and on-premises computers running Windows or Linux.-->
 
-1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Monitor**, and then, on the **Monitor \| Overview** page, from the left-hand navigation pane, under **Insights** section, select **Virtual Machines**.
 
-1. On the **Monitor \| Virtual Machines** page, select the **Performance** tab and Scroll down to review the performance metrics for the virtual machine.
+18. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Monitor**, and then, on the **Monitor \| Overview** page, from the left-hand navigation pane, under **Insights** section, select **Virtual Machines**.
+
+19. On the **Monitor \| Virtual Machines** page, select the **Performance** tab and Scroll down to review the performance metrics for the virtual machine.
 
    >**Note**: This option enables monitoring and alerting capabilities using health model, which consists of a hierarchy of health monitors built using the metrics emitted by Azure Monitor for VMs.
 
@@ -291,9 +292,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Action group name | **az801l09-ag1** |
    | Display name | **az801l09-ag1** |
 
-1. On the **Notifications** tab of the **Create an action group** page, in the **Notification type** drop-down list, select **Email/SMS message/Push/Voice**. In the **Name** text box, type **admin email**.
+1. On the **Notifications** tab of the **Create an action group** page, in the **Notification type** drop-down list, select **Email/SMS message/Push/Voice**. A new tab **Email/SMS message/Push/Voice** will open, select the **Email** checkbox, type your email address in the **Email** textbox, leave others with their default values, and then select **OK**.
 
-1. On the **Email/SMS message/Push/Voice** page, select the **Email** checkbox, type your email address in the **Email** textbox, leave others with their default values, and then select **OK**. Back on the **Notifications** tab of the **Create an action group** page, select **Next: Actions  >**.
+1. Back on the **Notifications** tab of the **Create an action group** page, In the **Name** text box, type **admin email**. Select **Next: Actions  >**.
 
 1. On the **Actions** tab of the **Create an action group** page, review items available in the **Action type** drop-down list without making any changes and select **Review + create**.
 
@@ -306,7 +307,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Alert rule name | **CPU Percentage above the test threshold** |
    | Alert rule description | **CPU Percentage above the test threshold** |
    | Resource group | **AZ801-L0901-RG** |
-   | Severity | **Sev 3** |
+   | Severity | **3- Informational** |
    |select **Advanced options**|
    | Enable upon creation | select the checkbox if it is not selected.|
 
@@ -371,9 +372,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On **SEA-SVR2**, in the Azure portal, browse back to the **Monitor** page and select **Logs**.
 
-   >**Note**: You might need to close the **Welcome to Log Analytics** pane if this is the first time you access Log Analytics.
+   >**Note**: You might need to close the **Welcome to Log Analytics** and **Queries** pane if this is the first time you access Log Analytics.
 
-1. On the **Select a scope** page, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab, and then select **Apply**.
+1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab, and then select **Apply**.
 
 1. In the query window, paste the following query, select **Run**:
 
