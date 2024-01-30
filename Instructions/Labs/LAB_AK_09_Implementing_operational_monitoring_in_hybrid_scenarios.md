@@ -133,22 +133,38 @@ In this lab, you will complete the following tasks:
 
 1. On the **Welcome** page, select **Next >**.
 
+   ![](../Media/ex-2-t1-s4.png)
+
 1. On the **License Terms** page, read the license and then select **I Agree**.
+
+   ![](../Media/ex-2-t1-s5.png)
 
 1. On the **Destination Folder** page, change or keep the default installation folder and then select **Next >**.
 
+   ![](../Media/ex-2-t1-s6.png)
+
 1. On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics** checkbox and then select **Next >**.
+
+   ![](../Media/ex-2-t1-s7.png)
 
 1. On the **Azure Log Analytics** page, enter 
 the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the previous exercise.
+
+   ![](../Media/ex-2-t1-s8.png)
 
 1. Select **Next >** once you have completed providing the necessary configuration settings.
 
 1. On the **Microsoft Update** page, review your choices and then select **Next >**.
 
+   ![](../Media/ex-2-t1-s9.png)
+
 1. On the **Ready to Install** page, review your choices and then select **Install**.
 
+   ![](../Media/ex-2-t1-s10.png)
+
 1. On the **Configuration completed successfully** page, select **Finish**.
+
+   ![](../Media/ex-2-t1-s11.png)
 
 1. On **SEA-SVR2**, start Windows PowerShell as administrator.
 
@@ -186,6 +202,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. On the **az801l09-vm0** page, in the **Monitoring** section, select **Diagnostic settings**.
 
 1. On the **Overview** tab of the **az801l09-vm0 \| Diagnostic settings** page, under **Diagnostics storage account**, select the storage account with the name like this **az10411xxxxxxxxxxxxxx**, then select **Enable guest-level monitoring**.
+
+   ![](../Media/ex-2-t2-s2.png)
 
    >**Note**: Wait for the operation to take effect. This might take about a minutes.
 
@@ -233,7 +251,11 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. If needed, on the **az801l09-vm0 \| Logs** page, select **Enable**.
 
+   ![](../Media/ex-3-t2-s15.png)
+
 1. In the **Monitoring configuration** page, select **Configure**.
+
+   ![](../Media/ex-3-t2-s16.png)
 
    >**Note**: Wait for the deployment to get succeed. After the deployment get succeeded, **Refresh** the page. 
 
@@ -248,6 +270,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 19. On the **Monitor \| Virtual Machines** page, select the **Performance** tab and Scroll down to review the performance metrics for the virtual machine.
 
+    ![](../Media/ex-3-t2-s19.png)
+
    >**Note**: This option enables monitoring and alerting capabilities using health model, which consists of a hierarchy of health monitors built using the metrics emitted by Azure Monitor for VMs.
 
 ## Exercise 4: Evaluating monitoring services
@@ -258,11 +282,15 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. On the **Select a scope** page, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **az801l09-vm0** virtual machine entry within that resource group, and then select **Apply**.
 
+   ![](../Media/ex-4-t1-s2.png)
+
    >**Note**: If you do not see **az801l09-vm0** in the list, in the **Search to filter items...** box, search for **az801l09-vm0**.
    
    >**Note**: This gives you the same view and options as those available from the **az801l09-vm0 \| Metrics** page.
 
 1. In the **Metric** drop-down list, select **Percentage CPU**, ensure that **Avg** appears in the **Aggregation** drop-down list, and review the resulting chart.
+
+   ![](../Media/ex-4-t1-s3.png)
 
 1. On the **Monitor \| Metrics** page, in the **Avg Percentage CPU for az801l09-vm0** pane, select **New alert rule**.
 
@@ -281,6 +309,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Check every | **1 minute** |
    | Lookback period | **1 Minute** |
 
+   ![](../Media/ex-4-t1-s5.png)
+
 1. On the **Create an alert rule** page, on the **Actions** tab, select the **+ Create action group** button.
 
 1. On the **Basics** tab of the **Create an action group** page, specify the following settings (leave others with their default values), and then select **Next: Notifications >**:
@@ -292,13 +322,23 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    | Action group name | **az801l09-ag1** |
    | Display name | **az801l09-ag1** |
 
+   ![](../Media/ex-4-t1-s7.png)
+
 1. On the **Notifications** tab of the **Create an action group** page, in the **Notification type** drop-down list, select **Email/SMS message/Push/Voice**. A new tab **Email/SMS message/Push/Voice** will open, select the **Email** checkbox, type your email address in the **Email** textbox, leave others with their default values, and then select **OK**.
+
+   ![](../Media/ex-4-t1-s9.png)
 
 1. Back on the **Notifications** tab of the **Create an action group** page, In the **Name** text box, type **admin email**. Select **Next: Actions  >**.
 
+   ![](../Media/ex-4-t1-s8.png)
+
 1. On the **Actions** tab of the **Create an action group** page, review items available in the **Action type** drop-down list without making any changes and select **Review + create**.
 
+   ![](../Media/ex-4-t1-s10.png)
+
 1. On the **Review + create** tab of the **Create an action group** page, select **Create**.
+
+   ![](../Media/ex-4-t1-s11.png)
 
 1. Back on the **Create an alert rule** page, select **Next: Details  >**, in the **Project details** section, specify the following settings (leave others with their default values):
 
@@ -311,7 +351,13 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
    |select **Advanced options**|
    | Enable upon creation | select the checkbox if it is not selected.|
 
+   ![](../Media/ex-4-t1-s12-1.png)
+
+   ![](../Media/ex-4-t1-s12-2.png)
+
 1. On the **Details** tab of the **Create an alert rule** page, select **Review + create**, select **Create**.
+
+   ![](../Media/ex-4-t1-s13.png)
 
    >**Note**: It can take up to 10 minutes for a metric alert rule to become active.
 
@@ -419,6 +465,10 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. Zoom in to review the map illustrating the network ports available on **SEA-SVR2**, select different ports and review the corresponding connection information.
 
 1. For each connection, switch between the **Summary** and **Properties** views, with the latter providing more detailed information regarding connection targets.
+
+   ![](../Media/ex-4-t3-s12-1.png)
+
+   ![](../Media/ex-4-t3-s12-2.png)
 
 <!-- ## Exercise 5: Deprovisioning the Azure environment
 
