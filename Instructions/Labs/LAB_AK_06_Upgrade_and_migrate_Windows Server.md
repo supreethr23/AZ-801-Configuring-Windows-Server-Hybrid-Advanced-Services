@@ -112,8 +112,8 @@ In this lab, you will:
 1. Provide the values for:
    
      * **Resource Group** - Select **Use existing** and choose the **AZ801-L0601-RG**<br>
-     * **Storage Account** - Select **Create New** and enter **cloudstore<inject key="Deployment-id" enableCopy="false"></inject>**
-     * **File Share** - Select **Create New** and enter **fileshare<inject key="Deployment-id" enableCopy="false"></inject>**<br>
+     * **Storage Account** - Select **Create New** and enter **cloudstore<inject key="DeploymentID" enableCopy="false"/>**
+     * **File Share** - Select **Create New** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>**<br>
      and click on **Create storage**.<br>
       
    	![](../Media/cs1.png)
