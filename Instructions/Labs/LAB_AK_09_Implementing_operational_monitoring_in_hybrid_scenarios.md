@@ -392,6 +392,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/AZ-801-Alerts.png)
 
+>**Note**: Alerts may take a while to appear on the portal, but if you set up email notifications when creating the alert rule, you will receive instant email notifications.
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
