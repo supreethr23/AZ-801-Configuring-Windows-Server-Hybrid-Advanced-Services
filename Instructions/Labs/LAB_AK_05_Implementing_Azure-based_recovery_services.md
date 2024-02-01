@@ -10,7 +10,7 @@ After completing this lab, you'll be able to:
 - Implement Hyper-V VM protection by using Azure Site Recovery vault.
 - Implement Azure Backup.
 
-## Estimated timing: 30 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture diagram
 
