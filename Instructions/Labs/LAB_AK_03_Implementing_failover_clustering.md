@@ -19,6 +19,10 @@ After completing this lab, you'll be able to:
 
 ## Estimated time: **60 minutes**
 
+## Architecture diagram
+
+![](../Media/lab3.1.png)
+
 ## Exercise 1: Configuring iSCSI storage
 
 ### Task 1: Install Failover Clustering
