@@ -9,6 +9,12 @@ In this lab, you will complete the following tasks:
 + Exercise 3: Configuring monitoring of Azure VMs
 + Exercise 4: Evaluating monitoring services
 
+## Estimated timing: 30 minutes
+
+## Architecture diagram
+
+![](../Media/lab9.1.png)
+
 ## Exercise 1: Preparing a monitoring environment
 
 ### Task 1: Deploy an Azure virtual machine
