@@ -10,7 +10,7 @@ After completing this lab, you'll be able to:
 - Locate problematic accounts.
 - Implementing LAPS.
   
-## Estimated timing: 30 minutes
+## Estimated timing: 75 minutes
 
 ## Architecture diagram
 
