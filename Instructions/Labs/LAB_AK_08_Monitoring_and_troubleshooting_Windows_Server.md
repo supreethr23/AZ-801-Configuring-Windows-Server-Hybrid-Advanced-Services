@@ -8,7 +8,7 @@ In this lab, you will complete the following tasks:
 + Exercise 2: Identifying the source of a performance problem
 + Exercise 3: Viewing and configuring centralized event logs
   
-## Estimated timing: 30 minutes
+## Estimated timing: 75 minutes
 
 ## Architecture diagram
 
