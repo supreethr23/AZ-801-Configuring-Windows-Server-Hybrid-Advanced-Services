@@ -12,7 +12,7 @@ After completing this lab, you'll be able to:
 - Onboard on-premises Windows Server into Defender for Cloud and Azure Automation.
 - Verify the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
 
-## Estimated timing: 30 minutes
+## Estimated timing: 80 minutes
 
 ## Architecture diagram
 
