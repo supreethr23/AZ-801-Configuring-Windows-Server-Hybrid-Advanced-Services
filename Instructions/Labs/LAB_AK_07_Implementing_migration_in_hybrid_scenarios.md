@@ -27,7 +27,7 @@ After completing this lab, you will be able to:
 -  Assess Hyper-V for migration by using Azure Migrate.
 -  Migrate Hyper-V VMs by using Azure Migrate.
 
-## Estimated Time: 120 minutes
+## Estimated Time: 180 minutes
 
 ## Architecture diagram
 
