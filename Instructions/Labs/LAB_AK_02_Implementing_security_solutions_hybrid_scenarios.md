@@ -16,7 +16,7 @@ After completing this lab, you'll be able to:
 
 ## Architecture diagram
 
-![](../Media/lab2.png)
+![](../Media/lab2.1.png)
 
 ## Exercise 1: Creating an Azure Log Analytics workspace and an Azure Automation account
 
