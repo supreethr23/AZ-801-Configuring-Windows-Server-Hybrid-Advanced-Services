@@ -15,6 +15,10 @@ In this lab, you will:
 
 ## Estimated time: 60 minutes
 
+## Architecture diagram
+
+![](../Media/lab6.1.png)
+
 ## Exercise 1: Deploying AD DS domain controllers in Azure
 
 #### Task 1: Deploy a domain controller by using an Azure Resource Manager (ARM) template
