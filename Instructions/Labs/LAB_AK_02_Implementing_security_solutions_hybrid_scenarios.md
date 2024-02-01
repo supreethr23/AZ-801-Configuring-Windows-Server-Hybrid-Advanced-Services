@@ -12,6 +12,12 @@ After completing this lab, you'll be able to:
 - Onboard on-premises Windows Server into Defender for Cloud and Azure Automation.
 - Verify the hybrid capabilities of Defender for Cloud and Azure Automation solutions.
 
+## Estimated timing: 30 minutes
+
+## Architecture diagram
+
+![](../Media/lab2.png)
+
 ## Exercise 1: Creating an Azure Log Analytics workspace and an Azure Automation account
 
 #### Task 1: Create an Azure Log Analytics workspace 
