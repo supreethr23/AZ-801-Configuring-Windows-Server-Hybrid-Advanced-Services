@@ -9,6 +9,12 @@ After completing this lab, you'll be able to:
 - Configure Windows Defender Credential Guard.
 - Locate problematic accounts.
 - Implementing LAPS.
+  
+## Estimated timing: 80 minutes
+
+## Architecture diagram
+
+![](../Media/lab1.png)
 
 ## Exercise 1: Configuring Windows Defender Credential Guard
 

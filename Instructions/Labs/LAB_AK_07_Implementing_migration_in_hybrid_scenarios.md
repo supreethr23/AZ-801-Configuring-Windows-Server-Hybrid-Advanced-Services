@@ -29,6 +29,10 @@ After completing this lab, you will be able to:
 
 ## Estimated Time: 120 minutes
 
+## Architecture diagram
+
+![](../Media/lab7.1.png)
+
 ## Exercise 1: Prepare the lab environment
 
 #### Task 1: Deploy an Azure VM by using an Azure Resource Manager QuickStart template

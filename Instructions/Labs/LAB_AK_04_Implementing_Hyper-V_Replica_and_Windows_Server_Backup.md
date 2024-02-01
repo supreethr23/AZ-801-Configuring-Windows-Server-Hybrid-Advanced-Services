@@ -9,6 +9,12 @@ After completing this lab, you'll be able to:
 - Implement Hyper-V Replica.
 - Implement backup and restore with Windows Server Backup.
 
+## Estimated timing: 80 minutes
+
+## Architecture diagram
+
+![](../Media/lab4.1.png)
+
 ## Exercise1: Implementing Hyper-V Replica
 
 #### Task 1: Install and configure Hyper-V Replica
