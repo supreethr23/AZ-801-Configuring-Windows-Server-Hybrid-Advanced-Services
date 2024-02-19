@@ -57,6 +57,8 @@ After completing this lab, you'll be able to:
 1. On the **Automation account** page, in the **Configuration Management** section, select **Inventory**.
 
 	![](../Media/az-801(1).png)
+
+   >**Note**: If Invetory is not visible on the screen we recommend you to decrease the browser resolution inside **SEA-SVR2**.
    
 1. On the **Inventory** page, in the **Log Analytics workspace** drop-down list, select the Log Analytics workspace you created earlier in this task and select **Enable**.
 
