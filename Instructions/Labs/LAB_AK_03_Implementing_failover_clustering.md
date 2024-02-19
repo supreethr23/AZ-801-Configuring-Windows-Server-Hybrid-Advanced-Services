@@ -66,8 +66,14 @@ After completing this lab, you'll be able to:
 
    ```powershell
    New-Item -ItemType Directory C:\Storage -Force
+   ```
+   ```powershell
    New-IscsiVirtualDisk C:\Storage\disk1.VHDX –size 10GB
+   ```
+   ```powershell
    New-IscsiVirtualDisk C:\Storage\disk2.VHDX –size 10GB
+   ```
+   ```powershell
    New-IscsiVirtualDisk C:\Storage\disk3.VHDX –size 10GB
    ```
 1. Close the Windows Powershell.
