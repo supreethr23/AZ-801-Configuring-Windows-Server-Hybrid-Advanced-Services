@@ -270,7 +270,7 @@ In this lab, you will complete the following tasks:
 
 1. In the **Select Users, Computers, Service Accounts or Groups** dialog box, enter **SEA-SVR2** in the **Enter the object names to select** box, and then select **OK**.
 
-    ![](../Media/lab8-02.png)
+    ![](../Media/E3T1S15.png)
 
 1. In the **Event Log Readers Properties** dialog box, select **OK**.
 
