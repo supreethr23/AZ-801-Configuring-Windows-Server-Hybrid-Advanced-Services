@@ -284,6 +284,7 @@ In this lab, you will:
 1. In the **Supply the credentials to perform this operation** section, select **Change**.
 1. In the **Credentials for deployment operation** dialog box, in the **User name** box, enter **Student@contoso.com**, in the **Password** box, enter **Pa55w.rd1234**, and then select **OK**. 
 1. Back on the **Deployment Configuration** page of **Active Directory Domain Services Configuration Wizard**, select **Next**.
+**Note:** If you are unable to see the **Next** option, try adjusting **zoom in/zoom out** from the browser settings.
 1. On the **Domain Controller Options** page, ensure that the **Domain Name System (DNS) server** and **Global Catalog (GC)** checkboxes are selected. Ensure that the **Read-only domain controller (RODC)** checkbox is cleared.
 1. In the **Type the Directory Services Restore Mode (DSRM) password** section, enter and confirm the password **Pa55w.rd1234**, and then select **Next**.
 1. On the **DNS Options** page of **Active Directory Domain Services Configuration Wizard**, select **Next**.
