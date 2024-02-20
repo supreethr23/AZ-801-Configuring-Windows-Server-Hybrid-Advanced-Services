@@ -35,6 +35,8 @@ After completing this lab, you'll be able to:
    | Log Analytics Workspace | any unique name |
    | Region | choose a region near you |
 
+   >**Note**: You will be selecting the region while creating the automation account in the next task, based on the region provided while creating the log analytics workspace.
+
    >**Note**: Wait for the deployment to complete. The deployment should take about 1 minute.
 
 #### Task 2: Create and configure an Azure Automation account
@@ -49,7 +51,7 @@ After completing this lab, you'll be able to:
    | Name | any unique name |
    | Region | the name of the Azure region determined based on **[Workspace mappings documentation](https://docs.microsoft.com/en-us/azure/automation/how-to/region-mappings)** |
 
-   >**Note**: Make sure that you specify the Azure region based on **[Workspace mappings documentation](https://docs.microsoft.com/en-us/azure/automation/how-to/region-mappings)**.
+   >**Note**: Make sure that you specify the Azure region based on **[Workspace mappings documentation](https://docs.microsoft.com/en-us/azure/automation/how-to/region-mappings)**. 
 
    >**Note**: Wait for the deployment to complete. The deployment might take about 3 minutes.
 
@@ -63,8 +65,6 @@ After completing this lab, you'll be able to:
 1. On the **Inventory** page, in the **Log Analytics workspace** drop-down list, select the Log Analytics workspace you created earlier in this task and select **Enable**.
 
 	![](../Media/az-801(2).png)
-
-   >**Note:** Ensure that you do not select the same region you entered when creating the log analytics workspace.
 
    >**Note**: Wait for the installation of the corresponding Log Analytics solution to complete. This might take about 3 minutes. 
 
