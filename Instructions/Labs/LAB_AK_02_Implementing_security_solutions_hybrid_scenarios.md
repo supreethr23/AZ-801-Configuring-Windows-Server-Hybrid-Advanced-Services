@@ -64,6 +64,8 @@ After completing this lab, you'll be able to:
 
 	![](../Media/az-801(2).png)
 
+   >**Note:** Ensure that you do not select the same region you entered when creating the log analytics workspace.
+
    >**Note**: Wait for the installation of the corresponding Log Analytics solution to complete. This might take about 3 minutes. 
 
    >**Note**: This automatically installs the **Change tracking** solution as well.
@@ -119,7 +121,7 @@ After completing this lab, you'll be able to:
 
 1. On the **Auto-provisioning configuration**, in the **Workspace selection** section, select the option **Custom workspace**, in the drop-down menu, select the entry representing the workspace you created in the previous exercise, and then select **Apply**.
 
-	![](../Media/az-801(10).png)
+	![](../Media/enforce.png)
 
 1. On the **Settings & monitoring** page, in the list of extensions, set **Guest Configuration agent (preview)** to **On**.
 1. On the **Settings & monitoring** page, in the list of extensions, set **Vulnerability assessment for machines** to **On**. To the right side, select the **Edit configuration** link.
@@ -131,8 +133,13 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(12).png)
 
 1. On the **Settings & monitoring** page, select **Continue**.   
+
 1. On the **Defender plan** page, select **Save** and then close the page.
+
+   >**Note:** On the **Are you sure you want to downgrade?** pop-up, select **Confirm**.
+
 1. Browse back to the **Microsoft Defender for Cloud | Overview** page, and then, in the **Management** section of the vertical menu on the left, select **Environment settings**.
+
 1. On the **Environment settings** page, expand the entry representing your Azure subscription and select the entry representing the Log Analytics workspace you created in the previous exercise.
 
 	![](../Media/log.png)
@@ -223,7 +230,9 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(19).png)
 
 1. On the **Azure Log Analytics** page of the **Microsoft Monitoring Agent Setup** wizard, enter the values of **Workspace ID** and **Workspace Key** you recorded earlier in this task, and then select **Next**.
+
 1. On the **Ready to Install** page of the **Microsoft Monitoring Agent Setup** wizard, select **Install**.
+
 1. After the installation completes, on the **Microsoft Monitoring Agent configuration completed successfully** page, select **Finish**.
 
 #### Task 2: Perform unattended installation of the Log Analytics agent
@@ -257,7 +266,9 @@ After completing this lab, you'll be able to:
 #### Task 3: Enable Azure Automation solutions for Azure VMs
 
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal, and browse to the Azure Automation account page you provisioned earlier in this lab. 
+
 1. On the **Automation account** page, in the **Configuration Management** section, select **Inventory**.
+
 1. On the **Inventory** page, in the toolbar, select **+ Add Azure VMs**.
 
 	![](../Media/az-801(20).png)
@@ -269,7 +280,9 @@ After completing this lab, you'll be able to:
    > **Note:** The VM has to be connected to the Log Analytics workspace associated with the Automation Account solutions in order to be listed as **ready to enable**.
 
 1. Browse back to the **Automation account** page and in the **Update Management** section, select **Update management**.
+
 1. On the **Update management** page, in the toolbar, select **+ Add Azure VMs**.
+
 1. On the **Enable Update management** page, in the list of VMs, ensure that the checkbox next to the **az801l02-vm0** entry is selected and select **Enable**.
 
    > **Note:** Just as with the Inventory and Change tracking solutions, the VM has to be connected to the Log Analytics workspace associated with the Automation Account solutions in order to be listed as **ready to enable**.
@@ -277,6 +290,7 @@ After completing this lab, you'll be able to:
 #### Task 4: Enable Azure Automation solutions for on-premises servers
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Automation account** page, and then, in the **Configuration Management** section, select **Inventory**.
+
 1. On the **Inventory** page, select the **Click to manage machines** link.
    
 	![](../Media/az-801(22).png)
@@ -288,7 +302,9 @@ After completing this lab, you'll be able to:
    > **Note:** This option applies to on-premises servers that have the Log Analytics agent installed and registered with the Azure Log Analytics workspace associated with the Azure Automation account hosting the Inventory, Change Tracking, and Update Management solutions.
 
 1. Browse back to the **Automation account** page and in the **Update Management** section, select **Update management**.
+
 1. On the **Update management** page, select the **Click to manage machines** link.
+
 1. On the **Manage Machines** page, select the **Enable on all available and future machines** option, and then select **Enable**.
 
    > **Note:** Just as with the Inventory and Change tracking solutions, this option applies to on-premises servers that have the Log Analytics agent installed and registered with the Azure Log Analytics workspace associated with the Azure Automation account hosting the Inventory, Change Tracking, and Update Management solutions.
@@ -297,9 +313,10 @@ After completing this lab, you'll be able to:
 
 #### Task 1: Validate threat detection capabilities for Azure VMs
 
-1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal. 
-1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines**.
+1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines**.
+
 1. On the **Virtual machines** page, select **az801l02-vm0**.
+
 1. On the **az801l02-vm0** page, in the **Operations** section, select **Run command**, and then select **RunPowerShellScript**.
 
 	![](../Media/az-801(24).png)
@@ -312,8 +329,12 @@ After completing this lab, you'll be able to:
    Start-Process -FilePath powershell.exe -ArgumentList '-nop -exec bypass -EncodedCommand "cABvAHcAZQByAHMAaABlAGwAbAAgAC0AYwBvAG0AbQBhAG4AZAAgACIAJgAgAHsAIABpAHcAcgAgAGgAdAB0AHAAcwA6AC8ALwBkAG8AdwBuAGwAbwBhAGQALgBzAHkAcwBpAG4AdABlAHIAbgBhAGwAcwAuAGMAbwBtAC8AZgBpAGwAZQBzAC8AUwB5AHMAbQBvAG4ALgB6AGkAcAAgAC0ATwB1AHQARgBpAGwAZQAgAGMAOgBcAHQAZQBtAHAAXABzAHYAYwBoAG8AcwB0AC4AZQB4AGUAIAB9ACIA"' -Wait
    ```
 
+   >**Note:** Wait for the script to execute.
+
 1. On **SEA-SVR2**, in the Azure portal, browse to the **Microsoft Defender for Cloud \| Overview** page. 
+
 1. On the **Microsoft Defender for Cloud \| Overview** page, in the vertical menu on the left side, in the **General** section, select **Security alerts**.
+
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **az801l02-vm0**.
 
       > **Note:** Microsoft Defender will take some time to show the alert result (upto 24 hours), you can proceed with the next task.
@@ -333,6 +354,7 @@ After completing this lab, you'll be able to:
    ```
 
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal and browse back to the **Microsoft Defender for Cloud \| Security alerts** page.
+
 1. On the **Microsoft Defender for Cloud \| Security alerts** page, note the alert of high severity indicating a suspicious use of PowerShell on **SEA-SVR2**.
 
    > **Note:** Microsoft Defender will take some time to show the aleret result (upto 24 hour), you can proceed with the next task.
@@ -348,14 +370,15 @@ After completing this lab, you'll be able to:
 
    > **Note:** It might take a few minutes before the entries representing the Azure and on-premises VMs appear on the **Inventory** page.
 
-   > **Note:** In case **az801l02-vm0** reports **Not installed** status in the **Monitoring agent** column, select the **az801l02-vm0** link. On the **Resource health (Preview)** page, review **Recommendations**, and then select the entry **Log Analytics agent should be installed on virtual machines**. On the **Log Analytics agent should be installed on virtual machines** page, select **Fix**. On the **Fixing resources** page, in the **Workspace ID** drop-down list, select the default workspace created by Defender for Cloud, and then select **Fix 1 resource**. 
+   > **Note:** In case **az801l02-vm0** reports **Not installed** status in the **Monitoring agent** column, select the **az801l02-vm0** link. On the **Resource health** page, review **Recommendations**, and then select the entry **Log Analytics agent should be installed on virtual machines**. On the **Log Analytics agent should be installed on virtual machines** page, select **Fix**. On the **Fixing resources** page, in the **Workspace ID** drop-down list, select the default workspace created by Defender for Cloud, and then select **Fix 1 resource**. 
 
-1. On the **Inventory** page, select the **az801l02-vm0** link, and then, on the **Resource health (Preview)** page, review **Recommendations**.
-1. Browse back to the **Inventory** page, select the link representing **SEA-SVR2**, and then, on the **Resource health (Preview)** page, review **Recommendations**.
+1. On the **Inventory** page, select the **az801l02-vm0** link, and then, on the **Resource health** page, review **Recommendations**.
+1. Browse back to the **Inventory** page, select the link representing **SEA-SVR2**, and then, on the **Resource health** page, review **Recommendations**.
 
 #### Task 4: Validate Azure Automation solutions
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the page of the Azure Automation account you provisioned earlier in this lab, and then, in the **Configuration Management** section, select **Inventory**.
+
 1. On the **Inventory** page, review the **Machines** tab and verify that it includes both Azure VM and the on-premises servers you registered with the Log Analytics workspace earlier in this lab.
 
    >**Note**: You might need to wait longer in case either or both of types of systems are not listed on the **Machines** tab.
