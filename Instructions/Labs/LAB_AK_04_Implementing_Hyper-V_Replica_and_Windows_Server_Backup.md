@@ -178,6 +178,12 @@ After completing this lab, you'll be able to:
    Start-VM -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
    ```
 
+   >**Note:** If an error occurs stating that the connection is broken or interrupted, enter the following command, press enter, and then re-run step 10 again.
+
+   ```powershell
+   Enter-PSSession -ComputerName SEA-SVR1.contoso.com
+   ```
+
 1. To verify that the VM was successfully started, on **SEA-SVR2**, in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
 
    ```powershell

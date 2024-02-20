@@ -285,7 +285,7 @@ After completing this lab, you'll be able to:
    - **4** in the first text box
    - **5** in the second text box.
 
-     ![](../Media/lab03-22.png) 
+     ![](../Media/failback.png) 
 
 1. Select the **General** tab.
 

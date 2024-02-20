@@ -61,13 +61,14 @@ After completing this lab, you'll be able to:
 
    ![](../media/03.png)
 
-1. On the **Backup Configuration** page, set **Storage replication type** to **Locally-redundant (1)**, select **Save (2)** and close the **Backup Configuration** page.
+1. On the **Backup Configuration** page, set **Storage replication type** to **Locally-redundant (1)**, select **Apply (2)** and close the **Backup Configuration** page.
 
-   ![](../media/04.png)
+   ![](../media/locallyredudant.png)
 
    > **Note:** Storage replication type cannot be changed after you implement protection.
 
-1. On the **az801l05a-rsvault | Properties** page, select the **Update** link under the **Security Settings** label.
+1. On the **az801l05a-rsvault | Properties** page, select the **Update** link under the **Soft Delete  and security Settings** label.
+
 1. On the **Security settings** page, Select **Disable(1)** for Soft Delete (For workloads running in azure), and select **Save (2)**
 
      ![](../Media/p2.png)
@@ -208,7 +209,7 @@ After completing this lab, you'll be able to:
 
     ![](../media/19.png)
 
-1. Select Computer **Configuration>Policies>Administrative Templates>Windows Components>Windows Update**. Select the policy **Configure Automatic Updates** and click on **policy setting**.
+1. Select **Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update**. Select the policy **Configure Automatic Updates** and click on **policy setting**.
 
     ![](../media/20.png)
 
