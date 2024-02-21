@@ -244,7 +244,7 @@ After completing this lab, you will be able to:
    |---|---|
    |Name|**subnet0**|
    |Starting Address|**10.7.0.0**|
-   |Subnet size|**/24 (256 Addresses)**|
+   |Size|**/24 (256 Addresses)**|
 
 1. Back on the **IP addresses** tab of the **Create virtual network** page, select **Review + create**.
 1. On the **Review + create** tab of the **Create virtual network** page, select **Create**.
