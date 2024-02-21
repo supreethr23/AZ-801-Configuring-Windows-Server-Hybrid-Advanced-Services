@@ -299,6 +299,8 @@ After completing this lab, you'll be able to:
 
 1. On **SEA-SVR2**, open File Explorer and browse to the **\\\\FSCluster\\Docs** folder.
 
+   >**Note:** In File Explorer, ensure that you are in **Quick access**. Select the **Quick access** path, replace it with **\\FSCluster\Docs**, and press **Enter**.
+
 1. Inside the **Docs** folder, right-click or access the context menu in an empty area of the folder, select **New**, and then select **Text Document**.
 
     ![](../Media/lab03-24.png) 
