@@ -179,7 +179,7 @@ After completing this lab, you will be able to:
    >- Checks that the Hyper-V Integration Services is enabled on all VMs managed by the host
    >- Enables CredSSP on the host if needed
 
-1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** and then select **Windows PowerShell ISE**. 
+1. Within the Remote Desktop session to **az801l07a-hv-vm**, select **Start** and then select **Windows PowerShell ISE** and **Run as Administrator**.
 1. In the **Administrator: Windows PowerShell ISE** window, on the console pane, run the following commands to copy the script to the **C:\\Labfiles\\Lab07** folder and remove the Zone.Identifier alternate data stream, which, in this case, indicates that the file was downloaded from the Internet:
 
    ```powershell
