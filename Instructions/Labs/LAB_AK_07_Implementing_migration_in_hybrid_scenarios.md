@@ -452,7 +452,7 @@ After completing this lab, you will be able to:
 1. Refresh the browser window displaying the **Discover** page.
 1. In the portal search and select **Azure migrate** and under **Migration goals** section select **Azure Migrate | Servers, databases and web apps**.
 1. On the **Azure Migrate | Servers, databases and web apps** page, in the **Migration and modernization** section, select the **Discover**. 
-1. On the **Discover** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Next**, select **Finalize registration**.
+1. On the **Discover** page, in Where do you want to migarate to?  select **Azure VM** from the drop-down and in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and select **Finalize registration**.
 
    >**Note**: It might take up to 5 minutes for the discovery of virtual machines to complete.
 
