@@ -483,7 +483,7 @@ After completing this lab, you will be able to:
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
-   >**Note**: If your not able see Cache Storage Account option and select **str<inject key="DeploymentID" enableCopy="false"/>** throwing error kindly wait for 10 minutes and re perform the above from step 1.
+   >**Note**: if you are unable to see the Cache Storage Account option and select **str<inject key="DeploymentID" enableCopy="false"/>** and encounter an error when selecting it please wait for 10 minutes and perform the above from step 1.
 
 1. On the **Compute** tab of the **Replicate** page, ensure that the **Standard_D2s_v3** is selected in the **Azure VM Size** drop-down list. In the **OS Type** drop-down list, select **Windows** and then select **Next**.  
 1. On the **Disks** tab of the **Replicate** page, accept the default settings and select **Next**.
@@ -503,7 +503,7 @@ After completing this lab, you will be able to:
 1. On the **az801l07a-vm1** page, select **Test migration**.
 1. On the **Test migration** page, in the **Virtual network** drop-down list, select **az801l07a-test-vnet** and then select **Test migration**.
 
-   >**Note**: Wait for the test migration to complete. This might take about 5 minutes.
+   >**Note**: Wait for the test migration to complete. This might take about 5 - 10 minutes.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, note the entry representing the newly replicated virtual machine **az801l07a-vm1-test**.
 
@@ -519,7 +519,11 @@ After completing this lab, you will be able to:
 1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, under **Replication** select Azure VM  1 entry and then, on the **Migration and modernization | Replications** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
 
    >**Note**: Wait for the download to complete. This might take about 10 minutes.
+   
+1. Please wait until the **Replication status** indicates **Completing planned failover** before proceeding."
 
+    ![](../Media/display.png)
+   
 1. In the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines** and then, on the **Virtual machines** page, note the entry representing the 
    newly replicated virtual machine **az801l07a-vm1**.
 
