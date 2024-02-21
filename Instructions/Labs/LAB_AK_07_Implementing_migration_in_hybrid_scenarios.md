@@ -423,6 +423,7 @@ After completing this lab, you will be able to:
 
    | Setting | Value | 
    | --- | --- |
+   | Where do you want to migarate to? |  **Azure VM** |
    | Are your machines virtualized? | **Yes, with Hyper-V** |
    | Target region | **<inject key="Region" enableCopy="false"/>** | 
    | Confirm the target region for migration | selected | 
