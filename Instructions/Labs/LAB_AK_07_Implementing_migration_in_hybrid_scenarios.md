@@ -447,7 +447,7 @@ After completing this lab, you will be able to:
 1. Back on the **Vault Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Next**.
 1. On the **Proxy Settings** page of the **Microsoft Azure Site Recovery Registration Wizard**, accept the default settings and select **Next**.
 
-    >**Note**: Registration process may take 5 mins kindly wait to complete.
+    >**Note**: Registration process may take 5 minutes kindly wait to complete.
 
 1. On the **Registration** page of the **Microsoft Azure Site Recovery Registration Wizard**, select **Finish**.
 1. Refresh the browser window displaying the **Discover** page.
@@ -483,12 +483,14 @@ After completing this lab, you will be able to:
    | Virtual Network | **az801l07a-migration-vnet** |
    | Subnet | **subnet0** |
 
+   >**Note**: If your not able see Cache Storage Account option and select **str<inject key="DeploymentID" enableCopy="false"/>** throwing error kindly wait for 10 minutes and re perform the above from step 1.
+
 1. On the **Compute** tab of the **Replicate** page, ensure that the **Standard_D2s_v3** is selected in the **Azure VM Size** drop-down list. In the **OS Type** drop-down list, select **Windows** and then select **Next**.  
 1. On the **Disks** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Tags** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Review + Start replication** tab of the **Replicate** page, select **Replicate**.  
 1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Overview** 
-   and on the **Azure Migrate: Migration and modernization** page, under **Manage** section select **Replicating machines**.
+   and on the **Azure Migrate: Migration and modernization** page, under **Migration** section select **Replications**.
 
 1. On the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines.
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
