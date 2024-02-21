@@ -354,7 +354,7 @@ After completing this lab, you will be able to:
 
     ![](../Media/lab7-2.png)
    
-1. Once verification is completed you will prompt with **New update installed** window, select **Refresh** and again click on **Verify**.
+1. Once verification is completed, if **New update installed** window, select **Refresh** and again click on **Verify**.
    >**Note**: Wait until verification process completes.
 1. Under **Azure user Login and appliance registration status** select **Login**, and then select **Copy code & login**. This will automatically open a new browser tab prompting you to enter the copied code.
 1. On the **Enter code** pane in the newly opened browser tab, paste the code you copied onto the Clipboard, and then select **Next**. When prompted, sign in by providing the credentials of a user account with the Owner role in the subscription you are using in this lab.
