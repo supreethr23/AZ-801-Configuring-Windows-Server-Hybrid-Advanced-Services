@@ -492,10 +492,10 @@ After completing this lab, you will be able to:
 1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Overview** 
    and on the **Azure Migrate: Migration and modernization** page, under **Migration** section select **Replications**.
 
-1. On the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines.
+1. On the **Migration and modernization | Replications** page, examine the **Status** column in the list of the replicating machines.
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
 
-   >**Note**: You will need to refresh the **Migration and modernization | Replicating machines** to update the **Status** information.
+   >**Note**: You will need to refresh the **Migration and modernization | Replications** to update the **Status** information.
 
 #### Task 3: Perform migration of Hyper-V VMs
 
