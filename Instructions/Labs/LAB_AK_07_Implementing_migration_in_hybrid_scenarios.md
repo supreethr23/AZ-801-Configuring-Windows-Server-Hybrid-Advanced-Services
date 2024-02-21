@@ -520,7 +520,7 @@ After completing this lab, you will be able to:
 
    >**Note**: Wait for the download to complete. This might take about 10 minutes.
    
-1. Please wait until the **Replication status** indicates **Completing planned failover** before proceeding."
+1. Refresh the page and please wait until the **Replication status** indicates **Completing planned failover** before proceeding.
 
     ![](../Media/display.png)
    
