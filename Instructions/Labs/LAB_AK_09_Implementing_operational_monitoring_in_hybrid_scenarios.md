@@ -23,6 +23,8 @@ In this lab, you will complete the following tasks:
 
 1. On **SEA-SVR2**, double-click on the **Azure Portal** icon, and sign in using this credential, enter the Username: <inject key="AzureAdUserEmail"></inject> and Password: <inject key="AzureAdUserPassword"></inject>
 
+   > **Note:** On **Action Required** page, select **Ask later**.
+
    >**Note:** On **Stay signed in?** page, select **Yes**.
    
    >**Note:** Select **Maybe later**, on the **Welcome to Microsoft Azure** page.
@@ -51,7 +53,7 @@ In this lab, you will complete the following tasks:
 
 1. Repeat the previous step to upload the **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.parameters.json** file into the Cloud Shell home directory.
 
-1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with **<inject key="Region"></inject>**):
+1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands one by one, and after entering each command, press Enter (replace the `<Azure_region>` placeholder with **<inject key="Region"></inject>**):
 
    ```powershell 
    $location = '<Azure_region>'
@@ -67,7 +69,7 @@ In this lab, you will complete the following tasks:
 
 ### Task 2: Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers
 
-1. To register the Microsoft.Insights and Microsoft.AlertsManagement resource providers, on **SEA-SVR2**, from the Cloud Shell pane, enter the following commands, and after entering each command, press Enter.
+1. To register the Microsoft.Insights and Microsoft.AlertsManagement resource providers, on **SEA-SVR2**, from the Cloud Shell pane, enter the following commands one by one, and after entering each command, press Enter.
 
    ```powershell
    Register-AzResourceProvider -ProviderNamespace Microsoft.Insights
@@ -211,7 +213,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/ex-2-t2-s2.png)
 
-   >**Note**: Wait for the operation to take effect. This might take about a minutes.
+   >**Note**: Wait for the operation to take effect. This might take about few minutes.
 
 1. Switch to the **Performance counters** tab of the **az801l09-vm0 \| Diagnostic settings** page and review the available counters.
 
@@ -245,7 +247,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
     ![](../Media/lab9-04.png)
 
-   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
+   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below (The Azure Monitor sink requires a managed identity. Click to configure a managed identity in Azure AD for this VM.) the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
 
 1. From the left-hand navigation, under **Monitoring** section, select **Metrics**. On the default chart, note that at this point, the **Metric Namespace** drop-down list, in addition to the **Virtual Machine Host** and **Guest (classic)** entries, also includes the **Virtual Machine Guest** entry.
 
