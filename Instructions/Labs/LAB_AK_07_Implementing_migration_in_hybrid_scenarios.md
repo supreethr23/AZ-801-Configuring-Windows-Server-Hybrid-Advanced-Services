@@ -207,7 +207,7 @@ After completing this lab, you will be able to:
    | Setting | Value | 
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | Select **create new** and enter **AZ801-L0702-RG** |
+   | Resource group | Select **AZ801-L0702-RG** |
    | Migrate project | **az801l07a-migrate-project** |
    | Geography | the name of your country or a geographical region |
 
