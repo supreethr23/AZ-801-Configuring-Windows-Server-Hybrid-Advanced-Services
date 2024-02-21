@@ -214,7 +214,7 @@ After completing this lab, you will be able to:
 #### Task 3: Implement the target Azure environment
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual networks**. On the **Virtual networks** page, select **+ Create** on the command bar. 
-1. On the **Basics** tab of the **Create virtual network** page, specify the following settings (leave others with their default values) and select **IP Addresses**:
+1. On the **Basics** tab of the **Create virtual network** page, specify the following settings (leave others with their default values) and select **IP Addresses** tab:
 
    | Setting | Value |
    | --- | --- |
