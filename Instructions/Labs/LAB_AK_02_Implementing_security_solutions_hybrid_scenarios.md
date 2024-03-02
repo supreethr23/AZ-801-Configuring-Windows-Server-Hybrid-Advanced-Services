@@ -69,6 +69,8 @@ After completing this lab, you'll be able to:
    >**Note**: Wait for the installation of the corresponding Log Analytics solution to complete. This might take about 3 minutes. 
 
    >**Note**: This automatically installs the **Change tracking** solution as well.
+   
+   >**Note**: If you see a pop up stating "your unsaved edits will be discarded" please click on **OK** and continue. 
 
 1. On the **Automation account** page, in the **Update Management** section, select **Update management** and select **Enable**.
 
