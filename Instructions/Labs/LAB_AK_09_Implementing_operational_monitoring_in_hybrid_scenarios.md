@@ -267,16 +267,14 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    >**Note**: Wait for the deployment to get succeed. After the deployment get succeeded, **Refresh** the page. 
 
-1. On the **az801l09-vm0 \| Logs** page, from the left-hand navigation side pane, under the **Monitoring** section, select **Insights**.
-
 <!-- 1. If needed, on the **az801l09-vm0 \| Insights** page, select **Enable**.
 
 >**Note**: This setting provides the Azure VM Insights functionality. VM Insights is an Azure Monitor solution that facilitates monitoring performance and health of both Azure VMs and on-premises computers running Windows or Linux.-->
 
 
-18. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Monitor**, and then, on the **Monitor \| Overview** page, from the left-hand navigation pane, under **Insights** section, select **Virtual Machines**.
+17. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for and select **Monitor**, and then, on the **Monitor \| Overview** page, from the left-hand navigation pane, under **Insights** section, select **Virtual Machines**.
 
-19. On the **Monitor \| Virtual Machines** page, select the **Performance** tab and Scroll down to review the performance metrics for the virtual machine.
+18. On the **Monitor \| Virtual Machines** page, select the **Performance** tab and Scroll down to review the performance metrics for the virtual machine.
 
     ![](../Media/ex-3-t2-s19.png)
 
@@ -319,9 +317,9 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/ex-4-t1-s5.png)
 
-1. On the **Create an alert rule** page, on the **Actions** tab, select the **+ Create action group** button.
+1. On the **Create an alert rule** page, on the **Actions** tab, if prompted close the **Use quick actions (preview)** tab and select **Use action group** in **Select actions**. 
 
-1. On the **Basics** tab of the **Create an action group** page, specify the following settings (leave others with their default values), and then select **Next: Notifications >**:
+1. Click on **Create action group**. On the **Basics** tab of the **Create an action group** page, specify the following settings (leave others with their default values), and then select **Next: Notifications >**:
 
    | Settings | Value |
    | --- | --- |
@@ -338,7 +336,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
 1. Back on the **Notifications** tab of the **Create an action group** page, In the **Name** text box, type **admin email**. Select **Next: Actions  >**.
 
-   ![](../Media/ex-4-t1-s8.png)
+   ![](../Media/E4T1S9.png)
 
 1. On the **Actions** tab of the **Create an action group** page, review items available in the **Action type** drop-down list without making any changes and select **Review + create**.
 
