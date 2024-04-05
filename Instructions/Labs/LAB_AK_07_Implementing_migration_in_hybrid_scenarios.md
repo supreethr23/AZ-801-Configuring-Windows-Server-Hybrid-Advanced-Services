@@ -474,6 +474,8 @@ After completing this lab, you will be able to:
 1. On the **Specify intent** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Continue**.
 1. On the **Virtual machines** tab of the **Replicate** page, specify the following settings (leave others with their default values) and select **Next**:
 
+   >**Note**: If you encouter any error in **Replicate** page. Please wait for a 5 - 10 mins and periodically refresh the page once your able to see the **Replicate** page kindly procced with next step.
+   
    | Setting | Value | 
    | --- | --- |
    | Import migration settings from an Azure Migrate assessment | **Yes, apply migration settings from an Azure Migrate assessment** |
