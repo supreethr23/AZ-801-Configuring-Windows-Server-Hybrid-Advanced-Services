@@ -471,7 +471,7 @@ After completing this lab, you will be able to:
 
    >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Servers, databases and web apps** page.
 
-1. On the **Specify intent** page, select **Continue**. On the Basics tab of the **Replicate** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Next**.
+1. On the **Specify intent** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Continue**.
 1. On the **Virtual machines** tab of the **Replicate** page, specify the following settings (leave others with their default values) and select **Next**:
 
    | Setting | Value | 
