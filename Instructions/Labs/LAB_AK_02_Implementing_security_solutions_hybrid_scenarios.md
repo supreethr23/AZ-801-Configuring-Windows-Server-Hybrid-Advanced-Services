@@ -242,9 +242,18 @@ After completing this lab, you'll be able to:
 	
    ```powershell
    New-Item -ItemType Directory -Path 'C:\Labfiles\L02\' -Force
+   ```
+
+   ```powershell
    Copy-Item -Path $env:USERPROFILE\Downloads\MMASetup-amd64.exe -Destination 'C:\Labfiles\L02\' -Force
+   ```
+   ```powershell
    Set-Location -Path C:\Labfiles\L02
+   ```
+   ```powershell
    .\MMASetup-amd64.exe /c /t:C:\Labfiles\L02
+   ```
+   ```powershell
    Remove-Item -Path .\MMASetup-amd64.exe
    ```
 
