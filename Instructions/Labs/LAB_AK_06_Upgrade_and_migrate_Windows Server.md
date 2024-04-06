@@ -152,7 +152,7 @@ In this lab, you will:
 
 1. On the **Review + create** tab of the **Create a Bastion** page, select **Create**:
 
-   > **Note**: Do not wait for the deployment to complete but instead proceed to the next task. The deployment might take about 5 minutes.
+   > **Note**: Wait for the deployment to complete before you proceed to the next task. The deployment might take about 5 minutes.
 
 #### Task 3: Deploy an Azure VM by using the Azure portal
 
