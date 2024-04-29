@@ -48,7 +48,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 If you encounter any difficulties with copy-pasting PowerShell commands directly, you can use the following workaround:
 
-1. Open a text editor such as Notepad on your local machine.
+1. Open a text editor such as Notepad on your LabVM.
 
 2. Copy the PowerShell commands from the lab guide and paste them into the text editor.
 
