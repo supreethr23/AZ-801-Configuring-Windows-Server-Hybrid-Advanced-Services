@@ -46,8 +46,7 @@ In this lab, you will:
    > **Note**: To review the script, you can use the following steps:
 
 	1. On **SEA-SVR2**, open another tab in the Microsoft Edge window, and again access the customized version of QuickStart 
-        template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart- 
-        templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**.
+        template at **[Create a new Windows VM and create a new AD Forest, Domain and DC](https://github.com/az140mp/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain)**.
 
 	1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, in the listing of the repository content, 	select the **DSC** folder, and then select **CreateADPDC.ps1** file.
     
