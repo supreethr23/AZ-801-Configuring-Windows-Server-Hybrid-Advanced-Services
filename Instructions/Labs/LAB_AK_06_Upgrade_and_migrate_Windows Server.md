@@ -384,6 +384,8 @@ In this lab, you will:
    
 1. On the list of devices, select the newly added **SEA-SVR1.contoso.com** entry, in the **Add and scan devices** pane, in the toolbar, select the ellipsis (**...**) symbol, and then, in the drop-down menu, select **Start scan**.
 
+   >**Note:** If the ellipses (...) or any other options are not visible, please try zooming out the screen in the LabVM and check again.
+
    >**Note:** Wait until the scan completes successfully. This should take about 1 minute.
 
 1. On the **Inventory servers** tab, in the **Add and scan devices** pane, select **Next**. 
