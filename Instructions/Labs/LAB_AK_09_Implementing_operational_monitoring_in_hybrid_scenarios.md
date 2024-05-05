@@ -21,7 +21,7 @@ In this lab, you will complete the following tasks:
 
 <!-- 1. Connect to **SEA-SVR2**, and if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**. -->
 
-1. On **SEA-SVR2**, double-click on the **Azure Portal** icon, and sign in using this credential, enter the Username: <inject key="AzureAdUserEmail"></inject> and Password: <inject key="AzureAdUserPassword"></inject>
+1. On **SEA-SVR2/LabVM**, double-click on the **Azure Portal** icon, and sign in using this credential, enter the Username: <inject key="AzureAdUserEmail"></inject> and Password: <inject key="AzureAdUserPassword"></inject>
 
    > **Note:** On **Action Required** page, select **Ask later**.
 
@@ -29,7 +29,7 @@ In this lab, you will complete the following tasks:
    
    >**Note:** Select **Maybe later**, on the **Welcome to Microsoft Azure** page.
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
+1. On **SEA-SVR2/LabVM**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 
    ![](../Media/801-18.png)
    
