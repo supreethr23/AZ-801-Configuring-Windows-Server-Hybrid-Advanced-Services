@@ -16,7 +16,7 @@ After completing this lab, you will be able to:
 
 ## Architecture diagram
 
-![](/Instructions/Media/lab8.1.png)
+![](nmedia/lab8.1.png)
 
 ## Note
 
