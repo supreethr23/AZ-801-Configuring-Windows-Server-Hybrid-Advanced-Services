@@ -32,22 +32,23 @@ In this lab, you will complete the following tasks:
 1. On **SEA-SVR2/LabVM**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 
    ![](../Media/801-18.png)
-   
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
 
-   ![](../Media/801-19.png)
+1. Selecting a ***PowerShell*** environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
 
-   > **Note:** If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you are using in this lab, select **Show advanced settings**, and enter the following credentials.
+   ![](../Media/21051.png)
 
-   | Settings | Value |
-   |----------|-------|
-   | Resource group| Use existing > **az-801 (1)**|
-   | Storage account | Create new > **blob<inject key="DeploymentID" enableCopy="false"/> (2)**|
-   | File share | Create new > **fs<inject key="DeploymentID" enableCopy="false"/> (3)**|
+1. Within the Getting Started pane, select **Mount storage account**, select your **Storage account subscription** from the dropdown and click **Apply**.
 
-1. Select **Create storage (4)**.
+   ![](../Media/21052.png)
 
-    ![](../Media/lab9-05.png)
+1. Within the **Mount storage account** pane, select **I want to create a storage account** and click **Next**.
+
+   ![](../Media/21053.png)
+
+
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **az-801** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fs<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create**.
+
+1. Wait for PowerShell terminal to start.
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.json** into the Cloud Shell home directory.
 
