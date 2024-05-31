@@ -106,20 +106,23 @@ In this lab, you will:
  > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
-1. If this is the first time you're starting Cloud Shell and you're presented with the **You have no storage mounted** message.
-1. Click on **Show Advanced settings**<br>
-	
-   ![](../Media/cs.png)
 
-1. Provide the values for:
-   
-     * **Resource Group** - Select **Use existing** and choose the **AZ801-L0601-RG**<br>
-     * **Storage Account** - Select **Create New** and enter **cloudstore<inject key="DeploymentID" enableCopy="false"/>**
-     * **File Share** - Select **Create New** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>**<br>
-     and click on **Create storage**.<br>
-      
-   	![](../Media/cs1.png)
+1. Selecting a ***PowerShell*** environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+
+   ![](../Media/21051.png)
+
+1. Within the Getting Started pane, select **Mount storage account**, select your **Storage account subscription** from the dropdown and click **Apply**.
+
+   ![](../Media/21052.png)
+
+1. Within the **Mount storage account** pane, select **I want to create a storage account** and click **Next**.
+
+   ![](../Media/21053.png)
+
+
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **AZ801-L0601-RG** and enter **cloudstore<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create**.
+
+1. Wait for PowerShell terminal to start.
 
 1. From the PowerShell session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network **az801l06a-vnet** you created earlier in this exercise:
 
