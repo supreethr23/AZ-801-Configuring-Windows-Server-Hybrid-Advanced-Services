@@ -218,7 +218,7 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(17).png)
 
 1. Select the **+ Add Servers** button. This will automatically display the **Agents management** page, from which you can download the Log Analytics agent installers and identify the workspace ID and keys necessary to complete the agent installation.
-1. On the **Agents management** page, record the values of **Workspace ID** and **Primary key**. You will need them later in this task.
+1. On the **Agents management** page, click on **Log analytics agent instructions** and record the values of **Workspace ID** and **Primary key**. You will need them later in this task.
 
 	![](../Media/az-801(18).png)
 
