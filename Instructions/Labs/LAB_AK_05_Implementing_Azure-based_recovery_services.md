@@ -178,7 +178,7 @@ After completing this lab, you'll be able to:
 1. On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
 1. On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs (1)** and **Enable soft delete for containers (2)** checkboxes and select **Review (3)**.
 
-   ![](../media/14.png)
+   ![](../media/AZ-108-E2T1S19.png)
 
    > **Note:** These settings must be disabled when using the storage account for Azure Site Recovery.
 
