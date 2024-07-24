@@ -248,7 +248,7 @@ In this lab, you will complete the following tasks:
 
    ![](../Media/801-32.png)
 
-1. In the **Active Directory Users and Computers** console, select the **Builtin** container. 
+1. In the **Active Directory Users and Computers** console, select the **Builtin** container under **contoso.com**. 
 
 1. In the **Builtin (1)** container, select the **Event Log Readers (2)** group.
 
