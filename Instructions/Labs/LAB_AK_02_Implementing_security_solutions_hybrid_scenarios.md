@@ -222,6 +222,8 @@ After completing this lab, you'll be able to:
 
 	![](../Media/az-801(18).png)
 
+   >**Note:** Make sure **Windows servers** is selected under **Agents Management**.
+
 1. On the **Agents management** page, select the **Download Windows Agent (64 bit)** link.
 1. After the download completes, select **Open file**. This will start the **Microsoft Monitoring Agent Setup** wizard.
 1. On the **Welcome to the Microsoft Monitoring Agent Setup Wizard** page of the **Microsoft Monitoring Agent Setup** wizard, select **Next**.
