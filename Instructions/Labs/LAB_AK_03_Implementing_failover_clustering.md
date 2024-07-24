@@ -48,7 +48,7 @@ After completing this lab, you'll be able to:
 
    > **Note**: Wait for the installation process to complete. The installation should take about 1 minute.
 
-1. Close the Windows Powershell.
+1. Minimize the Windows Powershell window.
 
 ### Task 2: Configure iSCSI virtual disks
 
@@ -76,7 +76,7 @@ After completing this lab, you'll be able to:
    ```powershell
    New-IscsiVirtualDisk C:\Storage\disk3.VHDX –size 10GB
    ```
-1. Close the Windows Powershell.
+1. Minimize the Windows Powershell window.
 
 1. On **SEA-SVR2**, select **Start**, and right-click on **Windows PowerShell**, and select **Run as administrator**.
 
