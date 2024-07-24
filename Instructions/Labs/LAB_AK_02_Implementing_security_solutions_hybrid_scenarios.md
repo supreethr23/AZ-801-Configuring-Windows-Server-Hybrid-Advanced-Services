@@ -296,6 +296,8 @@ After completing this lab, you'll be able to:
 
 1. On the **Update management** page, in the toolbar, select **+ Add Azure VMs**.
 
+   >**Note:** If **+ Add Azure VMs** options is not available, wait for 20-25 minutes. It might take some time to reflect the option.
+
 1. On the **Enable Update management** page, in the list of VMs, ensure that the checkbox next to the **az801l02-vm0** entry is selected and select **Enable**.
 
    > **Note:** Just as with the Inventory and Change tracking solutions, the VM has to be connected to the Log Analytics workspace associated with the Automation Account solutions in order to be listed as **ready to enable**.
