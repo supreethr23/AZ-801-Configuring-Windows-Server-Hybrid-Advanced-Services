@@ -117,9 +117,9 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(8).png)
 
 1. On the **Settings \| Defender plans** page, on the top side, select **Settings & monitoring**.
-1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent** entry, select the **Edit configuration** link.
+1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent** entry, select the **On** under **Status**.
 
-	![](../Media/az-801(9).png)
+	![](../Media/az-801(9)-1.png)
 
 1. On the **Auto-provisioning configuration**, in the **Workspace selection** section, select the option **Custom workspace**, in the drop-down menu, select the entry representing the workspace you created in the previous exercise, and then select **Apply**.
 
