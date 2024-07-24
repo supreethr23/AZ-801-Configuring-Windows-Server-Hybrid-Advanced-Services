@@ -117,9 +117,9 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(8).png)
 
 1. On the **Settings \| Defender plans** page, on the top side, select **Settings & monitoring**.
-1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent** entry, select the **Edit configuration** link.
+1. On the **Settings & monitoring** page, in the list of extensions, to the right side of the **Log Analytics agent** entry, select the **On** under **Status**.
 
-	![](../Media/az-801(9).png)
+	![](../Media/az-801(9)-1.png)
 
 1. On the **Auto-provisioning configuration**, in the **Workspace selection** section, select the option **Custom workspace**, in the drop-down menu, select the entry representing the workspace you created in the previous exercise, and then select **Apply**.
 
@@ -170,9 +170,9 @@ After completing this lab, you'll be able to:
 
 #### Task 2: Deploy an Azure VM by using an Azure Resource Manager template
 
-1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload**, and upload the file **C:\\Labfiles\\Lab02\\L02-sub_template.json** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload**, and upload the file **C:\\Labfiles\\Lab02\\L02-sub_template.json** into the Cloud Shell home directory.
    
-	![](../Media/az-801(15).png)
+	![](../Media/az-801(15)-1.png)
 
 1. Repeat the previous step twice to upload the **C:\\Labfiles\\Lab02\\L02-rg_template.json** and **C:\\Labfiles\\Lab02\\L02-rg_template.parameters.json** files into the Cloud Shell home directory.
 1. To create the resource group that will be hosting the lab environment, in the **PowerShell** session in the Cloud Shell pane, enter the following commands, and after entering each command, press Enter (replace the `<Azure_region>` (example: eastus) placeholder with the name of an Azure region where you intend to deploy resources in this lab):
@@ -206,10 +206,10 @@ After completing this lab, you'll be able to:
 
 #### Task 1: Perform manual installation of the Log Analytics agent
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Microsoft Defender for Cloud \| Overview** page, and then, in the **General** section of the vertical menu on the left, select **Inventory**.
-1. On the **Microsoft Defender for Cloud \| Inventory** page, select **+ Add non-Azure servers**.
+1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Microsoft Defender for Cloud \| Overview** page, and then, in the **Management** section of the vertical menu on the left, select **Security Solutions**.
+1. On the **Microsoft Defender for Cloud \| Security solutions** page, select **+ Add** under **Non-Azure Servers**.
 
-	![](../Media/az-801(16).png)
+	![](../Media/az-801(16)-1.png)
 
 1. On the **Onboard servers to Defender for Cloud** page, next to the entry representing the Log Analytics workspace you provisioned earlier in this lab, select **Upgrade**.
 
@@ -218,9 +218,11 @@ After completing this lab, you'll be able to:
 	![](../Media/az-801(17).png)
 
 1. Select the **+ Add Servers** button. This will automatically display the **Agents management** page, from which you can download the Log Analytics agent installers and identify the workspace ID and keys necessary to complete the agent installation.
-1. On the **Agents management** page, record the values of **Workspace ID** and **Primary key**. You will need them later in this task.
+1. On the **Agents management** page, click on **Log analytics agent instructions** and record the values of **Workspace ID** and **Primary key**. You will need them later in this task.
 
 	![](../Media/az-801(18).png)
+
+   >**Note:** Make sure **Windows servers** is selected under **Agents Management**.
 
 1. On the **Agents management** page, select the **Download Windows Agent (64 bit)** link.
 1. After the download completes, select **Open file**. This will start the **Microsoft Monitoring Agent Setup** wizard.
@@ -293,6 +295,8 @@ After completing this lab, you'll be able to:
 1. Browse back to the **Automation account** page and in the **Update Management** section, select **Update management**.
 
 1. On the **Update management** page, in the toolbar, select **+ Add Azure VMs**.
+
+   >**Note:** If **+ Add Azure VMs** options is not available, wait for 20-25 minutes. It might take some time to reflect the option.
 
 1. On the **Enable Update management** page, in the list of VMs, ensure that the checkbox next to the **az801l02-vm0** entry is selected and select **Enable**.
 
