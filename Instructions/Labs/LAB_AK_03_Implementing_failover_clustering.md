@@ -54,7 +54,7 @@ After completing this lab, you'll be able to:
 
 >**Important:** The lab uses **SEA-DC1**, which serves as an Active Directory Domain Services (AD DS) domain controller to host shared iSCI storage for a Windows Server-based cluster. This is not meant to represent in any way a recommended configuration but rather is done to simplify the lab configuration and minimize the number of lab virtual machines. In any production environment, domain controllers should not be used to host shared storage for failover clusters. Instead, such storage should be hosted on highly available infrastructure. 
 
-1. On **SEA-SVR2**, select **Start**, and right-click on **Windows PowerShell**, and select **Run as administrator**.
+1. On **SEA-SVR2**, select **Start**, and right-click on **Windows PowerShell**, and select **Run as administrator** to start a new session.
 
 1. To establish a PowerShell Remoting session to **SEA-DC1**, in the newly opened **Windows PowerShell** window, enter the following command and press Enter:
 
@@ -78,7 +78,7 @@ After completing this lab, you'll be able to:
    ```
 1. Minimize the Windows Powershell window.
 
-1. On **SEA-SVR2**, select **Start**, and right-click on **Windows PowerShell**, and select **Run as administrator**.
+1. On **SEA-SVR2**, select **Start**, and right-click on **Windows PowerShell**, and select **Run as administrator** to start a new session.
 
 1. To establish a PowerShell Remoting session to **SEA-SVR1**, in the newly opened **Windows PowerShell** window, enter the following command, and then press Enter:
 
