@@ -206,10 +206,10 @@ After completing this lab, you'll be able to:
 
 #### Task 1: Perform manual installation of the Log Analytics agent
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Microsoft Defender for Cloud \| Overview** page, and then, in the **General** section of the vertical menu on the left, select **Inventory**.
-1. On the **Microsoft Defender for Cloud \| Inventory** page, select **+ Add non-Azure servers**.
+1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, browse back to the **Microsoft Defender for Cloud \| Overview** page, and then, in the **Management** section of the vertical menu on the left, select **Security Solutions**.
+1. On the **Microsoft Defender for Cloud \| Security solutions** page, select **+ Add** under **Non-Azure Servers**.
 
-	![](../Media/az-801(16).png)
+	![](../Media/az-801(16)-1.png)
 
 1. On the **Onboard servers to Defender for Cloud** page, next to the entry representing the Log Analytics workspace you provisioned earlier in this lab, select **Upgrade**.
 
