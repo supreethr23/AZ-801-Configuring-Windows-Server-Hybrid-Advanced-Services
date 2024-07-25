@@ -27,7 +27,7 @@ In this lab, you will complete the following tasks:
 
    >**Note:** On **Stay signed in?** page, select **Yes**.
    
-   >**Note:** Select **Maybe later**, on the **Welcome to Microsoft Azure** page.
+   >**Note:** Select **Cancel**, on the **Welcome to Microsoft Azure** page.
 
 1. On **SEA-SVR2/LabVM**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 
@@ -46,11 +46,11 @@ In this lab, you will complete the following tasks:
    ![](../Media/21053.png)
 
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **az-801** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fs<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create**.
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **az-801** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fs<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, and select the region to **East US**, then click on **Create**.
 
 1. Wait for PowerShell terminal to start.
 
-1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.json** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu select **Upload**, and upload the file **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.json** into the Cloud Shell home directory.
 
 1. Repeat the previous step to upload the **C:\\AllFiles\\AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services-master\\Allfiles\\Labfiles\\Lab09\\L09-rg_template.parameters.json** file into the Cloud Shell home directory.
 
@@ -94,7 +94,7 @@ In this lab, you will complete the following tasks:
    | Settings | Value |
    | --- | --- |
    | Subscription | the name of the Azure subscription you are using in this lab |
-   | Resource group | the name of a new resource group **AZ801-L0901-RG** |
+   | Resource group | **AZ801-L0901-RG** |
    | Name | **workspace<inject key="DeploymentID" enableCopy="false"/>** |
    | Region | **<inject key="Region"></inject>** |
 
@@ -141,8 +141,6 @@ In this lab, you will complete the following tasks:
 1. Once the download of the agent installer is completed, click the downloaded file to start the setup wizard. 
 
 1. On the **Welcome** page, select **Next >**.
-
-   ![](../Media/ex-2-t1-s4.png)
 
 1. On the **License Terms** page, read the license and then select **I Agree**.
 
@@ -248,7 +246,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
     ![](../Media/lab9-04.png)
 
-   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below (The Azure Monitor sink requires a managed identity. Click to configure a managed identity in Azure AD for this VM.) the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and save it. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
+   >**Note**: If the **Enable Azure Monitor** option is disabled, then select the warning notification box below (The Azure Monitor sink requires a managed identity. Click to configure a managed identity in Azure AD for this VM.) the Azure Monitor (Preview) section to activate the Enabled button. Select the **On** toggle button under **Status**, and click on **Save**. On the pop-up select **Yes**. Go back to this page, **az801l09-vm0 | Diagnostic settings**. Refresh the page, and re-do the step-12 again.
 
 1. From the left-hand navigation, under **Monitoring** section, select **Metrics**. On the default chart, note that at this point, the **Metric Namespace** drop-down list, in addition to the **Virtual Machine Host** and **Guest (classic)** entries, also includes the **Virtual Machine Guest** entry.
 
@@ -437,7 +435,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    >**Note**: You might need to close the **Welcome to Log Analytics** and **Queries** pane if this is the first time you access Log Analytics.
 
-1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab, and then select **Apply**.
+1. Choose **Select scope**, on the **Browse** tab, browse to the **DefaultResourceGroup-xx** resource group, expand it, select the checkbox next to the **DefaultWorkspace-xxxxxxx**, and then select **Apply**.
 
 1. In the query window, paste the following query, select **Run**:
 
@@ -454,6 +452,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. Select **Queries** in the toolbar, in the **Queries** pane, expand the **Virtual Machines** node, hover on  **Track VM availability using Heartbeat** tile, and select the **Run** button.
 
    ![](../Media/801-30.png)
+
+1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
 
 1. On the **New Query 1** tab, select the **Tables (1)** header, and expand the **Azure Resources** section, to review the list of tables.
 
