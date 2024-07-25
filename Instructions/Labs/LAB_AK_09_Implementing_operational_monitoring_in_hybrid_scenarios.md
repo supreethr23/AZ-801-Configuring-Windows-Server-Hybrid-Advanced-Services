@@ -397,7 +397,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/AZ-801-Alerts.png)
 
->**Note**: Alerts may take a while to appear on the portal, but if you set up email notifications when creating the alert rule, you will receive instant email notifications.
+   >**Note**: Alerts may take a while to appear on the portal, but if you set up email notifications when creating the alert rule, you will receive instant email notifications.
 
 1. Alternatively, you can choose the **View as timeline (preview)** option to review the alerts that have been generated.
 
