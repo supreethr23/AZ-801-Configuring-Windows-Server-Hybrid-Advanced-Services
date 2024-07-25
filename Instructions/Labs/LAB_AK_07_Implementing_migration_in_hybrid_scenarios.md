@@ -297,8 +297,8 @@ After completing this lab, you will be able to:
    | Redundancy | **Locally redundant storage (LRS)** |
 
 1.  On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
-1.  On the **Data protection** tab of the **Create a storage account** page, uncheck the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review**.
-1.  On the **Review** tab, select **Create**.
+1.  On the **Data protection** tab of the **Create a storage account** page, uncheck the **Enable soft delete for blobs** and **Enable soft delete for containers** checkboxes, and then select **Review + create**.
+1.  On the **Review  + create** tab, select **Create**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -397,7 +397,6 @@ After completing this lab, you will be able to:
    | Target location | **<inject key="Region" enableCopy="false"/>** |
    | Storage type | **Premium managed disks** |
    | Savings options  | **None** |
-   | Reserved instances | **No reserved instances** |
    | Sizing criteria | **As on premises** |
    | VM series | **Dsv3_series** |
    | Comfort factor | **1** |
@@ -468,7 +467,7 @@ After completing this lab, you will be able to:
 
    >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Servers, databases and web apps** page.
 
-1. On the **Specify intent** page, select **Continue**. On the Basics tab of the **Replicate** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Next**.
+1. On the **Specify intent** page, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and then select **Continue**.
 1. On the **Virtual machines** tab of the **Replicate** page, specify the following settings (leave others with their default values) and select **Next**:
 
    | Setting | Value | 
@@ -494,17 +493,16 @@ After completing this lab, you will be able to:
 1. On the **Disks** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Tags** tab of the **Replicate** page, accept the default settings and select **Next**.
 1. On the **Review + Start replication** tab of the **Replicate** page, select **Replicate**.  
-1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Overview** 
-   and on the **Azure Migrate: Migration and modernization** page, under **Migration** section select **Replications**.
+1. To monitor the status of replication, back on the **Azure Migrate | Servers, databases and web apps** page, select **Refresh** and then, in the **Migration and modernization** section, select the **Overview** and on the **Azure Migrate: Migration and modernization** page, under **Migration** section select **Replications**.
 
-1. On the **Migration and modernization | Replications** page, examine the **Status** column in the list of the replicating machines.
+1. On the **Migration and modernization | Replications** page, examine the **Replication Status** column in the list of the replicating machines.
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
 
    >**Note**: You will need to refresh the **Migration and modernization | Replications** to update the **Status** information.
 
 #### Task 3: Perform migration of Hyper-V VMs
 
-1. In the Azure portal, on the **Migration and modernization | Replicating machines** page, select the entry representing the **az801l07a-vm1** virtual machine.
+1. In the Azure portal, on the **Migration and modernization | Replications** page, select the entry representing the **az801l07a-vm1** virtual machine.
 1. On the **az801l07a-vm1** page, select **Test migration**.
 1. On the **Test migration** page, in the **Virtual network** drop-down list, select **az801l07a-test-vnet** and then select **Test migration**.
 
@@ -514,16 +512,18 @@ After completing this lab, you will be able to:
 
    > **Note:** Initially, the virtual machine will have the name consisting of the **asr-** prefix and randomly generated suffix, but will be renamed eventually to **az801l07a-vm1-test**.
 
-1. In the Azure portal, browse back to the **Migration and modernization | Replicating machines** page, select **Refresh**, and then verify that the **az801l07a-vm1** virtual machine is listed with the **Cleanup test failover pending** status.
+1. In the Azure portal, browse back to the **Migration and modernization | Replications** page, select **Refresh**, and then verify that the **az801l07a-vm1** virtual machine is listed with the **Cleanup test failover pending** status.
 1. On the **Migration and modernization | Replicating machines** page, select the entry representing the **az801l07a-vm1** virtual machine.
 1. On the **az801l07a-vm1** replicating machines page, select **Clean up test migration**.
 1. On the **Test migrate cleanup** page, select the checkbox **Testing is complete. Delete test virtual machine** and then select **Cleanup Test**.
 1. Once the test failover cleanup job completes, refresh the browser page displaying the **az801l07a-vm1** replicating machines page and note that the **Migrate** icon in the toolbar automatically becomes available.
 1. On the **az801l07a-vm1** replicating machines page, select the **Migrate** link. 
 1. On the **Migrate** page, ensure that **Yes** is selected in the **Shutdown virtual machines and perform a planned migration with no data loss?** drop-down list, and then select **Migrate**.
-1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, under **Replication** select Azure VM  1 entry and then, on the **Migration and modernization | Replications** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
+1. To monitor the status of migration, browse back to the **Azure Migrate | Servers, databases and web apps** page. In the **Migration and modernization** section, select the **Replicating servers** entry and then, on the **Migration and modernization | Replicating machines** page, examine the **Status** column in the list of the replicating machines. Verify that the status displays the **Planned failover finished** status.
 
-   >**Note**: Wait for the download to complete. This might take about 10 minutes.
+   >**Note**: Wait for the deployment to complete. This might take about 10 minutes.
+
+   >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, browse back to the **Azure Migrate | Servers, databases and web apps** page, refresh the page, and then verify that the **Migrated Servers** entry in the **Migration and modernization** section has the value of **1**.
    
 1. Refresh the page and please wait until the **Replication status** indicates **Completing planned failover** before proceeding.
 
