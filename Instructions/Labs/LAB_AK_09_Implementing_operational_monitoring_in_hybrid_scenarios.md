@@ -453,7 +453,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/801-30.png)
 
-1. Choose **Select scope**, on the **Browse** tab, browse to the **DefaultResourceGroup-xx** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
+1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
 
 1. On the **New Query 1** tab, select the **Tables (1)** header, and expand the **Azure Resources** section, to review the list of tables.
 
