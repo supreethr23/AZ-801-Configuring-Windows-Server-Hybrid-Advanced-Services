@@ -75,6 +75,8 @@ In this lab, you will:
 1. On the **Edit parameters** page, select **Load file**, in the **File Upload** dialog box, browse to the **C:\\Labfiles\\Lab06** folder, select the **L06-rg_template.parameters.json** file, and then select **Open**.
    
 1. On the **Edit parameters** page, select **Save**.
+
+1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **Create new**, in the **Name** text box, enter **AZ801-L0601-RG**, and then select **OK**.
    
 1. On the **Create an Azure VM with a new AD Forest** page, if needed, adjust the deployment settings so they have the following values (leave others with their default values):
 
@@ -82,7 +84,7 @@ In this lab, you will:
    | --- | --- |
    | Subscription | Leave the default subscription |
    | Resource group | select the existing resource group **AZ801-L0601-RG** |
-   | Region | Leave the default region |
+   | Region | <inject key="Resource group Region" enableCopy="false"/>** |
    | Admin Username | **Student** |
    | Admin Password | **Pa55w.rd1234** |
    | Domain name | **contoso.com** |
