@@ -435,7 +435,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    >**Note**: You might need to close the **Welcome to Log Analytics** and **Queries** pane if this is the first time you access Log Analytics.
 
-1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>** you created earlier in this lab, and then select **Apply**.
+1. Choose **Select scope**, on the **Browse** tab, browse to the **DefaultResourceGroup-xx** resource group, expand it, select the checkbox next to the **DefaultWorkspace-xxxxxxx**, and then select **Apply**.
 
 1. In the query window, paste the following query, select **Run**:
 
@@ -452,6 +452,8 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 1. Select **Queries** in the toolbar, in the **Queries** pane, expand the **Virtual Machines** node, hover on  **Track VM availability using Heartbeat** tile, and select the **Run** button.
 
    ![](../Media/801-30.png)
+
+1. Choose **Select scope**, on the **Browse** tab, browse to the **DefaultResourceGroup-xx** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
 
 1. On the **New Query 1** tab, select the **Tables (1)** header, and expand the **Azure Resources** section, to review the list of tables.
 
