@@ -14,7 +14,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
   ![Explore Lab Resources](../Media/env-1.png)
  
@@ -34,7 +34,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![](../media/switch.png)
  
-## **Lab Duration Extension**
+## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
@@ -47,6 +47,10 @@ For convenience, you can open the lab guide in a separate window by selecting th
    ![Manage Your Virtual Machine](../Media/gext2.png)
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+
+## Pasting Commands in the PowerShell/CloudShell Environment
+
+Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the PowerShell/CloudShell environment instead of right-clicking
 
 ## Let's Get Started with Azure Portal
  
