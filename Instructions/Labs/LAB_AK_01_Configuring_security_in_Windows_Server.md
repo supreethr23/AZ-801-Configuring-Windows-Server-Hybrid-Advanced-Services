@@ -20,7 +20,7 @@ After completing this lab, you'll be able to:
 
 > **Note**: In the lab environment, Credential Guard will not be available on VMs because they don't meet the prerequisites. This, however, will not prevent you from stepping through the process of implementing it by using Group Policy and evaluating its readiness by using corresponding tools.
 
-#### Task 1: Enable Windows Defender Credential Guard using Group Policy
+### Task 1: Enable Windows Defender Credential Guard using Group Policy
 
 1. Connect to **SEA-SVR2** and, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 
@@ -62,7 +62,7 @@ After completing this lab, you'll be able to:
 
 1. Close the **Group Policy Management** console window.
 
-#### Task 2: Enable Windows Defender Credential Guard using the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool
+### Task 2: Enable Windows Defender Credential Guard using the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool
 
 1. On **SEA-SVR2**, select **Start**, right-click or access the **context** menu for **Windows PowerShell**, and then select **Run as administrator**.
 1. To run the HVCI and Windows Defender Credential Guard hardware readiness tool, at the Windows PowerShell command prompt, enter the following commands, enter **R** Run once at the first prompt, and then press Enter for the rest of the prompts:
@@ -80,7 +80,7 @@ After completing this lab, you'll be able to:
 
 ## Exercise 2: Locating problematic accounts
 
-#### Task 1: Locate and reconfigure domain accounts with non-expiring passwords
+### Task 1: Locate and reconfigure domain accounts with non-expiring passwords
 
 1. On **SEA-SVR2**, select **Start**, right-click or access the **context** menu for **Windows PowerShell**, and then select **Run as administrator**.
 
@@ -99,9 +99,9 @@ After completing this lab, you'll be able to:
 
 1. To verify the outcome, rerun the command from step 2 and notice that no results are returned.
 
-#### Task 2: Locate and disable domain accounts that have not been used to sign in for at least 90 days
+### Task 2: Locate and disable domain accounts that have not been used to sign in for at least 90 days
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
+>**Note:** Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the environment instead of right-clicking
 
 1. To identify Active Directory user accounts that have not been used to sign in for at least 90 days, at the Windows PowerShell command prompt, enter the following command and press Enter:
 
@@ -122,9 +122,9 @@ After completing this lab, you'll be able to:
 
 ## Exercise 3: Implementing LAPS
 
-#### Task 1: Prepare computer accounts for implementing LAPS (Local Administrator Password Solution)
+### Task 1: Prepare computer accounts for implementing LAPS (Local Administrator Password Solution)
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
+>**Note:** Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the environment instead of right-clicking
 
 1. To create a designated OU and move the **SEA-SVR1** computer account to it, on **SEA-SVR2**, at the Windows PowerShell command prompt, enter the following command and press Enter: 
 
@@ -158,9 +158,9 @@ After completing this lab, you'll be able to:
 
    > **Note**: This is required to connect to **SEA-SVR2** from **SEA-SVR1** later in this lab.
 
-#### Task 2: Prepare AD DS for LAPS
+### Task 2: Prepare AD DS for LAPS
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
+>**Note:** Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the environment instead of right-clicking
 
 1. To prepare the domain for LAPS, on **SEA-SVR2**, at the Windows PowerShell command prompt, enter the following commands, and after each, press Enter:
 
@@ -195,7 +195,7 @@ After completing this lab, you'll be able to:
 
 1. Close the Group Policy Management Editor.
 
-#### Task 3: Deploy LAPS client-side extension
+### Task 3: Deploy LAPS client-side extension
 
 1. Switch to the console session to **SEA-SVR1** and then, if needed, sign in as **CONTOSO\\Administrator**, with the password **Pa55w.rd**.
 
@@ -217,7 +217,7 @@ After completing this lab, you'll be able to:
    gpupdate /force
    ```
 
-#### Task 4: Verify LAPS
+### Task 4: Verify LAPS
 
 1. Switch to the console session to **SEA-SVR2**.
 1. Select **Start**. In the **Start** menu, select **LAPS**, and then select **LAPS UI**.
