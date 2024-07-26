@@ -139,9 +139,9 @@ In this lab, you will complete the following tasks:
 
       ![](../Media/801-13.png)
 
-### Exercise 2: Identifying the source of a performance problem
+## Exercise 2: Identifying the source of a performance problem
 
-#### Task 1: Create additional workload on the server
+### Task 1: Create additional workload on the server
 
 1. On **SEA-SVR2**, open File Explorer.
 
@@ -157,7 +157,7 @@ In this lab, you will complete the following tasks:
 
    ![](../Media/801-15.png)
 
-#### Task 2: Capture performance data by using a data collector set
+### Task 2: Capture performance data by using a data collector set
 
 1. On **SEA-SVR2**, switch to Performance Monitor.
 
@@ -169,7 +169,7 @@ In this lab, you will complete the following tasks:
 
    > **Note**: Wait 1 minute to allow the data capture to occur.
 
-#### Task 3: Remove the workload and review the performance data
+### Task 3: Remove the workload and review the performance data
 
 1. On **SEA-SVR2**, switch to **CPU Stress** dialog box and close it. 
 
@@ -198,7 +198,7 @@ In this lab, you will complete the following tasks:
 
 ### Exercise 3: Viewing and configuring centralized event logs
 
-#### Task 1: Configure subscription prerequisites
+### Task 1: Configure subscription prerequisites
 
 1. On **SEA-SVR2**, switch to Windows PowerShell.
 
@@ -274,7 +274,7 @@ In this lab, you will complete the following tasks:
 
 1. In the **Event Log Readers Properties** dialog box, select **OK**.
 
-#### Task 2: Create a subscription and verify the results
+### Task 2: Create a subscription and verify the results
 
 1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, enter **Event**, and then, in the **Best match** list, select **Event Viewer**.
 
