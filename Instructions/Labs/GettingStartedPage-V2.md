@@ -66,12 +66,16 @@ For convenience, you can open the lab guide in a separate window by selecting th
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
       ![Enter Your Password](../Media/sc900-image-2.png)
+
+4. If **Action required** pop-up window appears, click on **Ask later**
+
+    ![Manage Your Virtual Machine](../Media/2test1.png)
+
+5. If prompted to stay signed in, you can click "No."
  
-4. If prompted to stay signed in, you can click "No."
+6. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Cancel" to skip the tour.
  
-5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Cancel" to skip the tour.
- 
-6. Click "Next" from the bottom right corner to embark on your Lab journey!
+7. Click "Next" from the bottom right corner to embark on your Lab journey!
  
    ![Start Your Azure Journey](../Media/sc900-image(3).png)
  
