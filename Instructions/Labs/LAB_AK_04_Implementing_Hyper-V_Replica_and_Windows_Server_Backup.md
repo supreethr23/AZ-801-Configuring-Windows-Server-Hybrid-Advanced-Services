@@ -17,7 +17,7 @@ After completing this lab, you'll be able to:
 
 ## Exercise1: Implementing Hyper-V Replica
 
-#### Task 1: Install and configure Hyper-V Replica
+### Task 1: Install and configure Hyper-V Replica
 
 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **Contoso\\Administrator** with a password of **Pa55w.rd**.
 1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell (Admin)**.
@@ -96,7 +96,7 @@ After completing this lab, you'll be able to:
 
    > **Note**: Leave the second **Administrator: Windows PowerShell** window open.
 
-#### Task 2: Configure Hyper-V replication
+### Task 2: Configure Hyper-V replication
 
 1. On **SEA-SVR2**, switch to the **Administrator: Windows PowerShell** window displaying the local PowerShell session.
 1. To enable replication of the virtual machine **SEA-CORE1** from **SEA-SVR2** to **SEA-SVR1**, on **SEA-SVR2**, at the Windows PowerShell prompt of the local session, enter the following command and press Enter:
@@ -130,7 +130,7 @@ After completing this lab, you'll be able to:
 
    > **Note**: Leave both Windows PowerShell sessions open.
 
-#### Task 3: Validate a failover
+### Task 3: Validate a failover
 
 1. On **SEA-SVR2**, switch to the **Administrator: Windows PowerShell** window displaying the local PowerShell session.
 1. To prepare for a failover of the **SEA-CORE1** virtual machine to **SEA-SVR1**, on **SEA-SVR2**, in the Windows PowerShell window hosting the local session, enter the following command and press Enter:
@@ -212,7 +212,7 @@ After completing this lab, you'll be able to:
 
 ## Exercise 2: Implementing backup and restore with Windows Server Backup
 
-#### Task1: Configure Windows Server Backup settings
+### Task1: Configure Windows Server Backup settings
 
 1. On **SEA-SVR2**, open File Explorer by selecting the **File Explorer** icon on the taskbar.
 1. In File Explorer, select **Local Disk (C:)** in the **navigation** pane.
@@ -240,7 +240,7 @@ After completing this lab, you'll be able to:
    Get-Command -Module WindowsServerBackup -CommandType Cmdlet
    ```
 
-#### Task 2: Perform a backup to a network share
+### Task 2: Perform a backup to a network share
 
 1. To create the folder and files to be backed up on **SEA-SVR1**, on **SEA-SVR2**, in the Windows PowerShell window hosting the PowerShellRemoting session to **SEA-SVR1**, enter the following commands, and after entering each command, press Enter:
 
