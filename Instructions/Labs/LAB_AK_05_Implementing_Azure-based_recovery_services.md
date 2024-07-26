@@ -18,7 +18,7 @@ After completing this lab, you'll be able to:
 
 ## Exercise 1: Creating and configuring an Azure Site Recovery vault
 
-#### Task 1: Create an Azure Site Recovery vault
+### Task 1: Create an Azure Site Recovery vault
 
 1. Connect to **SEA-SVR2**, and if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, start Microsoft Edge, go to the Azure portal at `https://portal.azure.com/`, and sign in by using the credentials of a user account with the Owner role in the subscription you'll be using in this lab.
@@ -50,7 +50,7 @@ After completing this lab, you'll be able to:
 
    > **Note:** By default, the Storage Replication type of the vault is set to Geo-redundant (GRS), as well as Soft Delete and Security Features are enabled. You will change these settings in the lab to simplify deprovisioning, but you should ensure they are enabled in your production environments.
 
-#### Task 2: Configure the Azure Site Recovery vault
+### Task 2: Configure the Azure Site Recovery vault
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the deployment page, select **Go to resource**. 
 
@@ -75,7 +75,7 @@ After completing this lab, you'll be able to:
 
 ## Exercise 2: Implementing Hyper-V VM protection by using Azure Site Recovery vault
 
-#### Task 1: Implement an Azure recovery site
+### Task 1: Implement an Azure recovery site
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, use the **Search resources, services, and docs** text box in the toolbar to search for and select **Virtual networks**, and on the **Virtual networks** page, select **+ Create**.
 1. On the **Basics** tab of the **Create virtual network** page, specify the following settings (leave others with their default values) and select **IP Addresses (5)**:
@@ -184,7 +184,7 @@ After completing this lab, you'll be able to:
 
 1. On the **Review + create** tab of the **Create storage account** page, select **Create**.
 
-#### Task 2: Prepare protection of a Hyper-V virtual machine
+### Task 2: Prepare protection of a Hyper-V virtual machine
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, use the **Search resources, services, and docs** text box in the toolbar to search for and select **Recovery Services vaults**, and on the **Recovery Services vaults** page, select the **az801l05a-rsvault** entry.
 1. On the **az801l05a-rsvault** page, on the right side under **Overview (1)**, in the **Site Recovery** section, select **Getting started (2)** .
@@ -230,7 +230,7 @@ After completing this lab, you'll be able to:
 
     ![](../media/22.png)
 
-   > **Note:** If you receive the Microsoft Edge notification that **AzureSiteRecoveryProvider.exe can't be downloaded securely**, move the cursor over the right side of the message to reveal the ellipsis symbol (**...**), select it, in the drop-down menu, select **Copy download link**, open another tab in the same Microsoft Edge window, paste the link you copied, and then press Enter.
+   >**Note:** If you receive the Microsoft Edge notification that **AzureSiteRecoveryProvider.exe can't be downloaded securely**, move the cursor over the right side of the message to reveal the ellipsis symbol (**...**), select it, in the drop-down menu, select **Copy download link**, open another tab in the same Microsoft Edge window, paste the link you copied, and then press Enter.
 
 1. In the download notification, select **Open file**. This will start the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard.
 1. On the **Microsoft Update** page, select **Off (1)** and select **Next (2)**.
@@ -292,7 +292,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/33.png)
 
-#### Task 3: Enable replication of a Hyper-V virtual machine
+### Task 3: Enable replication of a Hyper-V virtual machine
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l05a-rsvault \| Site Recovery** page, in the **Hyper-V machines to Azure** section, select **2. Enable replication**. 
 
@@ -327,7 +327,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/37.png)
 
-#### Task 4: Review Azure VM replication settings
+### Task 4: Review Azure VM replication settings
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, back on the **az801l05a-rsvault \| Site Recovery** page, on the vertical menu on the left side, select **Replicated items**. 
 1. On the **az801l05a-rsvault \| Replicated items** page, ensure that there is an entry representing the **SEA-CORE1** virtual machine and verify that its **Replication Health** is listed as **Healthy** and that its **Status** is listed as either **Enabling protection** or displaying a current percentage of synchronization progress.
@@ -347,7 +347,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
     ![](../media/40.png)
 
-#### Task 5: Perform a failover of the Hyper-V virtual machine
+### Task 5: Perform a failover of the Hyper-V virtual machine
 
 1. On **SEA-SVR2**, in the browser window displaying the Azure portal, on the **SEA-CORE1** replicated items blade go to the Compute and Network setting and review the virtual machine size. Validate that the size is set to A1_v2, if not edit the size to be A1_v2.
 
@@ -394,7 +394,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 ## Exercise 3: Implementing Azure Backup
 
-#### Task 1: Set up the Azure Recovery Services agent
+### Task 1: Set up the Azure Recovery Services agent
 
 > **Note:** In general, the same vault can be used to implement Azure Site Recovery and Azure Backup functionality. When choosing the Azure region to host the vault for the purpose of disaster recovery and backup, you should take into account recovery objectives, including the range of impact of a regional disaster as well as network latency considerations. In this lab, you will use the same vault for site recovery and backup to minimize the number of duplicate steps. 
 
@@ -480,7 +480,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
     ![](../media/57.png)
 
-#### Task 2: Schedule Azure Backup
+### Task 2: Schedule Azure Backup
 
 1. On **SEA-SVR2**, in the **Microsoft Azure Backup** console, in the Actions pane, select **Schedule Backup**.
 
@@ -502,7 +502,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 1. On the **Choose Initial Backup type (Files and Folders)** page, accept the defaults, and then select **Next**.
 1. On the **Confirmation** page, select **Finish**. When the backup schedule is created, select **Close**.
 
-#### Task 3: Perform an on-demand backup
+### Task 3: Perform an on-demand backup
 
 > **Note:** The option to run backup on demand becomes available after you create a scheduled backup.
 
@@ -531,7 +531,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/63.png)
 
-#### Task 4: Perform file recovery by using Azure Recovery Services agent
+### Task 4: Perform file recovery by using Azure Recovery Services agent
 
 1. On **SEA-SVR2**, open File Explorer, browse to the **C:\\Windows\\System32\\drivers\\etc\\** folder and delete the **hosts** file.
 
