@@ -21,7 +21,7 @@ In this lab, you will:
 
 ## Exercise 1: Deploying AD DS domain controllers in Azure
 
-#### Task 1: Deploy a domain controller by using an Azure Resource Manager (ARM) template
+### Task 1: Deploy a domain controller by using an Azure Resource Manager (ARM) template
 
 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 
@@ -103,7 +103,7 @@ In this lab, you will:
 
    > **Note**: Wait for the deployment to complete before you proceed to the next task. This might take about 15 minutes. 
 
-#### Task 2: Deploy Azure Bastion 
+### Task 2: Deploy Azure Bastion 
 
  > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
 
@@ -158,7 +158,7 @@ In this lab, you will:
 
    > **Note**: Wait for the deployment to complete before you proceed to the next task. The deployment might take about 5 minutes.
 
-#### Task 3: Deploy an Azure VM by using the Azure portal
+### Task 3: Deploy an Azure VM by using the Azure portal
 
 > **Note**: You could fully automate the deployment of the second Azure VM and its setup as an additional domain controller in the same domain as the first one you provisioned in the first task of this exercise. However, the use of graphical interface in this case should provide additional guidance regarding differences between provisioning domain controllers in on-premises and Azure-based scenarios.
 
@@ -226,7 +226,7 @@ In this lab, you will:
 
    > **Note**: Wait for the deployment to complete. The deployment might take about 3 minutes.
 
-#### Task 4: Manually promote a domain controller in an Azure VM
+### Task 4: Manually promote a domain controller in an Azure VM
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the deployment page, select **Go to resource**.
 1. On the **az801l06a-dc2** page, on the vertical menu of the left side, in the **Networking** section, select **Network settings**.
@@ -316,7 +316,7 @@ In this lab, you will:
 
 ## Exercise 2: Migrating file servers by using Storage Migration Service
 
-#### Task 1: Install Windows Admin Center
+### Task 1: Install Windows Admin Center
 
 1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell**.
 1. In the **Windows PowerShell** console, enter the following command, and then press Enter to download the latest version of Windows Admin Center:
@@ -332,7 +332,7 @@ In this lab, you will:
 
    > **Note**: Wait until the installation completes. This should take about 2 minutes.
 
-#### Task 2: Set up file services
+### Task 2: Set up file services
 
 1. On **SEA-SVR2**, on the taskbar, select **File Explorer**.
 1. In File Explorer, browse to the **C:\\Labfiles\\Lab06** folder.
@@ -348,7 +348,7 @@ In this lab, you will:
 
    >**Note:** Click on **Run Once** when the pop-up comes up.
 
-#### Task 3: Perform migration by using Storage Migration Service
+### Task 3: Perform migration by using Storage Migration Service
 
 1. On **SEA-SVR2**, start Microsoft Edge, and then go to **https://SEA-SVR2.contoso.com**. 
    
@@ -443,7 +443,7 @@ In this lab, you will:
 
    >**Note:** The cutover will trigger two consecutive restarts of both **SEA-SVR1** and **SEA-SVR2**.
 
-#### Task 4: Validate migration outcome
+### Task 4: Validate migration outcome
 
 1. On **SEA-SVR2**, sign in as **CONTOSO\\Administrator** with the password **Pa55w.rd**.
 1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell** and select **Run as Administrator**.
