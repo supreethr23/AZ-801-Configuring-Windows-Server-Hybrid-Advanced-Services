@@ -121,7 +121,6 @@ In this lab, you will:
 
    ![](../Media/21053.png)
 
-
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **AZ801-L0601-RG** and enter **cloudstore<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create**.
 
 1. Wait for PowerShell terminal to start.
