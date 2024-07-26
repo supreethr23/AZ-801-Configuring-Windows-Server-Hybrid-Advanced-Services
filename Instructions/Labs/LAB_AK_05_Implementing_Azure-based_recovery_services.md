@@ -63,7 +63,7 @@ After completing this lab, you'll be able to:
 
 1. On the **Backup Configuration** page, set **Storage replication type** to **Locally-redundant (1)**, select **Apply (2)** and close the **Backup Configuration** page.
 
-   ![](../media/locallyredudant.png)
+   ![](../Media/locallyredudant.png)
 
    > **Note:** Storage replication type cannot be changed after you implement protection.
 
