@@ -101,7 +101,7 @@ After completing this lab, you'll be able to:
 
 #### Task 2: Locate and disable domain accounts that have not been used to sign in for at least 90 days
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+V** keys instead of right-clicking.
+>**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
 
 1. To identify Active Directory user accounts that have not been used to sign in for at least 90 days, at the Windows PowerShell command prompt, enter the following command and press Enter:
 
@@ -124,7 +124,7 @@ After completing this lab, you'll be able to:
 
 #### Task 1: Prepare computer accounts for implementing LAPS (Local Administrator Password Solution)
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+V** keys instead of right-clicking.
+>**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
 
 1. To create a designated OU and move the **SEA-SVR1** computer account to it, on **SEA-SVR2**, at the Windows PowerShell command prompt, enter the following command and press Enter: 
 
@@ -160,7 +160,7 @@ After completing this lab, you'll be able to:
 
 #### Task 2: Prepare AD DS for LAPS
 
->**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+V** keys instead of right-clicking.
+>**Note:** Make sure that, when pasting the commands inside the environment, you use the **CTRL+SHIFT+V/CTRL+V** keys instead of right-clicking.
 
 1. To prepare the domain for LAPS, on **SEA-SVR2**, at the Windows PowerShell command prompt, enter the following commands, and after each, press Enter:
 
