@@ -1,0 +1,12 @@
+[
+   {
+    "Name": "Hyper-V-Custom-Lab",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/prod/Instructions/Labs/Gettingstarted-katulasyslab.md",
+        "Order": 1
+        }
+     ]  
+   }
+]
