@@ -535,7 +535,10 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/69.png)
 
-1. Switch to the Microsoft Azure Backup window and select **Recover data**. This will start the **Recover Data Wizard**.
+1. Switch to the **Microsoft Azure Backup** window and select **Recover data**. This will start the **Recover Data Wizard**.
+
+     ![](../media/az801-lab5-data.png)
+
 1. On the **Getting Started** page of the **Recover Data Wizard**, ensue that **This server (sea-svr2.contoso.com)** option is selected and select **Next**.
 1.  On the **Select Recovery Location** page, leave all the default values and select **Next** 
 1. On the **Select Recovery Mode** page, ensure that **Individual files and folders** option is selected, and select **Next**.
