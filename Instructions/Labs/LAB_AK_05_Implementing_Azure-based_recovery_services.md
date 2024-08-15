@@ -349,7 +349,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 ### Task 5: Perform a failover of the Hyper-V virtual machine
 
-1. On **SEA-SVR2**, in the browser window displaying the Azure portal, on the **SEA-CORE1** replicated items blade go to the Compute and Network setting and review the virtual machine size. Validate that the size is set to A1_v2, if not edit the size to be A1_v2.
+1. On **SEA-SVR2**, in the browser window displaying the Azure portal, on the **SEA-CORE1** replicated items blade go to the Compute and Network setting and review the virtual machine size. Validate that the size is set to A1_v2, if not edit the size to be A1_v2 and click on **Save**.
 
 1. Go back to the overview and initiate **Test failover** with the following settings (leave others with their default values) and select **OK (2)**:
 
@@ -365,8 +365,6 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
      ![](../media/74.png)
 
    > **Note:** The time required for the test failover to complete depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated. 
-
-   > **Note:** While waiting for the test failover to complete, proceed to Exercise 3, and after you finish it, step through the remaining portion of this exercise.
 
 1. In the Azure portal, use the **Search resources, services, and docs** text box in the toolbar to search for and select **Virtual machines** and, on the **Virtual machines** page, note the entry representing the newly provisioned virtual machine.
 
@@ -408,8 +406,6 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    > **Note:** If you are getting an error message that says the installation has failed, then restart the VM and try again. 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the **az801l05a-rsvault** Recovery Services vault page, on the vertical menu on the left side, in the **Getting started** section, select **Backup**.
-
-   ![](../media/67.png)
 
 1. On the **az801l05a-rsvault \|Backup (1)** page, specify the following settings:
 
@@ -530,6 +526,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 1. On the **Backup Items (Azure Backup Agent)** page, verify that there is an entry referencing drive **C** of **sea-svr2.contoso.com**.
 
    ![](../media/63.png)
+
+   >**Note**: Wait for sometime until **Last backup** status changes to **Success**
 
 ### Task 4: Perform file recovery by using Azure Recovery Services agent
 
