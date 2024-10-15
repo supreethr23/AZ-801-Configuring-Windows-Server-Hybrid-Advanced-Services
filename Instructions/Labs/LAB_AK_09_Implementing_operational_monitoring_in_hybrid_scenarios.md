@@ -114,7 +114,7 @@ In this lab, you will complete the following tasks:
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Task 4: Install Service Map solution
+<!--### Task 4: Install Service Map solution
 
 1. On **SEA-SVR2**, in the Azure portal, in the **Search resources, services, and docs** text box, in the toolbar, search for **Service Map** and, in the list of results, in the **Marketplace** section, select **Service Map**.
 
@@ -126,7 +126,7 @@ In this lab, you will complete the following tasks:
    | --- | --- |
    | Subscription | select the name of the Azure subscription you are using in this lab |
    | Resource group | **AZ801-L0901-RG** |
-   | Log Analytics Workspace | select the name of the Log Analytics workspace you created in the previous task |
+   | Log Analytics Workspace | select the name of the Log Analytics workspace you created in the previous task |-->
 
 ## Exercise 2: Configuring monitoring of on-premises servers
 
@@ -453,7 +453,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/801-30.png)
 
-1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
+<!--1. Choose **Select scope**, on the **Browse** tab, browse to the **AZ801-L0901-RG** resource group, expand it, select the checkbox next to the **workspace<inject key="DeploymentID" enableCopy="false"/>**, and then select **Apply**.
 
 1. On the **New Query 1** tab, select the **Tables (1)** header, and expand the **Azure Resources** section, to review the list of tables.
 
@@ -485,7 +485,7 @@ the **Workspace ID** and **Workspace Key (Primary Key)** you recorded in the pre
 
    ![](../Media/ex-4-t3-s12-1.png)
 
-   ![](../Media/ex-4-t3-s12-2.png)
+   ![](../Media/ex-4-t3-s12-2.png) -->
 
 <!-- ## Exercise 5: Deprovisioning the Azure environment
 
