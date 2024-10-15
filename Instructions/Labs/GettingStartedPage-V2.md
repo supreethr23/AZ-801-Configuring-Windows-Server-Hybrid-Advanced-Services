@@ -71,15 +71,45 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
  
       ![Enter Your Password](../Media/sc900-image-2.png)
 
-4. If **Action required** pop-up window appears, click on **Ask later**
+1. If **Action required** pop-up window appears, click on **Next**.
 
-    ![Manage Your Virtual Machine](../Media/2test1.png)
+   ![Ask Later](../Media/ask-later.png)
 
-5. If prompted to stay signed in, you can click "No."
- 
-6. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Cancel" to skip the tour.
- 
-7. Click "Next" from the bottom right corner to embark on your Lab journey!
+1. On **Start by getting the app** page, click on **Next**.
+
+1. Click on **Next** twice.
+
+1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+
+   ![Install](../Media/mobile.jpg)
+
+   >Note:For **iOS**, Open app store and repeat the steps.
+
+   >Note: Skip If already installed.
+   
+1. Open the app and click on **Scan a QR code**.
+
+1. Scan the QR code visible on the screen and click on **Next**.
+
+   ![QR code](../Media/demo001.png)
+
+1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+
+1. Once the notification is approved, click on **Next**.
+
+   ![Approved](../Media/demo002.png)
+
+1. Click on **Done**.
+
+1. If prompted to stay signed in, you can click **"No"**.
+
+1. Tap on **Finish** in the Mobile Device.
+
+   >NOTE: While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+
+1. Click **Next** from the bottom right corner to embark on your Lab journey!
  
    ![Start Your Azure Journey](../Media/sc900-image(3).png)
  
