@@ -41,6 +41,8 @@ In this lab, you will:
 
    > **Note**: Caching on the disks hosting AD DS database and log files should be set to **None**.
 
+ 	![](../Media/sku-change.png)
+
 1. On the **Edit template** page, browse to the **extension** section (starting with the line **233**) and note that the template uses PowerShell Desired State Configuration to run the **CreateADPDC.ps1** script within the deployed Azure virtual machine (VM).
 
    > **Note**: To review the script, you can use the following steps:
