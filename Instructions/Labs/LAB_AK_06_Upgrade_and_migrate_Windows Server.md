@@ -41,6 +41,8 @@ In this lab, you will:
 
    > **Note**: Caching on the disks hosting AD DS database and log files should be set to **None**.
 
+ 	![](../Media/sku-change.png)
+
 1. On the **Edit template** page, browse to the **extension** section (starting with the line **233**) and note that the template uses PowerShell Desired State Configuration to run the **CreateADPDC.ps1** script within the deployed Azure virtual machine (VM).
 
    > **Note**: To review the script, you can use the following steps:
@@ -60,7 +62,9 @@ In this lab, you will:
 
 1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **152**) and note that the private IP address allocation method is set to **Static** (on line **164**).
 
-   > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
+   ![](../Media/pip.png)
+
+      > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
 
 1. Browse to the section that deploys a nested template(starting with line **266**) and note that the template updates the DNS server address within the virtual network hosting the Azure VM operating as a domain controller with the DNS server role installed.
 
@@ -84,7 +88,7 @@ In this lab, you will:
    | --- | --- |
    | Subscription | Leave the default subscription |
    | Resource group | select the existing resource group **AZ801-L0601-RG** |
-   | Region | <inject key="Resource group Region" enableCopy="false"/>** |
+   | Region | **<inject key="Resource group Region" enableCopy="false"/>** |
    | Admin Username | **Student** |
    | Admin Password | **Pa55w.rd1234** |
    | Domain name | **contoso.com** |
@@ -287,7 +291,7 @@ In this lab, you will:
 1. In the **Supply the credentials to perform this operation** section, select **Change**.
 1. In the **Credentials for deployment operation** dialog box, in the **User name** box, enter **Student@contoso.com**, in the **Password** box, enter **Pa55w.rd1234**, and then select **OK**. 
 1. Back on the **Deployment Configuration** page of **Active Directory Domain Services Configuration Wizard**, select **Next**.
-**Note:** If you are unable to see the **Next** option, try adjusting **zoom in/zoom out** from the browser settings.
+   >**Note:** If you are unable to see the **Next** option, try adjusting **zoom in/zoom out** from the browser settings.
 1. On the **Domain Controller Options** page, ensure that the **Domain Name System (DNS) server** and **Global Catalog (GC)** checkboxes are selected. Ensure that the **Read-only domain controller (RODC)** checkbox is cleared.
 1. In the **Type the Directory Services Restore Mode (DSRM) password** section, enter and confirm the password **Pa55w.rd1234**, and then select **Next**.
 1. On the **DNS Options** page of **Active Directory Domain Services Configuration Wizard**, select **Next**.
