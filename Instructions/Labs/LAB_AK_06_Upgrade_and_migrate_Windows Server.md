@@ -62,7 +62,9 @@ In this lab, you will:
 
 1. Browse to the section that provisions the network interface of the Azure VM (starting with the line **152**) and note that the private IP address allocation method is set to **Static** (on line **164**).
 
-   > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
+   ![](../Media/pip.png)
+
+      > **Note**: Using the static assignment is common when deploying domain controllers, but it is essential for servers that host the DNS server role.
 
 1. Browse to the section that deploys a nested template(starting with line **266**) and note that the template updates the DNS server address within the virtual network hosting the Azure VM operating as a domain controller with the DNS server role installed.
 
@@ -86,7 +88,7 @@ In this lab, you will:
    | --- | --- |
    | Subscription | Leave the default subscription |
    | Resource group | select the existing resource group **AZ801-L0601-RG** |
-   | Region | <inject key="Resource group Region" enableCopy="false"/>** |
+   | Region | **<inject key="Resource group Region" enableCopy="false"/>** |
    | Admin Username | **Student** |
    | Admin Password | **Pa55w.rd1234** |
    | Domain name | **contoso.com** |
