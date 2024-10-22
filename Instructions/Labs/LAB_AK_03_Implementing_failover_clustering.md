@@ -34,8 +34,8 @@ After completing this lab, you'll be able to:
 1. To install the Failover Clustering server feature including the management tools on **SEA-SVR1** and **SEA-SVR2**, at the Windows PowerShell command prompt, enter the following commands, and after entering each command, press Enter:
 
    ```powershell
-   Install-WindowsFeature –Name Failover-Clustering –IncludeManagementTools
-   Install-WindowsFeature -ComputerName 'SEA-SVR1.contoso.com' –Name Failover-Clustering –IncludeManagementTools
+   Install-WindowsFeature -Name Failover-Clustering -IncludeManagementTools
+   Install-WindowsFeature -ComputerName 'SEA-SVR1.contoso.com' -Name Failover-Clustering -IncludeManagementTools
    ```
 
    > **Note**: Wait for the installation process to complete. The installation should take about 1 minute.
