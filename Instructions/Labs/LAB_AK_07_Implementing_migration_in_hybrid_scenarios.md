@@ -47,29 +47,41 @@ After completing this lab, you will be able to:
   
    - Password: <inject key="AzureAdUserPassword"></inject>
   
-1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.):
+1. On the **Hyper-V Host Virtual Machine with nested VMs** page in the Azure portal, specify the following settings (Leave others with their default values.) and click on **Review + Create (9)**:
 
    | Setting | Value | 
    | --- | --- |
-   | Subscription | the name of the Azure subscription you are using in this lab |
+   | Subscription | the name of the Azure subscription you are using in this lab **(1)** |
    | Resource group | Select  **AZ801-L0701-RG** |
-   | Region | select **<inject key="Region" enableCopy="false"/>** |
-   | Virtual Network Name | **az801l07a-hv-vnet** |
-   | Host Network Interface1Name | **az801l07a-hv-vm-nic1** |
-   | Host Network Interface2Name | **az801l07a-hv-vm-nic2** |
-   | Host Virtual Machine Name | **az801l07a-hv-vm** |
-   | Host Admin Username | **Student** |
-   | Host Admin Password | **Pa55w.rd1234** |
+   | Region | select **<inject key="Region" enableCopy="false"/>** **(2)** |
+   | Virtual Network Name | **az801l07a-hv-vnet (3)** |
+   | Host Network Interface1Name | **az801l07a-hv-vm-nic1 (4)** |
+   | Host Network Interface2Name | **az801l07a-hv-vm-nic2 (5)** |
+   | Host Virtual Machine Name | **az801l07a-hv-vm (6)** |
+   | Host Admin Username | **Student (7)** |
+   | Host Admin Password | **Pa55w.rd1234 (8)** |
 
-1. On the **Hyper-V Host Virtual Machine with nested VMs** page, select **Review + create** and then select **Create**.
+   ![](../media/az801lab7img1.png)
+
+   ![](../media/az801lab7img3.png)
 
    > **Note**: Wait for the deployment to complete. The deployment might take about 10 minutes.
 
-1. Once deployment is successfully in search bar, search for and select Virtual machine and on virtual machine blade from the list select **az801l07a-hv-vm**.
-1. Please follow **1a** or **1b** based on the experience provided in the portal to add inbound port rule.
-    * 1a - On **az801l07a-hv-vm** page, under **Settings** section select **Networking** and click on **Add inbound port rule**
-    * 1b - On **az801l07a-hv-vm** page, under **Networking** section select **Network settings** and click on **+ create port rule** and from drop down and select **inbound port rule**.(New experience)
+1. Once deployment is successfully in search bar, search for and select Virtual machine.
+
+   ![](../media/az801lab7img2.png)
+
+1. On virtual machine blade from the list select **az801l07a-hv-vm**.
+
+   ![](../media/az801lab7img4.png)
+
+1. On **az801l07a-hv-vm** page, under **Networking** section select **Network settings (1)** and click on **+ create port rule (2)** and from drop down and select **inbound port rule (3)**.
+
+   ![](../media/az801lab7img5.png)
+
 1. On **Add inbound security rule** page for **Services** from drop down select **RDP** and click on **Add**.
+
+
 1. Once deployment is successfully in search bar, search for and select **Public Ip address**.
 1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following (Leave others with their default values.):
    
