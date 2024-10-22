@@ -68,13 +68,13 @@ After completing this lab, you'll be able to:
    New-Item -ItemType Directory C:\Storage -Force
    ```
    ```powershell
-   New-IscsiVirtualDisk C:\Storage\disk1.VHDX –size 10GB
+   New-IscsiVirtualDisk C:\Storage\disk1.VHDX -size 10GB
    ```
    ```powershell
-   New-IscsiVirtualDisk C:\Storage\disk2.VHDX –size 10GB
+   New-IscsiVirtualDisk C:\Storage\disk2.VHDX -size 10GB
    ```
    ```powershell
-   New-IscsiVirtualDisk C:\Storage\disk3.VHDX –size 10GB
+   New-IscsiVirtualDisk C:\Storage\disk3.VHDX -size 10GB
    ```
 1. Minimize the Windows Powershell window.
 
@@ -105,7 +105,7 @@ After completing this lab, you'll be able to:
 1. To create the Microsoft iSCSI Target on **SEA-DC1**, switch to the **Windows PowerShell** window hosting PowerShell Remoting session to **SEA-DC1**, enter the following command, and then press Enter:
 
    ```powershell
-   New-IscsiServerTarget -TargetName “iSCSI-L03” –InitiatorIds “IQN:iqn.1991-05.com.microsoft:sea-svr1.contoso.com","IQN:iqn.1991-05.com.microsoft:sea-svr2.contoso.com"
+   New-IscsiServerTarget -TargetName “iSCSI-L03” -InitiatorIds “IQN:iqn.1991-05.com.microsoft:sea-svr1.contoso.com","IQN:iqn.1991-05.com.microsoft:sea-svr2.contoso.com"
    ```
 
 ## Exercise 2: Configuring a failover cluster
@@ -123,18 +123,17 @@ After completing this lab, you'll be able to:
 1. To connect to the iSCSI Target hosted on **SEA-DC1** from **SEA-SVR2**, switch to the **Windows PowerShell** prompt providing access to the local session, enter the following commands, and after entering each command, press Enter:
 
    ```powershell
-   New-iSCSITargetPortal –TargetPortalAddress SEA-DC1.contoso.com  
-   Connect-iSCSITarget –NodeAddress iqn.1991-05.com.microsoft:sea-dc1-iSCSI-L03-target
+   New-iSCSITargetPortal -TargetPortalAddress SEA-DC1.contoso.com  
+   Connect-iSCSITarget -NodeAddress iqn.1991-05.com.microsoft:sea-dc1-iSCSI-L03-target
    Get-iSCSITarget | fl
    ```
-
    > **Note:** Verify that after you run the last command, the value for the *IsConnected* variable is True.
 
 1. To connect to the iSCSI Target hosted on **SEA-DC1** from **SEA-SVR1**, switch to the Windows PowerShell window hosting PowerShell Remoting session to **SEA-SVR1**, enter the following commands, and after entering each command, press Enter:
 
    ```powershell
-   New-iSCSITargetPortal –TargetPortalAddress SEA-DC1.contoso.com 
-   Connect-iSCSITarget –NodeAddress iqn.1991-05.com.microsoft:sea-dc1-iSCSI-L03-target
+   New-iSCSITargetPortal -TargetPortalAddress SEA-DC1.contoso.com 
+   Connect-iSCSITarget -NodeAddress iqn.1991-05.com.microsoft:sea-dc1-iSCSI-L03-target
    Get-iSCSITarget | fl
    ```
 
@@ -161,7 +160,6 @@ After completing this lab, you'll be able to:
    Format-Volume -DriveLetter F -FileSystem NTFS
    Format-Volume -DriveLetter G -FileSystem NTFS
    ```
-
    > **Note:** Verify the disk numbers match the previous command output before running the commands. Verify that each command completed successfully.
 
 ### Task 3: Create a failover cluster
@@ -180,7 +178,7 @@ After completing this lab, you'll be able to:
    Add-ClusterNode -Cluster SEA-CL03 -Name SEA-SVR1.contoso.com
    ```
 
-   > **Note:** Verify that the command completed successfully.
+   > **Note:** Verify that the command is completed successfully.
 
 ## Exercise 3: Deploying and configuring a highly available file server
 
@@ -204,7 +202,7 @@ After completing this lab, you'll be able to:
 
    ![](../Media/lab03-06.png) 
 
-1. On the **Failover Cluster Manager** page, right-click or access the context menu for **Roles**, and then select **Configure Role**. This will start **High Availability Wizard**.
+1. On the **Failover Cluster Manager** page, right-click or access the context menu for **Roles**, and then select **Configure Role**. This will start with **High Availability Wizard**.
 
    ![](../Media/lab03-16.png) 
 
