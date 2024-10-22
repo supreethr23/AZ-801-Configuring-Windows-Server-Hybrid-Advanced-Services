@@ -43,7 +43,7 @@ After completing this lab, you'll be able to:
 1. To install iSCSI Target server role service on **SEA-DC1**, at the Windows PowerShell command prompt, enter the following command and press Enter:
 
    ```powershell
-   Install-WindowsFeature -ComputerName 'SEA-DC1.contoso.com' –Name FS-iSCSITarget-Server –IncludeManagementTools
+   Install-WindowsFeature -ComputerName 'SEA-DC1.contoso.com' -Name FS-iSCSITarget-Server -IncludeManagementTools
    ```
 
    > **Note**: Wait for the installation process to complete. The installation should take about 1 minute.
