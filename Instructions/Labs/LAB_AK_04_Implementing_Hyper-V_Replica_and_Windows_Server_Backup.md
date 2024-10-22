@@ -20,7 +20,10 @@ After completing this lab, you'll be able to:
 ### Task 1: Install and configure Hyper-V Replica
 
 1. Connect to **SEA-SVR2**, and then, if needed, sign in as **Contoso\\Administrator** with a password of **Pa55w.rd**.
-1. On **SEA-SVR2**, select **Start**, and then select **Windows PowerShell (Admin)**.
+1. On **SEA-SVR2**, right click on **Start**, and then select **Windows PowerShell (Admin)**.
+
+   ![](../Media/lab4.2.png)
+
 1. To identify the status of the Windows Defender Firewall with Advanced Security **Hyper-V Replica HTTP Listener (TCP-In)** rule on **SEA-SVR2**, at the Windows PowerShell prompt, enter the following command and press Enter:
 
    ```powershell
@@ -64,7 +67,10 @@ After completing this lab, you'll be able to:
 
    > **Note**: Leave the **Administrator: Windows PowerShell** window open.
 
-1. To open another **Administrator: Windows PowerShell** window, on **SEA-SVR2**, select **Start** and select **Windows PowerShell (Admin)**.
+1. To open another **Administrator: Windows PowerShell** window, on **SEA-SVR2**, right click on **Start** and select **Windows PowerShell (Admin)**.
+
+   ![](../Media/lab4.2.png)
+
 1. To establish a PowerShell Remoting session to **SEA-SVR1**, in the newly opened Windows PowerShell window, enter the following command, and then press Enter:
 
    ```powershell
@@ -217,8 +223,21 @@ After completing this lab, you'll be able to:
 1. On **SEA-SVR2**, open File Explorer by selecting the **File Explorer** icon on the taskbar.
 1. In File Explorer, select **Local Disk (C:)** in the **navigation** pane.
 1. Right-click or access the context menu in an empty space in the details pane, select **New**, and then select **Folder**. 
+
+   ![](../Media/lab4.3.png)
+
 1. Name the folder **BackupShare**. Right-click or access the context menu for the **BackupShare** folder, select **Give access to**, and then select **Specific people**.
-1. In the **Network access** window, enter **Authenticated Users**, and then select **Add**. In the **Permission Level** column, set the value for **Authenticated Users** to **Read/Write**, select **Share**, and then select **Done**.
+
+   ![](../Media/lab4.4.png)
+
+1. In the **Network access** window, enter **Authenticated Users**, and then select **Add**.
+
+   ![](../Media/lab4.5.png)
+
+1. In the **Permission Level** column, set the value for **Authenticated Users** to **Read/Write**, select **Share**, and then select **Done**.
+
+   ![](../Media/lab4.6.png)
+
 1. On **SEA-SVR2**, switch to the **Administrator: Windows PowerShell** window hosting the PowerShellRemoting session to **SEA-SVR1**. 
 1. To install the **Windows Server Backup** role on **SEA-SVR1**, on **SEA-SVR2**, in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
 
