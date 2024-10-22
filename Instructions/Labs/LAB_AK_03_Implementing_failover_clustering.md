@@ -363,7 +363,15 @@ After completing this lab, you'll be able to:
 
 1. Switch to the **Failover Cluster Manager** console, and then, in the list of disks within the **Disks** node, select **Cluster Disk 3** configured as the disk witness, and then, in the Actions pane, select **Bring Online**.
 
-   ![](../Media/lab3-01.png)  
+   ![](../Media/lab3-01.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+<validation step="ced6ab86-cdfc-4810-b94f-e95ddb9e48bd" />
+   
 
 ## Review
 
