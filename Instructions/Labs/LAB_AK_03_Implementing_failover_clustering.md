@@ -105,7 +105,7 @@ After completing this lab, you'll be able to:
 1. To create the Microsoft iSCSI Target on **SEA-DC1**, switch to the **Windows PowerShell** window hosting PowerShell Remoting session to **SEA-DC1**, enter the following command, and then press Enter:
 
    ```powershell
-   New-IscsiServerTarget -TargetName “iSCSI-L03” -InitiatorIds “IQN:iqn.1991-05.com.microsoft:sea-svr1.contoso.com","IQN:iqn.1991-05.com.microsoft:sea-svr2.contoso.com"
+   New-IscsiServerTarget -TargetName iSCSI-L03 -InitiatorIds IQN:iqn.1991-05.com.microsoft:sea-svr1.contoso.com,IQN:iqn.1991-05.com.microsoft:sea-svr2.contoso.com
    ```
 
 ## Exercise 2: Configuring a failover cluster
