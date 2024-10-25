@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 04: Implementing Hyper-V Replica and Windows Server Backup
+# Lab Scenario Preview: Lab 03: Implementing Hyper-V Replica and Windows Server Backup
 
 ### Lab overview
 
