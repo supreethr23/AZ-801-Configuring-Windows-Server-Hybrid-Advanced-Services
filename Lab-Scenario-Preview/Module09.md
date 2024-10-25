@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 09: Implementing operational monitoring in hybrid scenarios
+# Lab Scenario Preview: Lab 08: Implementing operational monitoring in hybrid scenarios
 
 ### Lab overview
 
