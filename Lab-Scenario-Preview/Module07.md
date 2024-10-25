@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 07: Migrating Hyper-V VMs to Azure by using Azure Migrate
+# Lab Scenario Preview: Lab 06: Migrating Hyper-V VMs to Azure by using Azure Migrate
 
 ### Lab overview
 
