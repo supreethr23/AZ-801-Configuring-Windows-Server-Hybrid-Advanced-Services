@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 03: Implementing failover clustering
+# Lab Scenario Preview: Lab 02: Implementing failover clustering
 
 ### Lab overview
 
