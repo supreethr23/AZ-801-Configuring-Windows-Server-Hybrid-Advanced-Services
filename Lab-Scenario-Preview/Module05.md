@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 05 : Implementing Azure-based recovery services
+# Lab Scenario Preview: Lab 04 : Implementing Azure-based recovery services
 
 ### Lab overview
 
