@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 06: Upgrade and migrate in Windows Server
+# Lab Scenario Preview: Lab 05: Upgrade and migrate in Windows Server
 
 ### Lab overview
 
