@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/prod/Lab-Scenario-Preview/Module01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/Oct-24/Lab-Scenario-Preview/Module01.md",
         "Order": 1
       }
     ]
