@@ -46,6 +46,7 @@ After completing this lab, you'll be able to:
    ![](../Media/lab1-image4.png)
 
 1. Select **Turn On Virtualization Based Security**, and then select the **policy setting** link.
+
    ![](../Media/lab1-image5.png)
 
 1. In the **Turn On Virtualization Based Security** window, select the **Enabled** option.
