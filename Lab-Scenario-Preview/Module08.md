@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Lab 08: Monitoring and troubleshooting Windows Server
+# Lab Scenario Preview: Lab 07: Monitoring and troubleshooting Windows Server
 
 ### Lab overview
 
