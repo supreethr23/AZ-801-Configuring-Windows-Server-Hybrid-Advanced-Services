@@ -327,6 +327,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    ![](../media/37.png)
 
+   >**Note:** If you receive an error that the replication could not be enabled, please verify the soft delete for blob and container is disabled in the storage account and restart the replication job again. 
+
 ### Task 4: Review Azure VM replication settings
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, back on the **az801l05a-rsvault \| Site Recovery** page, on the vertical menu on the left side, select **Replicated items**. 
