@@ -1,1 +1,50 @@
 
+[
+  {
+    "Name": "AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/GettingStartedPage-V2.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_01_Configuring_security_in_Windows_Server.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_02_Implementing_security_solutions_hybrid_scenarios.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_03_Implementing_failover_clustering.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_04_Implementing_Hyper-V_Replica_and_Windows_Server_Backup.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_05_Implementing_Azure-based_recovery_services.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_06_Upgrade_and_migrate_Windows%20Server.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_07_Implementing_migration_in_hybrid_scenarios.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_08_Monitoring_and_troubleshooting_Windows_Server.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/refs/heads/prod/Instructions/Labs/LAB_AK_09_Implementing_operational_monitoring_in_hybrid_scenarios.md",
+        "Order": 10
+      } 
+    ]
+  }
+]
