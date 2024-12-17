@@ -172,26 +172,35 @@ After completing this lab, you'll be able to:
    ```
 
 1. On **SEA-SVR2**, in the **Type here to search** text box next to the **Start** button, enter **Group Policy Management**.
+   
 1. In the list of results, select **Group Policy Management**.
+   
 1. In the **Group Policy Management** console, expand **Forest: contoso.com**, expand **Domains**, expand **contoso.com**, right-click or access the **context** menu for the **Seattle_Servers** OU, and then select **Create a GPO in this domain, and Link it here**.
 
    ![](../Media/lab1-2-image1.png)
 
 1. In the **New GPO** dialog box, in the **Name** text box, enter **LAPS_GPO**, and then select **OK**.
+
    ![](../Media/lab1-2-image2.png)
    
 1. In the **Group Policy Management** window, under **Seattle_Servers**, right-click or access the **context** menu for **LAPS_GPO**, and then select **Edit**.
+   
 1. In the **Group Policy Management Editor** window, under **Computer Configuration**, expand the **Policies** node, expand the **Administrative Templates** node, and then select **LAPS**.
+   
 1. Select the **Enable local admin password management** policy, and then select the **policy settings** link.
+
    ![](../Media/lab1-2-image3.png)
 
 1. In the **Enable local admin password management** window, select **Enabled**, and then select **OK**.
+
    ![](../Media/lab1-2-image4.png)
 
 1. Select the **Password Settings** policy, and then select the **policy settings** link.
+
    ![](../Media/lab1-2-image5.png)
 
 1. In the **Password Settings** policy dialog box, select **Enabled**, and then configure **Password Length** to **20**, Verify that the **Password Age (Days)** is configured to **30**, and then select **OK**.
+
    ![](../Media/lab1-2-image6.png)
 
 1. Close the Group Policy Management Editor.
