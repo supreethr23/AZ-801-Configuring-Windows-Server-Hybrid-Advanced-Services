@@ -107,6 +107,14 @@ In this lab, you will:
 
    > **Note**: Wait for the deployment to complete before you proceed to the next task. This might take about 15 minutes. 
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - If you receive a success message, you can proceed to the next task.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="6f46a686-d299-4587-88f2-d9c0a9c4fd9f" />
+
+
 ### Task 2: Deploy Azure Bastion 
 
  > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
