@@ -42,7 +42,9 @@ In this lab, you will complete the following tasks:
 
    ![](../Media/801-4.png)
 
-1. In the **Available counters (1)** list, expand **Memory (2)**, select **Pages/sec (3)**, and then select **Add >> (4)**.
+1. In the **Available counters (1)** list, expand **Memory**, select **Pages/sec (2)**, and then select **Add >> (3)**.
+
+   ![](../Media/az801l7n.png)
 
 1. In the **Available counters (1)** list, expand **PhysicalDisk (2)**, select **% Disk Time (3)**, ensure that the **_Total (4)** entry is selected in the **Instances of selected object (5)** section, and then select **Add >> (6)**.
 
