@@ -171,7 +171,7 @@ In this lab, you will:
 
 ### Task 3: Deploy an Azure VM by using the Azure portal
 
-> **Note**: You could fully automate the deployment of the second Azure VM and its setup as an additional domain controller in the same domain as the first one you provisioned in the first task of this exercise. However, the use of graphical interface in this case should provide additional guidance regarding differences between provisioning domain controllers in on-premises and Azure-based scenarios.
+   > **Note**: You could fully automate the deployment of the second Azure VM and its setup as an additional domain controller in the same domain as the first one you provisioned in the first task of this exercise. However, the use of graphical interface in this case should provide additional guidance regarding differences between provisioning domain controllers in on-premises and Azure-based scenarios.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, in the **Search resources, services, and docs** text box, on the toolbar, search for and select **Virtual machines**. 
 1. On the **Virtual machines** page, select **+ Create**, and then, in the drop-down menu, select **Azure virtual machine**.
