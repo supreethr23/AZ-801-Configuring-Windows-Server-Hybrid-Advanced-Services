@@ -80,7 +80,7 @@ In this lab, you will:
    
 1. On the **Edit parameters** page, select **Save**.
 
-1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **Create new**, in the **Name** text box, enter **AZ801-L0601-RG**, and then select **OK**.
+1. Back on the **Create an Azure VM with a new AD Forest** page, below the **Resource group** drop-down list, select **AZ801-L0601-RG**.
    
 1. On the **Create an Azure VM with a new AD Forest** page, if needed, adjust the deployment settings so they have the following values (leave others with their default values):
 
