@@ -50,6 +50,13 @@ After completing this lab, you'll be able to:
 
    > **Note:** By default, the Storage Replication type of the vault is set to Geo-redundant (GRS), as well as Soft Delete and Security Features are enabled. You will change these settings in the lab to simplify deprovisioning, but you should ensure they are enabled in your production environments.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - If you receive a success message, you can proceed to the next task.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="05f38766-49b2-458d-8e23-ae87ebf611d3" />
+
 ### Task 2: Configure the Azure Site Recovery vault
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, on the deployment page, select **Go to resource**. 

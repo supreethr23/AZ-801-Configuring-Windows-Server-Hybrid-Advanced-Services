@@ -6,7 +6,7 @@ Welcome to your AZ-801: Configuring Windows Server Hybrid Advanced Services work
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](../Media/labguide-1.png)
+  ![Access Your VM and Lab Guide](../Media/labguide.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -16,23 +16,29 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources](../Media/env-1.png)
+  ![Explore Lab Resources](../Media/env.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![Use the Split Window Feature](../Media/spl.png)
+  ![Use the Split Window Feature](../Media/plus.png)
  
 ## Managing Your Virtual Machine
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](../Media/res.png)
+   ![Manage Your Virtual Machine](../Media/resources.png)
 
 2. To Switch between the Virtual Machines, select the required VM from the dropdown.
 
    ![](../media/switch.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![](../Media/zoom.png)
  
 ## Lab Duration Extension
 
