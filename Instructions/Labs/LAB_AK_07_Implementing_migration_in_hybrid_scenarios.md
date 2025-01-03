@@ -217,6 +217,7 @@ After completing this lab, you will be able to:
    ```powershell
    Rename-Computer -NewName 'az801l07a-vm1' -Restart
    ```
+   >**Note**: If the copy paste does not work, enter the code manually and run it.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
