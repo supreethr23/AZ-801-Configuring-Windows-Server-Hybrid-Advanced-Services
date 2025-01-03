@@ -351,12 +351,11 @@ After completing this lab, you will be able to:
    | Name | **az801l07a-test-vnet (3)** |
    | Region | **<inject key="Region" enableCopy="false"/>** **(4)**|
 
-   ![](../media/az801lab7img37.png)
-
 1. Click on **Next**.
 
-1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address 
-space**, select **Add IPV4 Address space**
+1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address space**, select **Add IPV4 Address space**
+
+   ![](../media/az801lab7img37.png)
 
 1. On the **Add IPV4 Address space** page, specify the following settings (leave others with their default values) and select **Add**:
 
