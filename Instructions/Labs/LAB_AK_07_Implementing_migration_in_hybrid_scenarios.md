@@ -390,7 +390,8 @@ After completing this lab, you will be able to:
    | Subscription | the name of the Azure subscription you are using in this lab **(1)** |
    | Resource group | **AZ801-L0703-RG (2)** |
    | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** **(3)** | 
-   | Location | **<inject key="Region" enableCopy="false"/>** **(4)** |
+   | Region | **<inject key="Region" enableCopy="false"/>** **(4)** |
+   | Primary Service | Select Azure Blob Storage or Azure Data Lake Storage Gen 2 from the dropdown.|
    | Performance | **Standard (5)** |
    | Redundancy | **Locally redundant storage (LRS) (6)** |
 
