@@ -526,7 +526,7 @@ After completing this lab, you will be able to:
 
 1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section in step 3, disable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery** located at the bottom of the page.
 
-   >**Note**: Wait it might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
+   >**Note**: Please wait as it might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
 ### Task 2: Configure, run, and view an assessment
 
