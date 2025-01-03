@@ -443,7 +443,7 @@ After completing this lab, you will be able to:
 
 1. On the **Before You Begin** page of the **Import Virtual Machine** wizard, select **Next >**.
 
-1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance\Virtual Machines\\** and select **Next >**.
+1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance_v25.24.02.07\Virtual Machines** and select **Next >**.
 
    ![](../media/az801lab7img42.png)
 
