@@ -217,6 +217,7 @@ After completing this lab, you will be able to:
    ```powershell
    Rename-Computer -NewName 'az801l07a-vm1' -Restart
    ```
+   >**Note**: If the copy paste does not work, enter the code manually and run it.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -351,12 +352,11 @@ After completing this lab, you will be able to:
    | Name | **az801l07a-test-vnet (3)** |
    | Region | **<inject key="Region" enableCopy="false"/>** **(4)**|
 
-   ![](../media/az801lab7img37.png)
-
 1. Click on **Next**.
 
-1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address 
-space**, select **Add IPV4 Address space**
+1. On the **IP addresses** tab of the **Create virtual network** page, remove the default IP Address space by clicking on **Delete the address space** and after deleting **address space**, select **Add IPV4 Address space**
+
+   ![](../media/az801lab7img37.png)
 
 1. On the **Add IPV4 Address space** page, specify the following settings (leave others with their default values) and select **Add**:
 
@@ -390,7 +390,8 @@ space**, select **Add IPV4 Address space**
    | Subscription | the name of the Azure subscription you are using in this lab **(1)** |
    | Resource group | **AZ801-L0703-RG (2)** |
    | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** **(3)** | 
-   | Location | **<inject key="Region" enableCopy="false"/>** **(4)** |
+   | Region | **<inject key="Region" enableCopy="false"/>** **(4)** |
+   | Primary Service | Select Azure Blob Storage or Azure Data Lake Storage Gen 2 from the dropdown.|
    | Performance | **Standard (5)** |
    | Redundancy | **Locally redundant storage (LRS) (6)** |
 
@@ -443,7 +444,7 @@ space**, select **Add IPV4 Address space**
 
 1. On the **Before You Begin** page of the **Import Virtual Machine** wizard, select **Next >**.
 
-1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance\Virtual Machines\\** and select **Next >**.
+1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder **F:\VMs\AzureMigrateAppliance_v25.24.02.07\Virtual Machines** and select **Next >**.
 
    ![](../media/az801lab7img42.png)
 
@@ -526,7 +527,7 @@ space**, select **Add IPV4 Address space**
 
 1. On the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section in step 3, disable the toggle button for **Disable the slider if you don’t want to perform these features**, and then select **Start discovery** located at the bottom of the page.
 
-   >**Note**: Wait it might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
+   >**Note**: Please wait as it might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
 ### Task 2: Configure, run, and view an assessment
 
