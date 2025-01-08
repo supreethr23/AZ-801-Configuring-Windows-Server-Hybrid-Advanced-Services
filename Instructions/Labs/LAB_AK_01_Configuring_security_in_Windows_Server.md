@@ -133,7 +133,10 @@ After completing this lab, you'll be able to:
    New-ADOrganizationalUnit -Name "Seattle_Servers"
    ```
    ```powershell
-   Get-ADComputer SEA-SVR1 | Move-ADObject –TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
+   $computer = Get-ADComputer -Identity "SEA-SVR1"
+   ```
+   ```powershell
+   Move-ADObject -Identity $computer -TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
    ```
 
 1. To install LAPS, at the Windows PowerShell command prompt, enter the following command and press Enter:
