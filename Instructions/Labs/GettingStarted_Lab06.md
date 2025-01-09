@@ -28,8 +28,16 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](../Media/res.png)
- 
+   ![Manage Your Virtual Machine](../Media/resources.png)
+
+2. To Switch between the Virtual Machines, select the required VM from the dropdown.
+
+   ![](../media/switch.png)
+
+   >**Note**: In case the dropdown is not visible, you can manually choose and initiate the required VMs directly from the lab VM's desktop.
+
+      ![](../media/hyperv-vm.png)
+   
 ## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
