@@ -34,7 +34,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![](../media/switch.png)
 
-   >**Note**: If the dropdown is not visible, you can manually select and launch the required VMs directly from the desktop of the lab VM.
+   >**Note**: In case the dropdown is not visible, you can manually choose and initiate the required VMs directly from the lab VM's desktop.
 
       ![](../media/hyperv-vm.png)
    
