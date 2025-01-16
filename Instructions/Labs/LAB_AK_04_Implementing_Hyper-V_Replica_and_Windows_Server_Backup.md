@@ -161,11 +161,8 @@ After completing this lab, you'll be able to:
    ```powershell
    Set-VMReplication -Reverse -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
    ```
-1. Switch to **HOSTVM-<inject key="DeploymentID" enableCopy="false"/>** from the dropdown as shown below.
 
-   ![](../Media/hostvmlab4.png)
-
-1. Click on the Hyper-V manager and right click on **SEA-SVR1** VM and select **Turn off**.
+1. Click on the Hyper-V manager within the LabVM and right click on **SEA-SVR1** VM and select **Turn off**.
 
    ![](../Media/to.png)
 
@@ -213,8 +210,6 @@ After completing this lab, you'll be able to:
    ```
 
 1. Leave both Windows PowerShell windows open.
-
-   > **Note**: If you want to verify the results of this exercise by using graphical tools, you can use Hyper-V Manager on **SEA-SVR2**, and then add the **SEA-SVR1** and **SEA-SVR2** servers to the **Hyper-V** console. You can then verify that the **SEA-CORE1** VM exists on both **SEA-SVR1** and **SEA-SVR2** and that replication is running from **SEA-SVR2** to **SEA-SVR1**.
 
 ## Exercise 2: Implementing backup and restore with Windows Server Backup
 
