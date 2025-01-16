@@ -162,11 +162,13 @@ After completing this lab, you'll be able to:
    Set-VMReplication -Reverse -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
    ```
 
+1. Minimize the **SEA-SVR2 on HOSTVM** connection and navigate back to the LabVM desktop.
+
 1. Click on the Hyper-V manager within the LabVM and right click on **SEA-SVR1** VM and select **Turn off**.
 
    ![](../Media/to.png)
 
-1. Right click on Start and select **Windows Powershell(Admin)** and enter the following command and press Enter:
+1. Right click on Start and select **Windows Powershell(Admin)** from the LabVM and enter the following command and press Enter:
 
    ```powershell
    Set-VMProcessor -VMName SEA-SVR1 -ExposeVirtualizationExtensions $true
@@ -175,16 +177,16 @@ After completing this lab, you'll be able to:
 
    ![](../Media/start.png)
 
-1. To start the newly designated primary VM on **SEA-SVR1**, Switch to **SEA-SVR2**, and in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
-
-   ```powershell
-   Start-VM -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
-   ```
-
-   >**Note:** If an error occurs stating that the connection is broken or interrupted, enter the following command, press enter, and then re-run step 10 again.
+1. To start the newly designated primary VM on **SEA-SVR1**, Switch to **SEA-SVR2**(Click on the shortcut available with the taskbar), and in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
 
    ```powershell
    Enter-PSSession -ComputerName SEA-SVR1.contoso.com
+   ```
+
+   >**Note:** The step is required because the connection is interrupted.
+
+   ```powershell
+   Start-VM -VMName SEA-CORE1 -ComputerName SEA-SVR1.contoso.com
    ```
 
 1. To verify that the VM was successfully started, on **SEA-SVR2**, in the Windows PowerShell window hosting the PowerShell Remoting session to **SEA-SVR1**, enter the following command and press Enter:
