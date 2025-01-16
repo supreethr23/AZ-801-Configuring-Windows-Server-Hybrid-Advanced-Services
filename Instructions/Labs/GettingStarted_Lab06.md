@@ -30,9 +30,11 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
    ![Manage Your Virtual Machine](../Media/resources.png)
 
-2. To initiate the required VMs, manually select and launch them directly from the Lab VM's desktop.
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](../media/hyperv-vm.png)
+   ![](../Media/zoom.png)
    
 ## Lab Duration Extension
 
@@ -76,6 +78,7 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
    ![Ask Later](../Media/2test1.png)
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+
 1. Click **Next** from the bottom right corner to embark on your Lab journey!
  
    ![Start Your Azure Journey](../Media/sc900-image(3).png)
