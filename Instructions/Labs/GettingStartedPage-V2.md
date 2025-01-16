@@ -30,11 +30,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
    ![Manage Your Virtual Machine](../Media/resources.png)
 
-2. To Switch between the Virtual Machines, select the required VM from the dropdown.
-
-   ![](../media/switch.png)
-
-   >**Note**: In case the dropdown is not visible, you can manually choose and initiate the required VMs directly from the lab VM's desktop.
+2. To initiate the required VMs, manually select and launch them directly from the Lab VM's desktop.
 
       ![](../media/hyperv-vm.png)
    
