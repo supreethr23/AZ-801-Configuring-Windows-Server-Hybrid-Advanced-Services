@@ -362,7 +362,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 ### Task 4: Review Azure VM replication settings
 
-1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, back on the **az801l05a-rsvault \| Site Recovery** page, on the vertical menu on the left side, select **Replicated items**. 
+1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, back on the **az801l05a-rsvault \| Site Recovery** page, on the vertical menu on the left side, select **Replicated items** under Protected items. 
 1. On the **az801l05a-rsvault \| Replicated items** page, ensure that there is an entry representing the **SEA-CORE1** virtual machine and verify that its **Replication Health** is listed as **Healthy** and that its **Status** is listed as either **Enabling protection** or displaying a current percentage of synchronization progress.
 
    ![](../media/38.png)
@@ -374,7 +374,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
     ![](../media/39.png)
 
-   > **Note:** Wait until the status changes to **Protected**. The time required for this to take place depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated. 
+   > **Note:** Wait until the status changes to **Protected**. The time required for this to take place depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated (This process might take about 15-20 minutes). 
 
 1. On the **SEA-CORE1** replicated items page, select **Latest recovery points** and review **Latest crash-consistent** and **Latest app-consistent** recovery points. 
 
@@ -398,7 +398,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
      ![](../media/74.png)
 
-   > **Note:** The time required for the test failover to complete depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated. 
+   > **Note:** The time required for the test failover to complete depends on the available bandwidth of the connection between the lab environment and the Azure region hosting the Recovery Services vault. You will need to refresh the browser page for the status to be updated (this process might take about 15-20 minutes). 
 
 1. In the Azure portal, use the **Search resources, services, and docs** text box in the toolbar to search for and select **Virtual machines** and, on the **Virtual machines** page, note the entry representing the newly provisioned virtual machine.
 
