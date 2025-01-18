@@ -38,10 +38,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|Leave the default subscription|
-   |**Resource group (2)**|**AZ801-L0501-RG**|
-   |**Vault name (3)**|**az801l05a-rsvault**|
-   |**Location (4)**|Leave the default region|
+   |**Subscription**|Leave the default subscription (1)|
+   |**Resource group**|**AZ801-L0501-RG** (2)|
+   |**Vault name**|**az801l05a-rsvault** (3)|
+   |**Location**|Leave the default region (4)|
 
     ![](../media/01.png)
 
@@ -94,10 +94,10 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |**Subscription (1)**|Leave the default subscription|
-   |**Resource group (2)**|**AZ801-L0502-RG**|
-   |**Virtual network Name (3)**|**az801l05-dr-vnet**|
-   |**Region (4)**|Leave the default region|
+   |**Subscription**|Leave the default subscription (1)|
+   |**Resource group**|**AZ801-L0502-RG** (2)|
+   |**Virtual network Name**|**az801l05-dr-vnet** (3)|
+   |**Region**|Leave the default region (4)|
 
     ![](../media/09.png)
 
@@ -136,8 +136,8 @@ After completing this lab, you'll be able to:
    |Setting|Value|
    |---|---|
    |**Subscription**|Leave the default subscription (1)|
-   |**Resource group**|**AZ801-L0502-RG (2)**|
-   |**Virtual network Name**|**az801l05-test-vnet (3)**|
+   |**Resource group**|**AZ801-L0502-RG** (2)|
+   |**Virtual network Name**|**az801l05-test-vnet** (3)|
    |**Region**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab (Leave the default region)  (4)|
 
    ![](../media/06.png)
@@ -153,8 +153,8 @@ After completing this lab, you'll be able to:
 
        |Setting|Value|
        |---|---|
-       |Starting Address|**10.5.0.0 (1)**|
-       |Address space size|**/22 (1024 Addresses) (2)**|
+       |Starting Address|**10.5.0.0** (1)|
+       |Address space size|**/22 (1024 Addresses)** (2)|
 
       ![](../Media/ex2t1s10.png)
 
@@ -165,9 +165,9 @@ After completing this lab, you'll be able to:
 
    |Setting|Value|
    |---|---|
-   |Name|**subnet0 (1)**|
-   |Starting Address|**10.5.0.0 (2)**|
-   |Subnet size|**/24 (256 Addresses) (3)**|
+   |Name|**subnet0** (1)|
+   |Starting Address|**10.5.0.0** (2)|
+   |Subnet size|**/24 (256 Addresses)** (3)|
 
       ![](../Media/p3upd.png)
 
@@ -183,7 +183,7 @@ After completing this lab, you'll be able to:
    |Setting|Value|
    |---|---|
    |**Subscription**|Leave the default subscription (1)|
-   |**Resource group**|**AZ801-L0502-RG (2)**|
+   |**Resource group**|**AZ801-L0502-RG** (2)|
    |**Storage account name**|storage<inject key="DeploymentID" enableCopy="false"/> (3)|
    |**Region**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab (Leave the default region) (4)|
    |**Primary Serice**|Azure Blob Storage or Azure Data Lake Storage Gen 2 (5)|   
@@ -309,8 +309,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    |Setting|Value|
    |---|---|
-   |Name|**az801l05-replication-policy (1)**|
-   |Copy frequency|**30 seconds (2)**|
+   |Name|**az801l05-replication-policy** (1)|
+   |Copy frequency|**30 seconds** (2)|
 
    ![](../media/32.png)
 
@@ -390,7 +390,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    |Setting|Value|
    |---|---|
-   |Azure virtual network|**az801l05-test-vnet (1)**|
+   |Azure virtual network|**az801l05-test-vnet** (1)|
 
     ![](../media/42.png)
 
