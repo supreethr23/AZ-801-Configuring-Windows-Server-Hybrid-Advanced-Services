@@ -186,14 +186,14 @@ After completing this lab, you'll be able to:
    |**Resource group**|**AZ801-L0502-RG (2)**|
    |**Storage account name**|storage<inject key="DeploymentID" enableCopy="false"/> (3)|
    |**Region**|the name of the Azure region into which you deployed the Recovery Services vault earlier in this lab (Leave the default region) (4)|
-   |**Primary Serice**|Azure Blob Storage Azure Data Lake Storage Gen 2 (5)|   
+   |**Primary Serice**|Azure Blob Storage or Azure Data Lake Storage Gen 2 (5)|   
    |**Performance**|Standard (6)|
    |**Redundancy**|Locally redundant storage (LRS)(7)|
 
     ![](../media/13upd.png)
 
 1. On the **Basics** tab of the **Create a storage account** page, select the **Data protection** tab.
-1. On the **Data protection** tab of the **Create a storage account** page, clear the **Enable soft delete for blobs (1)** and **Enable soft delete for containers (2)** checkboxes and select **Review + create(3)**.
+1. On the **Data protection** tab of the **Create a storage account** page, **Uncheck** the **Enable soft delete for blobs (1)** and **Enable soft delete for containers (2)** checkboxes and select **Review + create(3)**.
 
    ![](../Media/AZ-108-E2T1S19.png)
 
@@ -378,7 +378,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **SEA-CORE1** replicated items page, select **Latest recovery points** and review **Latest crash-consistent** and **Latest app-consistent** recovery points. 
 
-    ![](../media/40.png)
+    ![](../media/40upd.png)
 
 ### Task 5: Perform a failover of the Hyper-V virtual machine
 
@@ -390,7 +390,6 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
    |Setting|Value|
    |---|---|
-   |Choose a recovery point|the default option|
    |Azure virtual network|**az801l05-test-vnet (1)**|
 
     ![](../media/42.png)
@@ -522,7 +521,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 1. In the **Select Items** dialog box, browse to the **C:\\Windows\\System32\\drivers\\etc\\ (2)** folder, select **hosts**, and then select **OK**.
 1. On the **Select Items to Backup** page, select **Next (3)**.
 
-   ![](../media/59.png)
+   ![](../media/59upd.png)
 
 1. On the **Specify Backup Schedule** page, ensure that the **Day** option is selected, in the first drop-down list box below the **At following times (Maximum allowed is three times a day)** box, select **4:30 AM**, and then select **Next**.
 
@@ -549,7 +548,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **Confirmation** page, select **Back Up**.
 
-    ![](../media/72.png)
+    ![](../media/72upd.png)
 
 1. When the backup is complete, select **Close**.
 1. On **SEA-SVR2**, switch to the Microsoft Edge window displaying the Azure portal, browse back to the **az801l05a-rsvault** Recovery Services vault page and select **Backup items**. 
@@ -561,8 +560,6 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 1. On the **Backup Items (Azure Backup Agent)** page, verify that there is an entry referencing drive **C** of **sea-svr2.contoso.com**.
 
    ![](../media/63.png)
-
-   >**Note**: Wait for sometime until **Last backup** status changes to **Success**
 
 ### Task 4: Perform file recovery by using Azure Recovery Services agent
 
