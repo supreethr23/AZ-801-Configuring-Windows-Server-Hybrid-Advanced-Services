@@ -559,7 +559,7 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
 1. On the **Backup Items (Azure Backup Agent)** page, verify that there is an entry referencing drive **C** of **sea-svr2.contoso.com**.
 
-   ![](../media/63.png)
+   ![](../media/backup88.png)
 
 ### Task 4: Perform file recovery by using Azure Recovery Services agent
 
