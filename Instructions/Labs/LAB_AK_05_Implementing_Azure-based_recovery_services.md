@@ -380,6 +380,8 @@ Verify that the **Hyper-V site** and **Hyper-V servers** settings are set correc
 
     ![](../media/40upd.png)
 
+   > **Note:** It might take few minutes to load.
+
 ### Task 5: Perform a failover of the Hyper-V virtual machine
 
 1. On **SEA-SVR2**, in the browser window displaying the Azure portal, on the **SEA-CORE1** replicated items blade go to the **Compute and Network setting (1)** under General and review the virtual machine size. Validate that the size is set to A1_v2, if not **edit** the size to be **A1_v2 (2)** and click on **Save (3)**.
