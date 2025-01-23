@@ -37,7 +37,7 @@ In this lab, you will:
 
 1. On the **Create an Azure VM with a new AD Forest** page, select **Edit template**.
 
-1. On the **Edit template** page, browse to the **storageProfile** section (starting with the line **195**) and verify that the **sku** (on line **199**) is set to **2022-Datacenter**, that the **version** (on line **200**) is set to **latest** and that **dataDisks** **caching** (on line **213**) is set to **None**.
+1. On the **Edit template** page, browse to the **storageProfile** section (starting with the line **195**) and verify that the **sku** (on line **199**) is set to **2022-Datacenter**,if not then change it to 2022-Datacenter, and the **version** (on line **200**) is set to **latest** and that **dataDisks** **caching** (on line **213**) is set to **None**.
 
    > **Note**: Caching on the disks hosting AD DS database and log files should be set to **None**.
 
@@ -70,9 +70,7 @@ In this lab, you will:
 
    > **Note**: Configuring the custom DNS server virtual network setting that points to the Azure VM running the domain controller with the DNS server role ensures that any Azure VM subsequently deployed into the same virtual network will automatically use that DNS server for name resolution, effectively providing the domain join functionality.
 
-1. On the **Edit template** page, select **Discard**.
-   
-   > **Note**: Please click on **Save** if there were any changes made.
+1. On the **Edit template** page, select **Save** if changes were made to the template; otherwise, select **Discard**.
    
 1. Back on the **Create an Azure VM with a new AD Forest** page, select **Edit parameters**.
    
@@ -105,7 +103,7 @@ In this lab, you will:
 
 1. On the **Create an Azure VM with a new AD Forest** page, select **Review + create**, and then select **Create**.
 
-   > **Note**: Wait for the deployment to complete before you proceed to the next task. This might take about 15 minutes. 
+   ** Note**: Please wait for the deployment to complete before you go ahead with the next task. This might take about 15 minutes. 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - If you receive a success message, you can proceed to the next task.
@@ -117,7 +115,7 @@ In this lab, you will:
 
 ### Task 2: Deploy Azure Bastion 
 
-   > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system level credentials.
+   > **Note**: Azure Bastion allows for connection to the Azure VMs without public endpoints which you deployed in the previous task of this exercise, while providing protection against brute force exploits that target operating system-level credentials.
 
 1. On **SEA-SVR2**, in the Microsoft Edge window displaying the Azure portal, open the Azure Cloud Shell pane by selecting the Cloud Shell button in the Azure portal.
 
@@ -393,7 +391,7 @@ In this lab, you will:
 1. In the **Storage Migration Service** pane, scroll down to the bottom of the page and select **+ New job**.
 1. In the **New job** pane, in the **Job name** text box, enter **SVR1toSVR2**, ensure that the **Windows servers and clusters** **Source devices** option is selected, and select **OK**.
 1. In the **Storage Migration Service > SVR1toSVR2** pane, on the **Inventory servers** tab, review the **Check the prerequisites** pane and select **Next**.
-1. On the **Inventory servers** tab, in the **Enter credentials** pane, if necessary, enter the credentials of the **CONTOSO\\Administrator** user account, clear the **Migrate from failover clusters** checkbox, and then select **Next**.
+1. On the **Inventory servers** tab, in the **Enter credentials** pane, if necessary, enter the credentials of the **CONTOSO\\Administrator** user account and Password as **Pa55w.rd**, clear the **Migrate from failover clusters** checkbox, and then select **Next**.
 1. On the **Inventory servers** tab, in the **Install required features** pane, select **Next**.
 1. On the **Inventory servers** tab, in the **Add and scan devices** pane, select **+ Add a device**.
 1. On the **Add source device**, ensure that the **Device name** option is selected, in the **Name** text box, enter **SEA-SVR1.contoso.com**, and then select **Add**.
@@ -408,9 +406,11 @@ In this lab, you will:
 
    >**Note:** This will transition to the second stage of the migration job accessible via the **Transfer data** tab in the **Storage Migration Service > SVR1toSVR2** pane.
 
-1. On the **Transfer data** tab, in the **Enter credentials for the destination device** pane, verify that the **CONTOSO\\Administrator** user account is being used and select **Next**.
+1. On the **Transfer data** tab, in the **Enter credentials for the destination device** pane, verify that the **CONTOSO\\Administrator** user account and password as **Pa55w.rd** is being used and select **Next**.
 1. In the **Specify the destination for: sea-svr1.contoso.com** pane, ensure that the **Destination** option is set to **Use an existing server or VM**, in the **Destination device** text box, enter **SEA-SVR2.contoso.com** and select **Scan**.
 
+   >**Note:** In case if you do not see the Scan button, please zoom out a little in the browser settings.
+   
    >**Note:** Wait until the scan completes successfully. This should take about 1 minute.
 
    >**Note:** In hybrid scenarios, you also have the option of automatically creating an Azure VM serving as the destination of the migration job.
