@@ -129,15 +129,13 @@ After completing this lab, you will be able to:
 
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, start Microsoft Edge, and On the Welcome to Microsoft Edge page, select **Start without your data** and on the help for importing Google browsing data page, select the **Continue without this data** button. Then, proceed to select **Confirm and start browsing** on the next page, go to [Windows Server Evaluations](https://www.microsoft.com/en-in/EvalCenter).
 
-1. On start your evaluation today page, select **Windows Server 2022** as shown below
+1. On start your evaluation today page, select **Windows Server 2025** as shown below
 
-   ![](../media/az801lab6.png)
+   ![](../media/server-2025.png)
 
-1. On the Windows Server 2022 page, under **Get started for free** select **Download the VHD**
+1. On the Windows Server 2025 page, under **Get started for free** select **Download the VHD**
 
-   ![](../media/az801lab6.1.png)
-
-1. On **Evaluate Windows Server 2022** page provide the requested information for 
+1. On **Evaluate Windows Server 2025** page provide the requested information for 
    registration and click on **Download now (9)**.
 
    | Setting        | Value      | 
@@ -158,9 +156,7 @@ After completing this lab, you will be able to:
    >**Note**: You can change download settings location by navigating to Microsoft edge, select (...) icon at top right of the corner, select **Download** and on **Download** window click on **(...) icon and select 
    **Downloads settings** and in location field click on change to set the location.
    
-1. On the **Please select your windows server 2022 download** page, in English united status row, under **VHD download** select **64-bit edition**.
-
-   ![](../media/az801lab7img16.png)
+1. On the **Please select your windows server 2025 download** page, in English united status row, under **VHD download** select **64-bit edition**.
 
    >**Note**: Wait for download to complete.
 
@@ -184,7 +180,7 @@ After completing this lab, you will be able to:
 
    ![](../media/az801lab7img20.png)
 
-1. On the **Specify Generation** page of the **New Virtual Machine Wizard**, ensure that the **Generation 1** option is selected, and then select **Next >**.
+1. On the **Specify Generation** page of the **New Virtual Machine Wizard**, ensure that the **Generation 2** option is selected, and then select **Next >**.
 
 1. On the **Assign Memory** page of the **New Virtual Machine Wizard**, set **Startup memory** to **2048**, and then select **Next >**.
 
@@ -196,6 +192,8 @@ After completing this lab, you will be able to:
 
 1. On the **Connect Virtual Hard Disk** page of the **New Virtual Machine Wizard**, select the option **Use an existing virtual hard disk**, set location to the **VHD** file you downloaded to the **F:\VHDs** folder, and then select **Next >**.
 
+   ![](../media/connect_vhd.png)
+   
 1. On the **Summary** page of the **New Virtual Machine Wizard**, select **Finish**.
 
 1. In the **Hyper-V Manager** console, select the newly created virtual machine, right click and then select **Start**. 
