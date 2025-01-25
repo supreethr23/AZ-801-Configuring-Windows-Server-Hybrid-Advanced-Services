@@ -83,7 +83,7 @@ After completing this lab, you will be able to:
 
    ![](../media/az801lab7img6.png)
 
-1. Once deployment is successfully in search bar, search for and select **Public Ip address**.
+1. Once the rule is successfully created, in search bar search for and select **Public Ip address**.
 
 1. On **Public IP addresses** page, select **+ Create** and on basics tab specify the following (Leave others with their default values.) and Select **Review + create (3)** and **create**:
    
@@ -156,7 +156,7 @@ After completing this lab, you will be able to:
    >**Note**: You can change download settings location by navigating to Microsoft edge, select (...) icon at top right of the corner, select **Download** and on **Download** window click on **(...) icon and select 
    **Downloads settings** and in location field click on change to set the location.
    
-1. On the **Please select your windows server 2025 download** page, in English united status row, under **VHD download** select **64-bit edition**.
+1. On the **Please select your windows server 2025 download** page, in English United States row, under **VHD download** select **64-bit edition**.
 
    >**Note**: Wait for download to complete.
 
@@ -208,7 +208,8 @@ After completing this lab, you will be able to:
 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, in the **Action** menu, select **Ctrl + Alt + Delete** and then, when prompted, sign in by using **Pa55w.rd** password.
 
-   ![](../Media/s11.png) 
+   ![](../Media/s11upd.png)
+   >**Note**: Click on **Accept** on Send diagnostic data to Microsoft page. 
 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, select **Start**. In the **Start** menu, select **Windows PowerShell** and then, in the **Administrator: Windows PowerShell** window, run the following to set the computer name. 
 
@@ -389,11 +390,11 @@ After completing this lab, you will be able to:
    | Resource group | **AZ801-L0703-RG (2)** |
    | Storage account name | **str<inject key="DeploymentID" enableCopy="false"/>** **(3)** | 
    | Region | **<inject key="Region" enableCopy="false"/>** **(4)** |
-   | Primary Service | Select Azure Blob Storage or Azure Data Lake Storage Gen 2 from the dropdown.|
-   | Performance | **Standard (5)** |
-   | Redundancy | **Locally redundant storage (LRS) (6)** |
+   | Primary Service | Select Azure Blob Storage or Azure Data Lake Storage Gen 2 from the dropdown. (5)|
+   | Performance | **Standard (6)** |
+   | Redundancy | **Locally redundant storage (LRS) (7)** |
 
-   ![](../media/az801lab7img34.png)
+   ![](../media/az801lab7img34upd.png)
 
 1. On the **Basics** tab of the **Create a storage account** page, select the **Data protection (1)** tab. On the **Data protection** tab of the **Create a storage account** page, uncheck the **Enable soft delete for blobs (2)** and **Enable soft delete for containers (3)** checkboxes, and then select **Review + create (4)**.
 
