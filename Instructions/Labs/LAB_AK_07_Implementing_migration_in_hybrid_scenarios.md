@@ -117,6 +117,8 @@ After completing this lab, you will be able to:
    | User Name |**Student** |
    | Password |**Pa55w.rd1234** |
 
+   >**Note**: While Logging in to the VM, if an error message is shown as **Invalid Username or Password**, navigate to **More Choices** and select **Use a different account** and enter the User Name as **.\Student** and enter the above provided password.
+
 1. Within the Remote Desktop session to **az801l07a-hv-vm**, in the **Server Manager** window, select **Local Server (1)**, select the **On (2)** link next to the **IE Enhanced Security Configuration** label.
 
    ![](../media/az801lab7img11.png)
