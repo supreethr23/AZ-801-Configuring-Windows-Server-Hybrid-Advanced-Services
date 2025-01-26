@@ -509,6 +509,8 @@ After completing this lab, you will be able to:
     - Username: <inject key="AzureAdUserEmail"></inject>
   
     - Password: <inject key="AzureAdUserPassword"></inject>
+
+   >**Note**: You need to enter the credentials manually.
    
 1. When prompted **Are you trying to sign in to Microsoft Azure PowerShell?**, select **Continue**, and then **close** the newly opened browser tab.
 
