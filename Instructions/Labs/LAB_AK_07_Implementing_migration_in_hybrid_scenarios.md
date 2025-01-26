@@ -202,6 +202,8 @@ After completing this lab, you will be able to:
 
 1. In the **Hyper-V Manager** console, verify that the virtual machine is running, right click and then select **Connect**. 
 
+   > **Note:** Please wait for a few minutes for the setup to begin.
+
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **Hi there** page, select **Next**. 
 
 1. In the **Virtual Machine Connection** window to **az801l07a-vm1**, on the **License terms** page, select **Accept**. 
